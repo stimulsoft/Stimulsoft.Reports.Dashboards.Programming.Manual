@@ -1,0 +1,83 @@
+# Sending Report by Email
+
+> **Information**
+>
+> Please note that the Send Report by Email option is available only for reports, and not for dashboards.
+
+The **HTML5 Viewer** component provides the ability to send reports by email. To activate this feature, you should set the **ShowSendEmailButton** property of the viewer to **true** and define the **EmailReport** action.
+
+
+**Index.cshtml**
+
+```
+...
+@Html.Stimulsoft().StiMvcViewer("MvcViewer1", 
+    new StiMvcViewerOptions() {
+        Actions =
+        {
+            EmailReport = "EmailReport"
+        },
+        Toolbar =
+        {
+            ShowSendEmailButton = true
+        }
+})
+...
+```
+
+
+**HomeController.cs**
+
+```csharp
+...
+public ActionResult EmailReport()
+{
+    StiEmailOptions options = StiMvcViewer.GetEmailOptions();
+    
+    // Passed from the viewer, can be checked and changed
+    // options.AddressTo = "";
+    // options.Subject = "";
+    // options.Body = "";
+    
+    // Should be filled here
+    options.AddressFrom = "admin_address@test.com";
+    options.Host = "smtp.test.com";
+    options.Port = 465;
+    options.UserName = "admin_address@test.com";
+    options.Password = "admin_password";
+    
+    // options.CC.Add("email@test.com");
+    // options.BCC.Add("email@test.com");
+    // options.EnableSsl = true;
+    
+    return StiMvcViewer.EmailReportResult(options);
+}
+...
+```
+
+When sending a report by email, the menu to select the attachment format is displayed. It corresponds to the menu for selecting the format for exporting the report. After selecting the format, the dialog to send email parameters, such as the recipient's email, subject, and text of the message, is displayed.
+
+
+![](../../../images/topics/Reports_Web.ASP_NET_MVC.Using_Web_Viewer.Send_Email_1.png)
+
+After confirmation of sending the email, the above described **EmailReport** event will be called. You can check and correct the data entered in this form. The exported report file will be attached to the email automatically.
+
+
+The **HTML5 Viewer** component allows you to set default values for the send email form. The **DefaultEmailAddress**, **DefaultEmailSubject**, and **DefaultEmailMessage** properties can be used for this. By default, these properties are empty.
+
+
+**Index.cshtml**
+
+```
+...
+@Html.Stimulsoft().StiMvcViewer("MvcViewer1", 
+    new StiMvcViewerOptions() {
+        Email =
+        {
+            DefaultEmailAddress = "recipient_address@gmail.com",
+            DefaultEmailSubject = "New Invoice",
+            DefaultEmailMessage = "Please check the new invoice in the attachment"
+        }
+})
+...
+```

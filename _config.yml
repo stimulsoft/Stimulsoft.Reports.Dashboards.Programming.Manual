@@ -1,0 +1,27 @@
+title: Stimulsoft Reports Documentation
+description:
+baseurl: "/Stimulsoft.Reports.Dashboards.Programming.Manual"
+url: "https://stimulsoft.github.io"
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+
+relative_links:
+  enabled: true
+  collections: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      render_with_liquid: false
+
+exclude:
+  - scripts/
+  - "*.py"
+  - README.md
+  - ARCHITECTURE.md
+  - Gemfile
+  - Gemfile.lock

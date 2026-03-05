@@ -1,0 +1,3 @@
+## How It Works
+
+To run the web report designer, it is required to put the **StiWebDesignerSL** component on the ASP.NET page. Then, in the **PageLoad** event of a page, you need to assign a report to the Report property of a component. An ASP.NET component will read the Silverlight-client application into memory from resources and run it. Being loaded, the client-side will request all necessary settings and a report file from the server-side. The server part will pass this. When you save or preview the report, the client-side sends the report as an XML the file, and server will perform preliminary processing of the report, and transfer this file for saving, or compiles it and displays in a browser window.
