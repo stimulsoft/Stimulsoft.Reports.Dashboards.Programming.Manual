@@ -1,7 +1,8 @@
 title: Stimulsoft Reports Documentation
-description: Stimulsoft Reports and Dashboards Programming Manual
+description:
 baseurl: "/Stimulsoft.Reports.Dashboards.Programming.Manual"
 url: "https://stimulsoft.github.io"
+sidebar_title: "Programming Manual"
 
 plugins:
   - jekyll-relative-links
