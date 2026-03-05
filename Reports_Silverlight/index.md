@@ -1,6 +1,8 @@
 # Reports.Silverlight
 
-> **YouTube** [Stimulsoft Reports.Silverlight](https://www.youtube.com/watch?v=F90vaVA1kMs&list=PL-72PPAq-3SUtHiUHvWHtQI9FISkU-Y16)
+> **YouTube**
+>
+> Watch the video tutorials for working with the components of the [Stimulsoft Reports.Silverlight](https://www.youtube.com/watch?v=F90vaVA1kMs&list=PL-72PPAq-3SUtHiUHvWHtQI9FISkU-Y16) product. Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) and be the first to watch new video lessons. Questions and suggestions is recommended be left in the comments to the video.
 
 
 > **Samples**

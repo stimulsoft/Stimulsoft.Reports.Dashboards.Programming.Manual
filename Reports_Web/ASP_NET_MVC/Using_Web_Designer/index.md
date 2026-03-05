@@ -1,6 +1,8 @@
 # HTML5 Designer
 
-> **YouTube** [for working with ASP.NET MVC HTML5 Designer](https://www.youtube.com/watch?v=SvKzg9viYzc&index=12&list=PL-72PPAq-3SX80j_FIJAcNppiQcOMyGpK)
+> **YouTube**
+>
+> Watch videos [for working with ASP.NET MVC HTML5 Designer](https://www.youtube.com/watch?v=SvKzg9viYzc&index=12&list=PL-72PPAq-3SX80j_FIJAcNppiQcOMyGpK). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 
 > **Samples**

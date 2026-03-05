@@ -1,6 +1,8 @@
 # Angular Viewer
 
-> **YouTube** [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos)
+> **YouTube**
+>
+> Watch videos .NET Core Angular Viewer. Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 
 > **Samples**

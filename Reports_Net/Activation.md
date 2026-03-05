@@ -1,6 +1,8 @@
 # Activation
 
-> **YouTube** [WinForms components](https://www.youtube.com/watch?v=7wQSqpcCMSI&list=PL-72PPAq-3SWXBf9Pq7NeUVVCv-FDc1Q7&index=4)
+> **YouTube**
+>
+> Watch videos which show how to activate the [WinForms components](https://www.youtube.com/watch?v=7wQSqpcCMSI&list=PL-72PPAq-3SWXBf9Pq7NeUVVCv-FDc1Q7&index=4). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 After purchasing a Stimulsoft product, you need to activate the license for the components you are using. You can do this done in various ways. Below is an example of activating the **WinForms** component.
 

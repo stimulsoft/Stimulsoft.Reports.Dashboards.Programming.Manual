@@ -1,6 +1,8 @@
 # Reports.Java
 
-> **YouTube** [Stimulsoft Reports.JAVA](https://www.youtube.com/watch?v=ZIeo3ff3IwM&index=3&list=PL-72PPAq-3SWNJ3Va97rU_IO2LuFNFTP7)
+> **YouTube**
+>
+> Watch the video tutorials for working with the components of the [Stimulsoft Reports.JAVA](https://www.youtube.com/watch?v=ZIeo3ff3IwM&index=3&list=PL-72PPAq-3SWNJ3Va97rU_IO2LuFNFTP7) product. Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) and be the first to watch new video lessons. Questions and suggestions is recommended be left in the comments to the video.
 
 
 > **Samples**

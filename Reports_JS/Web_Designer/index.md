@@ -1,6 +1,8 @@
 # HTML5 Designer
 
-> **YouTube** [for working with JS HTML5 Designer](https://www.youtube.com/watch?v=vqbZz0ythKc&list=PL-72PPAq-3SVanYQ9GVxG6TBITDcveRXx&index=7)
+> **YouTube**
+>
+> Watch videos [for working with JS HTML5 Designer](https://www.youtube.com/watch?v=vqbZz0ythKc&list=PL-72PPAq-3SVanYQ9GVxG6TBITDcveRXx&index=7). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to watch new video lessons. Leave your questions and suggestions in the comments to the video.
 
 
 > **Samples**

@@ -1,6 +1,8 @@
 # Flash Designer
 
-> **YouTube** [for the ASP.NET Flash Designer](https://www.youtube.com/watch?v=fSA1j1-8yNQ&list=PL-72PPAq-3SUmzS9elmeG-Uo3cRyJWmn0)
+> **YouTube**
+>
+> Watch videos [for the ASP.NET Flash Designer](https://www.youtube.com/watch?v=fSA1j1-8yNQ&list=PL-72PPAq-3SUmzS9elmeG-Uo3cRyJWmn0). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 
 > **Samples**

@@ -1,6 +1,8 @@
 # Activation
 
-> **YouTube** [ASP.NET Core HTML5 Viewer](https://www.youtube.com/watch?v=IM0TaRvtirI)
+> **YouTube**
+>
+> Watch videos that show how to activate the [ASP.NET Core HTML5 Viewer](https://www.youtube.com/watch?v=IM0TaRvtirI). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 After purchasing a Stimulsoft product, you need to activate the license for the components you are using. You can do this by specifying a license key or by downloading a file with the license key. Below is an example of activating the **StiNetCoreViewer** component.
 

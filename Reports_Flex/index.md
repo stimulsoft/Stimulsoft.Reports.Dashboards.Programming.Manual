@@ -1,6 +1,8 @@
 # Reports.Flex
 
-> **YouTube** [Stimulsoft Reports.Flex](https://www.youtube.com/watch?v=18ucEeOwTGk&list=PL-72PPAq-3SV8SkFPwHnZzQS-sojZKLVG&index=1)
+> **YouTube**
+>
+> Watch the video tutorials for working with the components of the [Stimulsoft Reports.Flex](https://www.youtube.com/watch?v=18ucEeOwTGk&list=PL-72PPAq-3SV8SkFPwHnZzQS-sojZKLVG&index=1) product. Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) and be the first to watch new video lessons. Questions and suggestions is recommended be left in the comments to the video.
 
 
 > **Samples**

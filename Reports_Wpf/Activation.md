@@ -1,6 +1,8 @@
 # Activation
 
-> **YouTube** [WPF components](https://www.youtube.com/watch?v=_0yZOSEfFVk&list=PL-72PPAq-3SUaNkPsRwmCgtMoXJhW1OzD&index=2)
+> **YouTube**
+>
+> Watch videos which show how to activate the [WPF components](https://www.youtube.com/watch?v=_0yZOSEfFVk&list=PL-72PPAq-3SUaNkPsRwmCgtMoXJhW1OzD&index=2). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 After purchasing a Stimulsoft product, you need to activate the license for the components you are using. You can do this done in various ways. Below is an example of activating the **WPF** component.
 

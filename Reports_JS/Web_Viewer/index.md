@@ -1,6 +1,8 @@
 # HTML5 Viewer
 
-> **YouTube** [for the JS HTML5 Viewer](https://www.youtube.com/watch?v=jdKrggDTIws&list=PL-72PPAq-3SVanYQ9GVxG6TBITDcveRXx&index=16)
+> **YouTube**
+>
+> Watch videos [for the JS HTML5 Viewer](https://www.youtube.com/watch?v=jdKrggDTIws&list=PL-72PPAq-3SVanYQ9GVxG6TBITDcveRXx&index=16). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find new video lessons uploaded. . Leave your questions and suggestions in the comments to the video.
 
 
 > **Samples**

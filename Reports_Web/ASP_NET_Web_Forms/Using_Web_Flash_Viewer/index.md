@@ -1,6 +1,8 @@
 # Flash Viewer
 
-> **YouTube** [for ASP.NET Flash Viewer](https://www.youtube.com/watch?v=JuIey-Mqqgg&list=PL-72PPAq-3SVkQbSOI3O1RrmPD4rY0OQi&index=1)
+> **YouTube**
+>
+> Watch videos [for ASP.NET Flash Viewer](https://www.youtube.com/watch?v=JuIey-Mqqgg&list=PL-72PPAq-3SVkQbSOI3O1RrmPD4rY0OQi&index=1). Subscribe to the [Stimulsoft channel](https://www.youtube.com/user/StimulsoftVideos) to find out about the new video lessons uploaded. Leave your questions and suggestions in the comments to the video.
 
 
 > **Samples**
