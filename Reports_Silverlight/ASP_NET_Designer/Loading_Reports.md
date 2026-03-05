@@ -2,11 +2,11 @@
 
 One of the following methods can be used to load a report to the **Web designer**:
 
-* Loading a report before loading the designer;
+  * Loading a report before loading the designer;
 
-* Loading a report after loading the designer;
+  * Loading a report after loading the designer;
 
-* Loading a report from the main menu of the designer.
+  * Loading a report from the main menu of the designer.
 
 
 * **Loading a report before loading the designer**. In this way the report (for example, from a file) is loaded first and then the designer is loaded. The previously loaded report is specified as a parameter of a method of calling the designer. A code below is a sample for loading a report before loading the designer:

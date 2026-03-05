@@ -123,15 +123,15 @@ The specified element must be located on the HTML page on which the report desig
 
 Two methods of the **StiReport** object are used to load a report – **loadFile()** and **load()**. They are used as follows:
 
-* loadFile(filePath) – loads a report from the **MRT** file which path is specified in the filePath;
+  * loadFile(filePath) – loads a report from the **MRT** file which path is specified in the filePath;
 
-* load(str) – loads a report from the string str, that contains **XML** or **JSON**;
+  * load(str) – loads a report from the string str, that contains **XML** or **JSON**;
 
-* load(data) – loads a report from the **array data** of the number[] type;
+  * load(data) – loads a report from the **array data** of the number[] type;
 
-* load(xml) – loads a report from the XML of the **XMLDocument** type;
+  * load(xml) – loads a report from the XML of the **XMLDocument** type;
 
-* load(json) – loads a report from the **JS** object.
+  * load(json) – loads a report from the **JS** object.
 
 
 For example, use the code below to load a report from file:

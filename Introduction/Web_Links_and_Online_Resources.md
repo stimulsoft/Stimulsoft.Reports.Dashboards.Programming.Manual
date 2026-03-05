@@ -5,20 +5,20 @@ This section describes how to get information about the latest news and announce
 
 * The official website of the company is available at [https://stimulsoft.com](https://stimulsoft.com)
 
-* Description of products you may find at [https://stimulsoft.com/en/products](https://stimulsoft.com/en/products)
+  * Description of products you may find at [https://stimulsoft.com/en/products](https://stimulsoft.com/en/products)
 
-* Download the latest version of the product by the link [https://stimulsoft.com/en/downloads](https://stimulsoft.com/en/downloads)
+  * Download the latest version of the product by the link [https://stimulsoft.com/en/downloads](https://stimulsoft.com/en/downloads)
 
-* You can read the latest news of the company at [https://stimulsoft.com/en/blog/news](https://stimulsoft.com/en/blog/news)
+  * You can read the latest news of the company at [https://stimulsoft.com/en/blog/news](https://stimulsoft.com/en/blog/news)
 
 
 * In addition, you can download packages of products Stimulsoft from other resources:
 
-* `Reports.Web`, Reports.Blazor, Reports.Angular Reports.Net, Reports.Wpf, `Reports.Web.NetCore, Dashboards.Blazor, Dashboards.Win, Dashboards.Web, Dashboards.Web.NetCore` from NuGet at [https://www.nuget.org/profiles/Stimulsoft](https://www.nuget.org/profiles/Stimulsoft)
+  * `Reports.Web`, Reports.Blazor, Reports.Angular Reports.Net, Reports.Wpf, `Reports.Web.NetCore, Dashboards.Blazor, Dashboards.Win, Dashboards.Web, Dashboards.Web.NetCore` from NuGet at [https://www.nuget.org/profiles/Stimulsoft](https://www.nuget.org/profiles/Stimulsoft)
 
-* Reports.Java from Maven at  [http://central.maven.org/maven2/com/stimulsoft](http://central.maven.org/maven2/com/stimulsoft)
+  * Reports.Java from Maven at  [http://central.maven.org/maven2/com/stimulsoft](http://central.maven.org/maven2/com/stimulsoft)
 
-* Reports.JS and `Dashboards`.JS from npm at [https://www.npmjs.com/search?q=stimulsoft](https://www.npmjs.com/search?q=stimulsoft)
+  * Reports.JS and `Dashboards`.JS from npm at [https://www.npmjs.com/search?q=stimulsoft](https://www.npmjs.com/search?q=stimulsoft)
 
 * Reports.PHP and `Dashboards`.PHP from composer at [https://packagist.org/?query=stimulsoft](https://packagist.org/?query=stimulsoft)
 
