@@ -18,14 +18,14 @@ If you are a registered user and you contact us for technical support, use the s
 
 To solve your problem quickly, we need the following information:
 
-  * Product name and its version;
+* Product name and its version;
 
-  * A detailed description of the problem and how to reproduce it;
+* A detailed description of the problem and how to reproduce it;
 
-  * Your operating system (98, ME, 2000, XP, Vista, Window 7 etc.), its version, and the localization of established service packs;
+* Your operating system (98, ME, 2000, XP, Vista, Window 7 etc.), its version, and the localization of established service packs;
 
-  * Version of Microsoft .NET Framework or other development environment and installed service packs;
+* Version of Microsoft .NET Framework or other development environment and installed service packs;
 
-  * A name of your development environment and its version;
+* A name of your development environment and its version;
 
-  * Additional information that can help us solve the problem.
+* Additional information that can help us solve the problem.

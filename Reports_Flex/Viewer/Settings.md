@@ -22,41 +22,41 @@ In other words each button has the show function. This function has two values: 
 
 * On the toolbar:
 
-  * **StiOptions.viewer.toolbar.showPrintButton** - Print button;
+* **StiOptions.viewer.toolbar.showPrintButton** - Print button;
 
-  * **StiOptions.viewer.toolbar.showOpenButton** - Open button;
+* **StiOptions.viewer.toolbar.showOpenButton** - Open button;
 
-  * **StiOptions.viewer.toolbar.showSaveButton** - Save button
+* **StiOptions.viewer.toolbar.showSaveButton** - Save button
 
-  * **StiOptions.viewer.toolbar.showBookmarksButton** - Bookmark button;
+* **StiOptions.viewer.toolbar.showBookmarksButton** - Bookmark button;
 
-  * **StiOptions.viewer.toolbar.showThumbnailsButton** - Thumbnails button;
+* **StiOptions.viewer.toolbar.showThumbnailsButton** - Thumbnails button;
 
-  * **StiOptions.viewer.toolbar.showFindButton** - Find button;
+* **StiOptions.viewer.toolbar.showFindButton** - Find button;
 
-  * **StiOptions.viewer.toolbar.showCloseButton** - Close button.
+* **StiOptions.viewer.toolbar.showCloseButton** - Close button.
 
 
 * On the Navigation toolbar:
 
-  * **StiOptions.viewer.toolbar.showFirstPageButton** - First Page button;
+* **StiOptions.viewer.toolbar.showFirstPageButton** - First Page button;
 
-  * **StiOptions.viewer.toolbar.showPreviousPageButton** - Previous Page button;
+* **StiOptions.viewer.toolbar.showPreviousPageButton** - Previous Page button;
 
-  * **StiOptions.viewer.toolbar.showGoToPageButton** - GoToPage button;
+* **StiOptions.viewer.toolbar.showGoToPageButton** - GoToPage button;
 
-  * **StiOptions.viewer.toolbar.showNextPageButton** - Next Page button;
+* **StiOptions.viewer.toolbar.showNextPageButton** - Next Page button;
 
-  * **StiOptions.viewer.toolbar.showLastPageButton** - Last Page button.
+* **StiOptions.viewer.toolbar.showLastPageButton** - Last Page button.
 
 
 * On the View Page toolbar:
 
-  * **StiOptions.viewer.toolbar.showPageViewModeSingleButton** - Single Page button;
+* **StiOptions.viewer.toolbar.showPageViewModeSingleButton** - Single Page button;
 
-  * **StiOptions.viewer.toolbar.showPageViewModeContinuousButton** - Continuous Page button;
+* **StiOptions.viewer.toolbar.showPageViewModeContinuousButton** - Continuous Page button;
 
-  * **StiOptions.viewer.toolbar.showPageViewModeMultipleButton** - Multiple Page button.
+* **StiOptions.viewer.toolbar.showPageViewModeMultipleButton** - Multiple Page button.
 
 Also it is possible to disable the Zoom panel, see the following:
 

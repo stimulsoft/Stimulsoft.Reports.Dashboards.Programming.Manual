@@ -2,21 +2,21 @@
 
 With the help of icons information about the components, settings and tools applied to these components in the reports is displayed. These icons are filtering, conditions and events of the inherited report, dynamic collapsing, dynamic sorting, order, quick information. By default, these icons are displayed in the left to right order in a component, but if necessary, they can be displayed in the right to left order. It is possible using the properties:
 
-  * ConditionsRightToLeft,
+* ConditionsRightToLeft,
 
-  * EventsRightToLeft,
+* EventsRightToLeft,
 
-  * InheritedRightToLeft,
+* InheritedRightToLeft,
 
-  * InteractionCollapsingRightToLeft,
+* InteractionCollapsingRightToLeft,
 
-  * InteractionSortRightToLeft,
+* InteractionSortRightToLeft,
 
-  * OrderAndQuickInfoRightToLeft,
+* OrderAndQuickInfoRightToLeft,
 
-  * FiltersRightToLeft,
+* FiltersRightToLeft,
 
-  * QuickButtonsRightToLeft.
+* QuickButtonsRightToLeft.
 
 
 They belong to the **StiOptions.Viewer.Pins** class. Consider these features in more detail:

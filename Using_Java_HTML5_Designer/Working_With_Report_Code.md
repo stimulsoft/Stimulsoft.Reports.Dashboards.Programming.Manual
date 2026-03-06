@@ -172,11 +172,11 @@ Add a tag  `<stiwebdesigner:resources />`, tag used to load necessary resources 
 
 This tag contains next attributes:
 
-    * **handler** [required] – com.stimulsoft.webdesigner.StiWebDesigerHandler object to handle webdesigner;
+  * **handler** [required] – com.stimulsoft.webdesigner.StiWebDesigerHandler object to handle webdesigner;
 
-    * **options** [optional] – StiWebdesignerOptions object to customize webdesigner. If not present – default options are used;
+  * **options** [optional] – StiWebdesignerOptions object to customize webdesigner. If not present – default options are used;
 
-    * **designerID** [optional] – String value identifier of webdesigner HTML element. If more than one webdesigner present in HTML page each webdesigner must have different identifier.
+  * **designerID** [optional] – String value identifier of webdesigner HTML element. If more than one webdesigner present in HTML page each webdesigner must have different identifier.
 
 ### Description of StiWebDesigerHandler
 
@@ -184,23 +184,23 @@ This tag contains next attributes:
 To handle designer events, class that implement **StiWebDesigerHandler** must be created and setup in stiwebdesigner tag. Occured on opening {@link StiReport}.
 
 
-  * **public StiReport getEditedReport(HttpServletRequest request)**;
+* **public StiReport getEditedReport(HttpServletRequest request)**;
 
 Occurred on loading webdesinger. Here must present implementation of loading report and population it with Database\Data sources (if required).
 
 
-  * **public void onOpenReportTemplate(StiReport report, HttpServletRequest request)**;
+* **public void onOpenReportTemplate(StiReport report, HttpServletRequest request)**;
 
 Occurred on opening StiReport. Method intended for populate report with Database\Data sources (if required).
 
 
-  * **public void onNewReportTemplate(StiReport report, HttpServletRequest request);**
+* **public void onNewReportTemplate(StiReport report, HttpServletRequest request);**
 
 Occurred on new StiReport. Method intended for populate report with Database\Data sources (if required).
 
 In new report if you want to use wizard, you must populate report with datasources.
 
 
-  * **public void onSaveReportTemplate(StiReport report, String reportName, HttpServletRequest request);**
+* **public void onSaveReportTemplate(StiReport report, String reportName, HttpServletRequest request);**
 
 Occurred on save StiReport. Method must implement saving StiReport.

@@ -10,11 +10,11 @@
 
 This tag contains next attributes:
 
-    * **report** [required] – StiReport object to display in webviewer;
+  * **report** [required] – StiReport object to display in webviewer;
 
-    * **options** [optional] – StiWebViewerOptions object to customize webviewer. If not present – default options are used;
+  * **options** [optional] – StiWebViewerOptions object to customize webviewer. If not present – default options are used;
 
-    * **viewerID** [optional] – String value identifier of webviewer HTML element. If more than one webviewer present in HTML page each webviewer must have different identifier.
+  * **viewerID** [optional] – String value identifier of webviewer HTML element. If more than one webviewer present in HTML page each webviewer must have different identifier.
 
 **Example of usage webviewer tag** (display generated (mdc) report from d:\repots\TwoSimpleLists.mdc with custom parameters)
 
