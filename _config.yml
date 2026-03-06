@@ -3,6 +3,7 @@ description:
 baseurl: "/Stimulsoft.Reports.Dashboards.Programming.Manual"
 url: "https://stimulsoft.github.io"
 sidebar_title: "Programming Manual"
+exclude_from_menu: ["Out_Of_Date"]
 
 plugins:
   - jekyll-relative-links
