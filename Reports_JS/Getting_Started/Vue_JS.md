@@ -7,9 +7,9 @@ This part describes an example of using Stimulsoft components in Vue application
 In the terminal navigate to the directory where you want to place the new project. Then, run the following command.
 
 
-**terminal**
-
-npm create vue@latest my-app
+| **terminal** |
+| --- |
+| npm create vue@latest my-app |
 
 The application settings can be left as default or modified if necessary.
 
@@ -17,9 +17,9 @@ The application settings can be left as default or modified if necessary.
 
 First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/ru/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/ru/downloads#dashboards) package. For this, run the following command.
 
-**terminal**
-
-npm install stimulsoft-dashboards-js
+| **terminal** |
+| --- |
+| npm install stimulsoft-dashboards-js |
 
 **Integrate Stimulsoft into the application**
 To do this, edit the **App.vue** file in the project's **src** folder. First, import the Stimulsoft module and the `onMounted()` method. You can also modify the `template` and `styles` blocks here. Pass a `callback` function with the initialization of Stimulsoft components into the `onMounted()` method. For example, the report designer will open with a blank report.
@@ -90,6 +90,6 @@ Alternatively, open the viewer with a previously created report. The report file
 By default, a Vue application defines the start command in the **package.js**on file. Therefore, to run the project, simply execute the command from the terminal in the project's root folder.
 
 
-**console**
-
-npm run dev
+| **console** |
+| --- |
+| npm run dev |

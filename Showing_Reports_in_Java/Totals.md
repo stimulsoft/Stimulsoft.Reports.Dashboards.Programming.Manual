@@ -5,9 +5,9 @@ In addition to the standard (built-in) functions, there is an ability to define 
 
 * **public String getFunctionName()** – the function class should return the name of the custom function. Register is taken into account. Do not use the names of existing built-in functions, methods, variables, reserved words as true/false/null, etc.
 
-* **public List<Class> getParametersList()** – the function class should return a list of classes of variables used in the custom function.
+* **public List&lt;Class&gt; getParametersList()** – the function class should return a list of classes of variables used in the custom function.
 
-* **public Object invoke(List<Object> args)** –  there must be a realization of a custom function.
+* **public Object invoke(List&lt;Object&gt; args)** –  there must be a realization of a custom function.
 
 
 An example of using on the base of **Samples\webfx\**. Suppose you need to implement a custom **substring** function. In the class **my.actions.MyRenderReportAction** write the following:

@@ -157,7 +157,7 @@ Add taglib directives in the JSP. They will work with custom tags on the page.
 ...
 ```
 
-Add a tag  `<stiwebdesigner:resources />`, tag used to load necessary resources (css & js) for webdesigner, it haven’t any attributes, it must be placed inside HTML <head> tag.
+Add a tag  `<stiwebdesigner:resources />`, tag used to load necessary resources (css & js) for webdesigner, it haven’t any attributes, it must be placed inside HTML &lt;head&gt; tag.
 
 ### Description of webdesigner tag
 

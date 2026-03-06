@@ -102,18 +102,18 @@ use Stimulsoft\Events\StiReportEventArgs;
 $report = new StiReport();
 
 
-$report->onBeforeRender = function (StiReportEventArgs $args) {
+$report-&gt;onBeforeRender = function (StiReportEventArgs $args) {
 
 $data = '{"Customers": [{"CompanyName": "Centro comercial Moctezuma", "Address": "Sierras de Granada 9993", "Phone": 12355500, "ContactTitle": "Marketing Manager"}]}';
 
-$args->regReportData("Demo", $data);
+$args-&gt;regReportData("Demo", $data);
 
 };
 
 
-$report->render();
+$report-&gt;render();
 
-$report->process();
+$report-&gt;process();
 
 ?>
 
@@ -141,11 +141,11 @@ use Stimulsoft\Report\StiReport;
 
 $report = new StiReport();
 
-$report->onBeforeRender = 'beforeRender';
+$report-&gt;onBeforeRender = 'beforeRender';
 
-$report->render();
+$report-&gt;render();
 
-?>
+?&gt;
 
 
 function onBeforeRender(args) {
@@ -184,9 +184,9 @@ use Stimulsoft\Report\StiReport;
 
 $report = new StiReport();
 
-$report->onBeforeRender = 'beforeRender';
+$report-&gt;onBeforeRender = 'beforeRender';
 
-$report->render();
+$report-&gt;render();
 
 ?>
 

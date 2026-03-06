@@ -86,4 +86,4 @@ It will display empty webviewer (because of empty StiReport object). Add taglib 
 ...
 ```
 
-Add a tag  <stiwebviewer:resources />, tag used to load necessary resources (css & js) for webviewer, it haven’t any attributes, it must be placed inside HTML <head> tag.
+Add a tag  <stiwebviewer:resources />, tag used to load necessary resources (css & js) for webviewer, it haven’t any attributes, it must be placed inside HTML &lt;head&gt; tag.

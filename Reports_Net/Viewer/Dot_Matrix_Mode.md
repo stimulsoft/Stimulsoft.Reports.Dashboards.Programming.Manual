@@ -40,7 +40,7 @@ Most parameters can be set using the static properties.
 
 ### Dot-Matrix and Escape Codes
 
-For inserting the escape sequence to text the commands that may look like <#command> should be used as seen in the code sample below:
+For inserting the escape sequence to text the commands that may look like &lt;#command&gt; should be used as seen in the code sample below:
 
 Normal text <#b> Bold text <#/b><#i> Italic text <#/i> Again normal text
 

@@ -6,16 +6,16 @@ To use the product, simply download the ZIP archive from the [Downloads](https:/
 To install the product into an existing project, just copy the `/vendor` folder from **/PHP** to the root directory of your project, or use the [Composer](https://getcomposer.org/) dependency manager by running the following console command:
 
 
-**console**
-
-composer require stimulsoft/reports-php
+| **console** |
+| --- |
+| composer require stimulsoft/reports-php |
 
 To work with dashboards, you will need to install the following package:
 
 
-**console**
-
-composer require stimulsoft/dashboards-php
+| **console** |
+| --- |
+| composer require stimulsoft/dashboards-php |
 
 In most cases, using only PHP code is sufficient for the product to work, enabling all the core features. For more detailed product customization and to leverage all available features, JavaScript code should be used.
 

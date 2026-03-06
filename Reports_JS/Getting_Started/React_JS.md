@@ -7,17 +7,17 @@ This part describes an example of using Stimulsoft components in React applicati
 In the terminal, navigate to the directory where you want to place the new project. Then, run the following command.
 
 
-**terminal**
-
-npx create-react-app my-app
+| **terminal** |
+| --- |
+| npx create-react-app my-app |
 
 **Install Stimulsoft components**
 
 First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/ru/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/ru/downloads#dashboards) package. For this, run the following command.
 
-**terminal**
-
-npm install stimulsoft-dashboards-js
+| **terminal** |
+| --- |
+| npm install stimulsoft-dashboards-js |
 
 **Integrate Stimulsoft into the application**
 To do this, edit the **App.js** file in the project's **src** folder. First, you need to import the `Stimulsoft` module and the `React` class. Then, create an `App` class that extends `React.Component`, override the class constructor, the `render(`) and the `componentDidMount()` methods. For example, the report designer will be opened with an empty report.
@@ -93,6 +93,6 @@ Alternatively, open the viewer with a previously created report. The report file
 A **React** application by default defines the start command in the **package.json** file. Therefore, to run the project, simply execute the command from the terminal in the project's root folder.
 
 
-**console**
-
-npm start
+| **console** |
+| --- |
+| npm start |

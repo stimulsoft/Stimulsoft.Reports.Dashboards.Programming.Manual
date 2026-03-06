@@ -35,8 +35,8 @@ If needed, the same actions can be performed within a JavaScript client-side eve
 
 **index.php**
 
-<?phpuse Stimulsoft\Report\StiReport;
-$report = new StiReport();$report->onBeginProcessData = 'beginProcessData';$report->render();?>
+&lt;?phpuse Stimulsoft\Report\StiReport;
+$report = new StiReport();$report-&gt;onBeginProcessData = 'beginProcessData';$report-&gt;render();?&gt;
 function onBeginProcessData(args) {if (args.connection == "MyJsonConnection")args.pathData = "Data/Demo.json";}
 
 
@@ -71,8 +71,8 @@ If necessary, you can view or modify the loaded data within the JavaScript clien
 
 **index.php**
 
-<?phpuse Stimulsoft\Report\StiReport;
-$report = new StiReport();$report->onEndProcessData = 'onEndProcessData';$report->renderHtml();?>
+&lt;?phpuse Stimulsoft\Report\StiReport;
+$report = new StiReport();$report-&gt;onEndProcessData = 'onEndProcessData';$report-&gt;renderHtml();?&gt;
 function onEndProcessData(args) {let dataSet = args.dataSet;}
 
 ### Disabling server-side processing of file data adapters
@@ -85,8 +85,8 @@ To disable file data adapters on the server side, simply set the `$allowFileData
 
 **index.php**
 
-<?phpuse Stimulsoft\Report\StiReport;
-$report = new StiReport();$report->handler->allowFileDataAdapters = false;?>
+&lt;?phpuse Stimulsoft\Report\StiReport;
+$report = new StiReport();$report-&gt;handler-&gt;allowFileDataAdapters = false;?&gt;
 
 **Using variables in file data**
 

@@ -84,9 +84,9 @@ public class FormsController : Controller
 1. Inside the application folder, run the command in the terminal to create a new **Angular** application with no `routing` and CSS styling:
 
 
-**console**
-
-ng new sti-forms-designer --routing false --style css
+| **console** |
+| --- |
+| ng new sti-forms-designer --routing false --style css |
 
 1. Rename the **sti-forms-designer** folder to **ClientApp**;
 2. In the **package.json** file, add dependencies for **Stimulsoft PDF Forms** and the necessary components:
@@ -226,16 +226,16 @@ export class AppComponent {
 2. Run the command to install **Angular** components:
 
 
-**console**
-
-npm i --force
+| **console** |
+| --- |
+| npm i --force |
 
 1. Run the command to build an **Angular** application:
 
 
-**console**
-
-ng build --output-hashing none
+| **console** |
+| --- |
+| ng build --output-hashing none |
 
 1. Create the **wwwroot** folder in the project's root folder;
 2. Copy all files from **ClientApp\dist\sti-forms-designer\** into **wwwroot**;

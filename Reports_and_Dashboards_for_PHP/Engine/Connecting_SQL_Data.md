@@ -252,5 +252,5 @@ If global data encryption is enabled using the `$encryptData` option, all data t
 
 **index.php**
 
-<?phpuse Stimulsoft\Report\StiReport;
-$report = new StiReport();$report->handler->encryptSqlData = false;$report->process();?>
+&lt;?phpuse Stimulsoft\Report\StiReport;
+$report = new StiReport();$report-&gt;handler-&gt;encryptSqlData = false;$report-&gt;process();?&gt;

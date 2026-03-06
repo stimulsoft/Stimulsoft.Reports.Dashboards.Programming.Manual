@@ -6,14 +6,14 @@
 
 To use the designer, simply install the  [stimulsoft-reports](https://pypi.org/project/stimulsoft-reports) or [stimulsoft-dashboards](https://pypi.org/project/stimulsoft-dashboards) package using the package manager by executing the following command:
 
-**console**
+| **console** |
+| --- |
+| python -m pip install stimulsoft-reports |
 
-python -m pip install stimulsoft-reports
 
-
-**console**
-
-python -m pip install stimulsoft-dashboards
+| **console** |
+| --- |
+| python -m pip install stimulsoft-dashboards |
 
 The latest available version of the product will be installed in the current workspace, after which you can use the classes and functions for working with reports and dashboards.
 

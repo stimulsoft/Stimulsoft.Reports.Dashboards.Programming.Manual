@@ -7,9 +7,9 @@ This chapter describes an example of using Stimulsoft components in Angular JS a
 In the terminal navigate to the directory where you want to place the new project. Then, run the command.
 
 
-**terminal**
-
-ng new sti-angular-js --no-standalone --routing --ssr=false --style css
+| **terminal** |
+| --- |
+| ng new sti-angular-js --no-standalone --routing --ssr=false --style css |
 
 **Install Stimulsoft components**
 
@@ -139,6 +139,6 @@ Or open the viewer with a previously created report.
 An Angular application by default defines the start command in the **package.json** file. Therefore, to start the project, run the command from the terminal in the root folder of the project.
 
 
-**console**
-
-npm start
+| **console** |
+| --- |
+| npm start |

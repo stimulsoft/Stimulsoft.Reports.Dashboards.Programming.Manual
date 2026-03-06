@@ -1,6 +1,6 @@
 ## Creating Project
 
-Launch the Eclipse IDE, choose **File> New> Project**. In the project wizards open the **Web** type and in the drop-down list select **Dynamic Web Project** wizard and click **Next** (See the picture below):
+Launch the Eclipse IDE, choose **File&gt; New&gt; Project**. In the project wizards open the **Web** type and in the drop-down list select **Dynamic Web Project** wizard and click **Next** (See the picture below):
 
 
 ![](../images/topics/Using_Java_with_Flex_Client.Creating_Project_1.png)

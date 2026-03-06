@@ -107,7 +107,9 @@ namespace AngularViewer.Controllers
 **Step 15:** Install Angular Client Components from npm.
 
 
-npm install stimulsoft-viewer-angular
+|  |
+| --- |
+| npm install stimulsoft-viewer-angular |
 
 
 **Step 16**: Close console;
@@ -122,7 +124,9 @@ npm install stimulsoft-viewer-angular
 **Step 19**: Enter **ng new** **ClientApp** command in console:
 
 
-ng new ClientApp
+|  |
+| --- |
+| ng new ClientApp |
 
 **Step 20**: Enter ‘**N**’ to not use routing;
 
@@ -136,7 +140,9 @@ ng new ClientApp
 **Step 23**: Open console and download **stimulsoft-viewer-angular**.
 
 
-npm install stimulsoft-viewer-angular
+|  |
+| --- |
+| npm install stimulsoft-viewer-angular |
 
 **Step 24**: Close console;
 

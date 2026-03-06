@@ -188,7 +188,7 @@ The table below shows the connection string templates for different types of dat
 | Teradata | Data Source=myServerAddress;User ID=myUsername;Password=myPassword; |
 | VistaDB | Data Source=D:\folder\myVistaDatabaseFile.vdb4;Open Mode=ExclusiveReadWrite; |
 | Universal(dotConnect) | Provider=Oracle;direct=true;data source=192.168.0.1;port=1521;sid=sid;user=user;password=pass |
-| MongoDB | mongodb://<user>:<password>@localhost/test |
+| MongoDB | mongodb://&lt;user&gt;:&lt;password&gt;@localhost/test |
 | OData | http://services.odata.org/v3/odata/OData.svc/ |
 | Other... | The table shows the most commonly used templates for the connection string. You can view various connection string options at [the special website](https://www.connectionstrings.com/). |
 

@@ -3,14 +3,14 @@
 To use the reporting tool, just install [stimulsoft-reports](https://pypi.org/project/stimulsoft-reports) or [stimulsoft-dashboards](https://pypi.org/project/stimulsoft-dashboards) package via a package manager by executing one of the following commands:
 
 
-**console**
+| **console** |
+| --- |
+| python -m pip install stimulsoft-reports |
 
-python -m pip install stimulsoft-reports
 
-
-**console**
-
-python -m pip install stimulsoft-dashboards
+| **console** |
+| --- |
+| python -m pip install stimulsoft-dashboards |
 
 
 > **Information**
@@ -26,14 +26,14 @@ The latest available version of the reporting tool will be installed in the curr
 By default, a minimal set of data drivers is installed. The necessary drivers can be additionally installed manually, or use the command to install all available drivers:
 
 
-**console**
+| **console** |
+| --- |
+| python -m pip install stimulsoft-reports[ext] |
 
-python -m pip install stimulsoft-reports[ext]
 
-
-**console**
-
-python -m pip install stimulsoft-dashboards[ext]
+| **console** |
+| --- |
+| python -m pip install stimulsoft-dashboards[ext] |
 
 
 > **Information**
@@ -118,7 +118,7 @@ Our products [Stimulsoft Reports.PYTHON](https://www.stimulsoft.com/en/products/
 
 | **Name** | **Description** |
 | --- | --- |
-| `getHtml(mode = StiHtmlMode.HtmlScripts)` | Returns the JavaScript and HTML code required for the component to function, including all necessary operations on the report. The `mode` parameter determines the returned format: ·    `StiHtmlMode.Scripts` – only the JavaScript code to embed in a <script></script> a complete HTML page; ·    `StiHtmlMode.HtmlScripts` – combined JavaScript and HTML code to embed in an HTML element; ·    `StiHtmlMode.HtmlPage` – a complete HTML page. **Note:** The `getHtml()` method of component objects, for example `report.javascript,` doesn't accept parameters, as it has only one output format. |
+| `getHtml(mode = StiHtmlMode.HtmlScripts)` | Returns the JavaScript and HTML code required for the component to function, including all necessary operations on the report. The `mode` parameter determines the returned format: ·    `StiHtmlMode.Scripts` – only the JavaScript code to embed in a &lt;script&gt;&lt;/script&gt; a complete HTML page; ·    `StiHtmlMode.HtmlScripts` – combined JavaScript and HTML code to embed in an HTML element; ·    `StiHtmlMode.HtmlPage` – a complete HTML page. **Note:** The `getHtml()` method of component objects, for example `report.javascript,` doesn't accept parameters, as it has only one output format. |
 | `renderHtml(elementId: str = None)` | Renders the JavaScript and HTML code required for the component. The `elementId` parameter specifies the HTML element where the component will be rendered. By default, it renders at the current position on the page. |
 | `printHtml()` | Renders a fully prepared HTML page with all necessary scripts for the component. The current HTML template is ignored. This mode is ideal for full-screen report viewing or editing. |
 

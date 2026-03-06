@@ -1,6 +1,6 @@
 ## HTML
 
-**HTML** (HyperText Markup Language) is the predominant markup language for Web pages. The majority of web pages are created using the HTML language. The HTML language is interpreted by browser and shown as a document. HTML is a tag language of the document layout. It provides a means to describe the structure of text-based information in a document by denoting certain text as links, headings, paragraphs, lists, etc. Elements are the basic structure for HTML markup. Elements have two basic properties: attributes and content. Each attribute and each element's content has certain restrictions that must be followed for a HTML document to be considered valid. An element usually has a start tag (e.g. <element-name>) and an end tag (e.g. </element-name>).
+**HTML** (HyperText Markup Language) is the predominant markup language for Web pages. The majority of web pages are created using the HTML language. The HTML language is interpreted by browser and shown as a document. HTML is a tag language of the document layout. It provides a means to describe the structure of text-based information in a document by denoting certain text as links, headings, paragraphs, lists, etc. Elements are the basic structure for HTML markup. Elements have two basic properties: attributes and content. Each attribute and each element's content has certain restrictions that must be followed for a HTML document to be considered valid. An element usually has a start tag (e.g. &lt;element-name&gt;) and an end tag (e.g. &lt;/element-name&gt;).
 
 ### Export Settings
 
@@ -29,4 +29,4 @@ Except the **StiHtmlExportSettings** class parameters of export to HTML are set 
 | ArabicDigitsType | enum | select Arabic digits type; by default Standard |
 | AllowImageComparer | bool | use the image comparer, e.g. replace image duplicates (see Common export settings); if false then an image is exported "as is"; by default true |
 | ForceWysiwygWordwrap | bool | Forcibly break text in rows as well as in the WYSIWYG mode; by default - false |
-| ReplaceSpecialCharacters | bool | change symbols '<', '>', '&', ' " ' on &lt; &gt; &amp; &quot; by default true |
+| ReplaceSpecialCharacters | bool | change symbols '&lt;', '&gt;', '&', ' " ' on &lt; &gt; &amp; &quot; by default true |

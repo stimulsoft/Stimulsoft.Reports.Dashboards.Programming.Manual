@@ -7,9 +7,9 @@ This part describes an example of using Stimulsoft in Node.js applications. In t
 In the terminal, navigate to the directory where you want to place the new project. Then, run the following command.
 
 
-**terminal**
-
-npm init
+| **terminal** |
+| --- |
+| npm init |
 
 The application settings can be left at default or modified as needed.
 
@@ -17,9 +17,9 @@ The application settings can be left at default or modified as needed.
 
 First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/ru/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/ru/downloads#dashboards) package. For this, run the following command.
 
-**terminal**
-
-npm install stimulsoft-dashboards-js
+| **terminal** |
+| --- |
+| npm install stimulsoft-dashboards-js |
 
 **Create a file project**
 This can be any js file, for example `index.js`.
@@ -53,6 +53,6 @@ report.renderAsync(function () {
 To do this, run the project file in the Node.js
 
 
-**console**
-
-node index.js
+| **console** |
+| --- |
+| node index.js |

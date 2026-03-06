@@ -129,7 +129,7 @@ All these are analogs of similar HTML tags, supporting all the attributes. A lis
 ...
 ```
 
-* It is also possible to pass parameters to a report as a Map <String, String>. Redesign our webpage as follows (Listing 6). In this case, a report with the name MyFirstReport.mrt will be loaded in a report and two parameters will be passed into it:
+* It is also possible to pass parameters to a report as a Map &lt;String, String&gt;. Redesign our webpage as follows (Listing 6). In this case, a report with the name MyFirstReport.mrt will be loaded in a report and two parameters will be passed into it:
 
 
 **Index.jsp**

@@ -17,10 +17,9 @@ This example shows how to install and run Stimulsoft JS for Node.js. Also, you c
 **Step 5**: [Install the Reports.JS module in this folder](https://www.npmjs.com/package/stimulsoft-reports-js):
 
 
-**console**
-
-
-npm install stimulsoft-reports-js
+| **console** |
+| --- |
+| npm install stimulsoft-reports-js |
 
 Or
 
@@ -28,10 +27,9 @@ Or
 [Install the Dashboards.JS module in this folder:](https://www.npmjs.com/package/stimulsoft-dashboards-js)
 
 
-**console**
-
-
-npm install stimulsoft-dashboards-js
+| **console** |
+| --- |
+| npm install stimulsoft-dashboards-js |
 
 **Step 6**: Open **index.js** file in the editor;
 
@@ -66,10 +64,9 @@ report.saveFile("report2.mrt");
 **Step 9**: Open console and run **index.js**.
 
 
-**console**
-
-
-node index
+| **console** |
+| --- |
+| node index |
 
 **Step 10**: You can perform various actions on reports with using **Node.js**. For example, let's export the report to pdf. Open **index.js** in the editor, define this code and save changes.
 
@@ -115,7 +112,6 @@ report.renderAsync(() => {
 **Step 11**: Open console and run **index.js**.
 
 
-**console**
-
-
-node index
+| **console** |
+| --- |
+| node index |
