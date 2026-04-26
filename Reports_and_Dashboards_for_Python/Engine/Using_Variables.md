@@ -99,19 +99,17 @@ On the Python server-side, the collection is represented as a dictionary of `Sti
 
 **report.html**
 
+```html
 
 <script>
+    function prepareVariables(args) {
+        let variables = args.variables;
 
-function prepareVariables(args) {
-
-let variables = args.variables;
-
-
-variables.find(item => item.name == "VariableString").value = "Text value";
-
-variables.find(item => item.name == "VariableInt").value = 20;
-}
+        variables.find(item => item.name == "VariableString").value = "Text value";
+        variables.find(item => item.name == "VariableInt").value = 20;
+    }
 </script>
+```
 
 You can also modify variable values on the Python server side, ensuring the type of the new value matches the variable type. Additionally, you can create new report variables if needed. Only modified or newly created variables will be sent to the client.
 
@@ -121,17 +119,35 @@ Example of modifying a variable on the PHP server-side:
 
 **app.py**
 
-from stimulsoft_reports.report import StiReportfrom stimulsoft_reports.events import StiVariablesEventArgs
-def prepareVariables(args: StiVariablesEventArgs):args.variables['VariableString'].value = 'Text value'args.variables['VariableInt'].value = 20
-report = StiReport()report.onPrepareVariables += prepareVariablesreport.loadFile(url_for('static', filename='reports/Variables.mrt'))report.render()
+```python
+
+from stimulsoft_reports.report import StiReport
+from stimulsoft_reports.events import StiVariablesEventArgs
+
+def prepareVariables(args: StiVariablesEventArgs):
+    args.variables['VariableString'].value = 'Text value'
+    args.variables['VariableInt'].value = 20
+
+report = StiReport()
+report.onPrepareVariables += prepareVariables
+report.loadFile(url_for('static', filename='reports/Variables.mrt'))
+report.render()
+```
 
 The full example code is available on [GitHub](https://github.com/stimulsoft/Samples-Reports.Python).
 
 
 **app.py**
 
+```python
+
 from stimulsoft_reports.events import StiVariablesEventArgs
-def prepareVariables(args: StiVariablesEventArgs):args.variables['VariableString'].value = 'Value from Server-Side'args.variables['VariableInt'].value = 123args.variables['VariableDecimal'].value = 123.456
+
+def prepareVariables(args: StiVariablesEventArgs):
+    args.variables['VariableString'].value = 'Value from Server-Side'
+    args.variables['VariableInt'].value = 123
+    args.variables['VariableDecimal'].value = 123.456
+```
 
 `DateTime` variables are passed as a string value in the format `"YYYY-MM-dd HH-mm-ss"`, or as a `datetime` object, for example:
 

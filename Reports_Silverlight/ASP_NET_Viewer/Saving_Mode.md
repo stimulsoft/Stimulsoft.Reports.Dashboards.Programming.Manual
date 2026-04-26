@@ -10,6 +10,7 @@ When you export a report to any format, saving the report will take place in one
 
 ### Export Settings
 
+
 A report opened in **WebViewerSL** can be exported to many different formats. The list of formats for export can be customized. In other words, you can hide unused export formats. Customization of the list of formats of exports can be made by means of WebViewerSL properties. **For example** the **HTML** format, in the **Client** saving mode. Showing of this format in the list of formats for export depends on the value of the **ShowHtmlButton** property. The picture below shows the complete list of formats in the **Client** save mode:
 
 

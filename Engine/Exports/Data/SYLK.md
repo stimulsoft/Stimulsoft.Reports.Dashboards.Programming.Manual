@@ -9,6 +9,7 @@
 
 ### Export Settings
 
+
 The export parameters of the SYLK export are described in the **StiSylkExportSettings** class. The description of all class properties are in the table below.
 
 

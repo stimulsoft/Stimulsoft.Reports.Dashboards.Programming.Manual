@@ -8,32 +8,30 @@ Example of connecting data as an object:
 
 **app.py**
 
+```python
 
 from stimulsoft_reports.report import StiReport
 
-report = StiReport()report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+report = StiReport()
+report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
 
 data = { "Customers": {
-
-"CompanyName": "Chop-suey Chinese",
-
-"Address": "Emilii Plater Street 49",
-
-"Phone": 555123000,
-
-"ContactTitle": "Sales Representative"}
+    "CompanyName": "Chop-suey Chinese",
+    "Address": "Emilii Plater Street 49",
+    "Phone": 555123000,
+    "ContactTitle": "Sales Representative"}
 }
 
 report.regData("Demo", data)
 report.render()
+```
 
 In some cases, it may be necessary to synchronize the report's data dictionary structure with the provided data. To do this, simply specify true as the third parameter of the `regData()` method. In this case, before building the report, the data dictionary will be synchronized.
 
 
-**Information**
-
-
-When using the Designer component, you can create a new report object and pass data to it with data dictionary synchronization enabled. In this case, the designer will open with a new report and data already prepared for use.
+> **Information**
+>
+> When using the Designer component, you can create a new report object and pass data to it with data dictionary synchronization enabled. In this case, the designer will open with a new report and data already prepared for use.
 
 ### Clearing connection parameters and the data dictionary
 
@@ -45,13 +43,20 @@ Example of connecting data after clearing the existing dictionary:
 
 **app.py**
 
+```python
 
 from stimulsoft_reports.report import StiReport
 
-report = StiReport()report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+report = StiReport()
+report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+
 report.clearData(True)
+
 data = '{"Customers": [{"CompanyName": "Centro comercial Moctezuma", "Address": "Sierras de Granada 9993", "Phone": 12355500, "ContactTitle": "Marketing Manager"}]}'
-report.regData("Demo", data, True)report.render()
+
+report.regData("Demo", data, True)
+report.render()
+```
 
 ### Report preparation event
 
@@ -63,25 +68,25 @@ Example of connecting data in a report event:
 
 **app.py**
 
+```python
 
 from stimulsoft_reports.report import StiReport
-
 from stimulsoft_reports.events import StiReportEventArgs
 
-
 def beforeRender(args: StiReportEventArgs):
-
-data = '{"Customers": [{"CompanyName": "Centro comercial Moctezuma", "Address": "Sierras de Granada 9993", "Phone": 12355500, "ContactTitle": "Marketing Manager"}]}'
-
-args.regReportData("Demo", data)
+    data = '{"Customers": [{"CompanyName": "Centro comercial Moctezuma", "Address": "Sierras de Granada 9993", "Phone": 12355500, "ContactTitle": "Marketing Manager"}]}'
+    args.regReportData("Demo", data)
 
 
-report = StiReport()report.onBeforeRender += beforeRenderreport.loadFile(url_for('static', filename='reports/SimpleList.mrt'))report.render()
+report = StiReport()
+report.onBeforeRender += beforeRender
+report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+report.render()
+```
 
-**Information**
-
-
-If data has already been assigned in the report using the `regData()` method of the report object, it will be overridden by the data specified in the event.
+> **Information**
+>
+> If data has already been assigned in the report using the `regData()` method of the report object, it will be overridden by the data specified in the event.
 
 
 ### Client-Side data connection
@@ -94,68 +99,75 @@ Example of loading data from an XML file using an XSD schema:
 
 **app.py**
 
+```python
 
 from stimulsoft_reports.report import StiReport
 
-report = StiReport()report.onBeforeRender += 'beforeRender'
+report = StiReport()
+report.onBeforeRender += 'beforeRender'
 report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
 report.render()
+```
 
 
 **report.html**
 
+```html
 
 <script>
-
-function beforeRender(args) {
-
-let dataSet = new Stimulsoft.System.Data.DataSet("SimpleDataSet");
-
-
-dataSet.readXmlSchemaFile("Demo.xsd");
-
-dataSet.readXmlFile("Demo.xml");
-
-
-//dataSet.readJsonFile("Demo.json");
-
-let report = args.report;report.regData(dataSet.dataSetName, "", dataSet);report.dictionary.synchronize();}
+    function beforeRender(args) {
+        let dataSet = new Stimulsoft.System.Data.DataSet("SimpleDataSet");
+        
+        dataSet.readXmlSchemaFile("Demo.xsd");
+        dataSet.readXmlFile("Demo.xml");
+        
+        //dataSet.readJsonFile("Demo.json");
+        
+        let report = args.report;
+        report.regData(dataSet.dataSetName, "", dataSet);
+        report.dictionary.synchronize();
+    }
 </script>
+```
 
 The full example code is available on [GitHub](https://github.com/stimulsoft/Samples-Reports.PHP/blob/master/Working%20with%20Report/How%20to%20Activate%20the%20Product.php).
 
 
-Information
-
-
-Loading a data schema is not required. However, if you want to use a data schema, it should be added before loading the XML data.
+> **Information**
+>
+> Loading a data schema is not required. However, if you want to use a data schema, it should be added before loading the XML data.
 
 Example of loading data from a JSON file:
 
 
 **app.py**
 
+```python
 
 from stimulsoft_reports.report import StiReport
 
-report = StiReport()report.onBeforeRender += 'beforeRender'
+report = StiReport()
+report.onBeforeRender += 'beforeRender'
 report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
 report.render()
+```
 
 
 **report.html**
 
+```html
 
 <script>
-
-function beforeRender(args) {
-
-let dataSet = new Stimulsoft.System.Data.DataSet("SimpleDataSet");
-
-dataSet.readJsonFile("Demo.json");
-
-let report = args.report;report.regData(dataSet.dataSetName, "", dataSet);report.dictionary.synchronize();}
+    function beforeRender(args) {
+        let dataSet = new Stimulsoft.System.Data.DataSet("SimpleDataSet");
+        dataSet.readJsonFile("Demo.json");
+        
+        let report = args.report;
+        report.regData(dataSet.dataSetName, "", dataSet);
+        report.dictionary.synchronize();
+    }
 </script>
+```
 
 The full example code is available on [GitHub](https://github.com/stimulsoft/Samples-Reports.PHP/blob/master/Working%20with%20Report/How%20to%20Activate%20the%20Product.php).
 
@@ -163,7 +175,6 @@ The full example code is available on [GitHub](https://github.com/stimulsoft/Sam
 In addition to the `readXmlFile()` and `readJsonFile()` functions, there are also `readXml()` and `readJson()` functions, which accept data in the form of a string or an object.
 
 
-**Information**
-
-
-The `report.dictionary.synchronize()` function is used to synchronize the connected data with the report template’s data dictionary. When this function is called, the report dictionary is created based on the structure of the data loaded into the DataSet. This function is not required if the dictionary has been created in advance and its structure matches the connected data.
+> **Information**
+>
+> The `report.dictionary.synchronize()` function is used to synchronize the connected data with the report template’s data dictionary. When this function is called, the report dictionary is created based on the structure of the data loaded into the DataSet. This function is not required if the dictionary has been created in advance and its structure matches the connected data.

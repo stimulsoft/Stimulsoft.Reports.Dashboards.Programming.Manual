@@ -24,14 +24,15 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 
 ### Main settings (without groups)
 
+
 | **Name** | **Description** |
 | --- | --- |
 | `Width` | It sets component width in "px or "%". The 100 % value is set by default. |
 | `Height` | It sets component height in "px" or "%". The "800px" value is set by default. |
 | `localization` | Sets the selected localization of the component. By default, the English localization is set. It is built into the component. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -64,8 +65,8 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `allowPropagationEvents` | Allows the propagation of key press events when the report designer is not in focus. By default, the property is set to `true`. |
 | `propertiesPanelViewMode` | Provides the ability to pin or unpin the Properties panel, Report Dictionary, and Report Tree. It can take one of the following values from the enumeration: - `Pinned` — panels are pinned (default value); - `Unpinned` — panels are unpinned. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -90,8 +91,8 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `showNewPageButton` | It enables or disables the display of the **New Page** button in the toolbar. The property has the `true` value by default. |
 | `showNewDashboardButton` | It enables or disables the display of the **New Dashboard** button in the toolbar. The property has the `true` value by default. |
 
-
 ### Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -113,8 +114,8 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `showTable` | It enables the display of the **Table** component in the designer components insert menu. The property has the `true` value by default. |
 | `showTableOfContents` | It enables the display of the **Table of Contents** band in the designer components insert menu. The property has the `true` value by default. |
 
-
 ### Cross-Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -125,8 +126,8 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `showCrossFooterBand` | It enables the display of the **Cross-Footer** band in the designer components insert menu. The property has the `true` value by default. |
 | `showCrossDataBand` | It enables the display of the **Cross-Data** band in the designer components insert menu. The property has the `true` value by default. |
 
-
 ### Components
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -152,7 +153,6 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `showVerticalLinePrimitive` | It enables or disables the display of the **Vertical Line** component in the toolbox or Insert tab in the designer. The property has the `true` value by default. |
 | `showRectanglePrimitive` | It enables or disables the display of the **Rectangle** component in the toolbox or Insert tab in the designer. The property has the `true` value by default. |
 | `showRoundedRectanglePrimitive` | It enables or disables the display of the **Rounded Rectangle** component in the toolbox or Insert tab in the designer. The property has the `true` value by default. |
-
 
 ### dashboardElements
 
@@ -182,6 +182,7 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 
 
 ### Dictionary
+
 
 | **Name** | **Description** |
 | --- | --- |

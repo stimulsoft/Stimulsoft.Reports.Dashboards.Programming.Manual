@@ -10,6 +10,7 @@ The XPS is a ZIP-archive that contains the files which make up the document. The
 
 ### Export Settings
 
+
 The export parameters of the XPS export are described in the StiXpsExportSettings class. The description of all class properties are in the table below.
 
 
@@ -17,8 +18,8 @@ The export parameters of the XPS export are described in the StiXpsExportSetting
 | --- | --- | --- |
 | ImageResolution | float | image resolution dpi; can take any value, by default 100 |
 
-
 ### Static Options
+
 
 Besides the **StiXpsExportSettings** class, the parameters of export to XPS are also set using the static properties. All properties are described in the table below. To access to export properties it is necessary to add the **StiOptions.Export.Xps**... prefix. For example, **StiOptions.Export.Xps.ReduceFontFileSize**.
 

@@ -148,18 +148,38 @@ To access the request parameters, you can use the `onBeginProcessData` event, th
 
 **app.py**
 
-from stimulsoft_reports.events import StiDataEventArgsfrom stimulsoft_reports.report import StiReport
-def beginProcessData(args: StiDataEventArgs):if args.dataSource == 'DataSourceWithParams':args.parameters['Parameter1'].value = 'TableName'args.parameters['Parameter2'].value = 10
+```python
 
-report = StiReport()report.onBeginProcessData += beginProcessDatareport.onBeginProcessData += 'beginProcessData'report.loadFile(url_for('static', filename='reports/SimpleListSQLParameters.mrt'))report.render()
+from stimulsoft_reports.events import StiDataEventArgs
+from stimulsoft_reports.report import StiReport
+
+def beginProcessData(args: StiDataEventArgs):
+    if args.dataSource == 'DataSourceWithParams':
+        args.parameters['Parameter1'].value = 'TableName'
+        args.parameters['Parameter2'].value = 10
+
+
+report = StiReport()
+report.onBeginProcessData += beginProcessData
+report.onBeginProcessData += 'beginProcessData'
+report.loadFile(url_for('static', filename='reports/SimpleListSQLParameters.mrt'))
+report.render()
+```
 
 
 **report.html**
 
+```html
 
 <script>
-function beginProcessData(args) {if (args.dataSource == "DataSourceWithParams") {args.parameters['Parameter1'].value = "TableName";args.parameters['Parameter2'].value = 10;}}
+    function beginProcessData(args) {
+        if (args.dataSource == "DataSourceWithParams") {
+            args.parameters['Parameter1'].value = "TableName";
+            args.parameters['Parameter2'].value = 10;
+        }
+    }
 </script>
+```
 
 When modifying query parameter values, the type of the new value must match the type of the parameter being changed. Otherwise, executing the SQL query may return incorrect data or cause an internal execution error.
 
@@ -210,5 +230,10 @@ If general data encryption is enabled using the encryptData option, all data sen
 
 **app.py**
 
+```python
+
 from stimulsoft_reports.report import StiReport
-report = StiReport()report.handler.encryptSqlData = False
+
+report = StiReport()
+report.handler.encryptSqlData = False
+```

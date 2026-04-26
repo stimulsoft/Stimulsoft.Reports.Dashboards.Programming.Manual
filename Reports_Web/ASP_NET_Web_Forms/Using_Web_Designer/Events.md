@@ -58,6 +58,7 @@ protected void StiWebDesigner1_SaveReport(object sender, StiReportDataEventArgs 
 
 ### Events
 
+
 | **Name** | **Description** |
 | --- | --- |
 | OnGetReport | The event occurs when [requesting a report for editing](Add_Designer.md). |

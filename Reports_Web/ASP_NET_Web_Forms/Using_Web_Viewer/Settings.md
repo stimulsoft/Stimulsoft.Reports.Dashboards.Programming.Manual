@@ -53,23 +53,14 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 
 ### Basic settings
 
-**Name
-              
-              
-                Description
 
-                Width
-              
-              
-                Sets the width of the component in the required units that are specified in the Unit class. The value can be set in pixels - Unit.Pixel(), points - Unit.Point() and per cent - Unit.Percentage(). The default width is 100%.
-
-                Height
-              
-              
-                Sets the height of the component in the required units that are specified in the Unit class. The value can be set in pixels - Unit.Pixel(), points - Unit.Point() and per cent - Unit.Percentage(). By default, the automatic height is set depending on the size of the report page, or 650 pixels in the view mode of the viewer with scrollbars.**
-
+| **Name** | **Description** |
+| --- | --- |
+| Width | Sets the width of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default width is 100%. |
+| Height | Sets the height of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. By default, the automatic height is set depending on the size of the report page, or 650 pixels in the view mode of the viewer with scrollbars. |
 
 ### Work with server
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -89,8 +80,8 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | UseLocalizedCache | Sets a value that enables the use of a different cache depending on the selected localization. The default value of the property is **false**. |
 | AllowLoadingCustomFontsToClientSide | Allows you to pass custom fonts to the client side and convert them to CSS style for the correct display of text as HTML with a specified font. By default, the property is set to **false**. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -132,8 +123,8 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | AllowPropagationEvents | Allows the propagation of key press events when the report viewer is not in focus. By default, the property is set to **true**. |
 | DashboardFilterElementItemHeight | Sets the height in pixel of the checkbox in the List Box dashboard element. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -178,8 +169,8 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 >
 > See samples how to [add a custom button on the toolbar of the viewer](https://www.stimulsoft.com/en/samples/aspnet/custom-button-on-the-toolbar-of-the-viewer).
 
-
 ### Export report
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -218,8 +209,8 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | ShowExportToImageSvgz | Enables displaying the **Compressed SVG (SVGZ) File** export menu item when viewing reports, and the **Compressed SVG (SVGZ) File** item when viewing dashboards. By default, the property is set to **true**. |
 | ShowOpenAfterExport | Enables displaying the **Open After Export** parameter in export settings menu. By default, the property is set to **true**. |
 
-
 ### Email
+
 
 | **Name** | **Description** |
 | --- | --- |

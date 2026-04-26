@@ -9,6 +9,7 @@ For **HTML5 Designer**, there are several additional methods that are used to ge
 
 ### The GetReportObject() Method
 
+
 Returns the report object with which the designer is currently working. It is possible to perform the necessary actions with it - register new data sets, change report properties, assign parameters or load another report to the object. Then, the report can be returned to the designer, specifying it as a parameter in the resulting action method.
 
 
@@ -26,8 +27,8 @@ public IActionResult ExportReport()
 ...
 ```
 
-
 ### The GetActionReportObject() method
+
 
 Returns the report object that will be used for the particular action. For example, for the **OpenReport** action, this method returns a report loaded from the local disk of the computer. For the **PreviewReport** action, the method returns a prepared copy of the report for preview.
 
@@ -51,8 +52,8 @@ public IActionResult OpenReport()
 ...
 ```
 
-
 ### The GetRouteValues() method
+
 
 Returns values for URLs with which the designer page was opened. Thus, it is possible to get the initial collection of page parameters to run the designer and use these values for any checks and conditions.
 
@@ -84,8 +85,8 @@ public IActionResult ExportReport(string id)
 ...
 ```
 
-
 ### The GetRequestParams() method
+
 
 Returns all parameters of the current state of the designer passed to the server side. They can be useful for determining the type of action that the designer is currently executing - for example, to determine the type of export, as well as all action parameters.
 
@@ -112,8 +113,8 @@ public IActionResult ExportReport()
 ...
 ```
 
-
 ### The GetExportSettings() method
+
 
 Returns all parameters of the current report export. The type of the parameter object will correspond to the type of export selected in the report preview menu. Any export parameters can be changed and passed to the input of the resulting method. In this case, the report will be exported with the parameters transferred.
 
@@ -138,19 +139,22 @@ public IActionResult ExportReport()
 ...
 ```
 
-
 ### The MapPath() and MapWebRootPath() methods
 
-**Returns the absolute path, respectively, to the application or wwwroot directory. You can use this to upload report templates files, data files, etc. These methods are located in the StiNetCoreHelper static class.
 
-                HomeController.cs
+Returns the absolute path, respectively, to the application or wwwroot directory. You can use this to upload report templates files, data files, etc. These methods are located in the **StiNetCoreHelper** static class.
 
-                ...
-                public IActionResult GetReport()
-                {
-                StiReport report = new StiReport();
-                report.Load(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mrt"));
-                
-                return StiNetCoreDesigner.GetReportResult(this, report);
-                }
-                ...**
+
+**HomeController.cs**
+
+```csharp
+...
+public IActionResult GetReport()
+{
+    StiReport report = new StiReport();
+    report.Load(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mrt"));
+    
+    return StiNetCoreDesigner.GetReportResult(this, report);
+}
+...
+```

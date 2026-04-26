@@ -44,6 +44,7 @@ protected void StiWebDesignerFx1_SaveReport(object sender, StiReportDataEventArg
 
 ### Events
 
+
 | **Name** | **Description** |
 | --- | --- |
 | OnGetReport | Occurs when [requesting report for editing](Editing_Report.md). |

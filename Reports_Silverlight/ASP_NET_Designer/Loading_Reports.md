@@ -44,6 +44,7 @@ protected void Button1_Click(object sender, EventArgs e)
 
 * **Loading a report after loading the designer** is done using the **GetReport** event. After adding the handler to this event, it will occur each time when a report is required for the designer. In other words, after loading the Web designer requests a report from the server and, if the handler is added to the **GetReport** event, then in this event a report can be assigned to the designer. See the code below how to use the **GetReport** event:
 
+
 **C#**
 
 ```csharp
@@ -56,6 +57,5 @@ protected void StiWebDesignerSL1_GetReport(object sender, StiWebDesignerSL.StiGe
 }
 ...
 ```
-
 
 * **Loading a report from the main menu of the designer**. A report can be loaded by selecting the **Open Report** menu item. After selecting this menu item the dialog box for specifying a report for loading will appear. Also the designer supports loading reports and other report items (for example, images) using **Drag&Drop**.

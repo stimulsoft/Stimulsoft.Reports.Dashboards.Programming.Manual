@@ -60,33 +60,35 @@ export default App;
 Alternatively, open the viewer with a previously created report. The report files should be copied beforehand into the **reports** folder in the **./public** directory of the project.
 
 
-**App.js
+**App.js**
 
-          ...
-          class App extends React.Component {
-          constructor() {
-          super();
-          this.viewer = new Stimulsoft.Viewer.StiViewer(false, "StiViewer", false);
-          }
-          
-          render() {
-          return (
-          <div className="App">
-          <h2>Stimulsoft Viewer</h2>
-          <div id="сontent"></div>
-          </div>
-          );
-          }
-           
-          componentDidMount() {
-          var report = new Stimulsoft.Report.StiReport();
-          report.loadFile("reports/Invoice.mrt");
-          
-          this.viewer.report = report;
-          this.viewer.renderHtml("сontent");
-          }
-          }
-          ...**
+```javascript
+...
+class App extends React.Component {
+    constructor() {
+        super();
+        this.viewer = new Stimulsoft.Viewer.StiViewer(false, "StiViewer", false);
+    }
+
+    render() {
+        return (
+                    <div className="App">
+                        <h2>Stimulsoft Viewer</h2>
+                        <div id="сontent"></div>
+                    </div>
+        );
+    }
+ 
+    componentDidMount() {
+        var report = new Stimulsoft.Report.StiReport();
+        report.loadFile("reports/Invoice.mrt");
+        
+        this.viewer.report = report;
+        this.viewer.renderHtml("сontent");
+    }
+}
+...
+```
 
 ### First Start
 

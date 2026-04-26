@@ -5,6 +5,7 @@ Setting the **WebViewerSL** can be done using the properties, which are describe
 
 ### Control Panel
 
+
 A list of properties for customizing the **WebViewerSL** toolbar:
 
 
@@ -26,8 +27,8 @@ A list of properties for customizing the **WebViewerSL** toolbar:
 | ShowZoomPageWidthButton | Property is used to show/hide the **Page Width** button. If the **ShowZoomPageWidthButton** property is set to **true**, then the **Page Width** button will be shown. If the **ShowZoomPageWidthButton** property is set to **false**, then the **Page Width** button will be hidden. By default the property is set to **true**. |
 | ShowToolEditorButton | Property is used to show/hide the **Tool Editor** button. If the **ShowToolEditorButton** property is set to **true**, then the **Tool Editor** button will be shown. If the **ShowToolEditorButton** property is set to **false**, then the **Tool Editor** button will be hidden. By default the property is set to **true**. |
 
-
 ### Navigation Panel
+
 
 The properties of the WebViewerSL navigation panel are described below.
 
@@ -40,8 +41,8 @@ The properties of the WebViewerSL navigation panel are described below.
 | ShowPageNextButton | Property is used to show/hide the **Next Page** button. If the **ShowPageNextButton** property is set to **true**, then the **Next Page** property is set to **false**, then the **ShowPageNextButton** property is set to **false**, then the **Next Page** button will be hidden. By default the property is set to **true**. |
 | ShowPreviousPageButton | Property is used to show/hide the **Previous Page** button. If the **ShowPreviousPageButton** property is set to **true**, then the **Previous Page** button will be shown. If the **ShowPreviousPageButton** property is set to **false**, then the **Previous Page** button will be hidden. By default the property is set to **true**. |
 
-
 ### Zooming
+
 
 The properties of the WebViewerSL Zoom panel are described below:
 

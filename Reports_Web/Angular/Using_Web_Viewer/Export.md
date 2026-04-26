@@ -34,6 +34,7 @@ public IActionResult ExportReport()
 
 ### Export settings
 
+
 Each report export format of the **Angular Viewer** component has a lot of settings, and each setting has its own default values. Sometimes you need to set other default values. For this purpose, a special **DefaultSettings** property of the viewer is used. It is a container for all the default export settings.
 
 

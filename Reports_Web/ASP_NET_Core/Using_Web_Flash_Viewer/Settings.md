@@ -32,6 +32,7 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 
 ### Basic settings (without groups)
 
+
 | **Name** | **Description** |
 | --- | --- |
 | Theme | Specifies the [viewer theme](Using_Themes.md). The list of available themes is in the StiViewerFxTheme enumeration. The default value is Office2022. |
@@ -39,8 +40,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | Width | Sets the width of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default width is 100%. |
 | Height | Sets the height of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default height in 650 pixels. |
 
-
 ### Actions
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -52,8 +53,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | GetLocalization | Specifies the name of the action method to control loading the [localization](Localization.md) XML file. |
 | ViewerEvent | Specifies the name of the method for processing the [actions of the viewer](Showing_Report.md), such as printing and exporting the report, loading localization, if these actions are not specified separately. Also, this action is used to load the scripts and styles of the viewer. |
 
-
 **Server**
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -68,8 +69,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | UseRelativeUrls | Sets the viewer mode in which relative URLs are used for requests to the server. By default, the property is set to **true**. |
 | PassQueryParametersForResources | Enables transferring all request URL parameters when generating links to the resources of the viewer. If **false**, only the necessary parameters are used to request the resources of the viewer. This corresponds to the more correct operation of the browser cache. By default, the property is set to **true**. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -93,8 +94,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | ShowFormsHelp | Enables displaying a link to online documentation in the titles of the dialog forms of the viewer. By default, the property is set to **true**. |
 | ShowFormsHints | Enables displaying tooltips when hovering over the interface elements in the dialog boxes of the viewer. By default, the property is set to **true**. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -125,8 +126,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | ShowZoomButtons | Enables showing zoom buttons. By default, the property is set to **true**. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomModeFx.OnePage** – when the viewer runs, the zoom to display the one report page will be set; **StiZoomModeFx.TwoPages** – when the viewer runs, the zoom to display two report pages will be set; **StiZoomModeFx.PageWidth** – when the viewer runs, the zoom to display the report by the width of the page will be set. |
 
-
 ### Export properties
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -161,8 +162,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | ShowExportToImageSvg | Enables the export menu item - **Scalable Vector Graphics (SVG) File**. By default, the property is set to **true**. |
 | ShowExportToImageSvgz | Enables the export menu item - **Compressed SVG (SVGZ) File**. By default, the property is set to **true**. |
 
-
 ### Email
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -170,8 +171,8 @@ The **Flash Viewer** is configured using the properties in the **StiNetCoreViewe
 | ShowExportDialog | Enables displaying export options dialog box when sending email. If the property is set to **false**, the export will be done with the default settings. By default the property is set to **true**. |
 | DefaultEmailAddress | Sets the default recipient email, i.e. the address to which the email with the attached report will be sent. |
 
-
 ### Printing options
+
 
 | **Name** | **Description** |
 | --- | --- |

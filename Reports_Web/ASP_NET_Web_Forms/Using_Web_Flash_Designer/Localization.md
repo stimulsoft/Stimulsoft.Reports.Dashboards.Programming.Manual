@@ -31,7 +31,6 @@ The interface of the report designer allows you to select the necessary localiza
 ![](../../../images/topics/Reports_Web.ASP_NET_Web_Forms.Using_Web_Flash_Designer.Localization_1.png)
 
 
-**Information**
-
-
-If the value for the **Localization** property is set, then when you run the report designer, then the localization, specified in this property, will always be applied. If the property value is not set, then the localization, selected from the list of available localizations in the report designer panel, will be automatically loaded.
+> **Information**
+>
+> If the value for the **Localization** property is set, then when you run the report designer, then the localization, specified in this property, will always be applied. If the property value is not set, then the localization, selected from the list of available localizations in the report designer panel, will be automatically loaded.

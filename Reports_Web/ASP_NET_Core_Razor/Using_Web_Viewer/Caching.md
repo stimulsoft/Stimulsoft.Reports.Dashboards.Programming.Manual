@@ -15,6 +15,7 @@ You can manage caching with the following properties.
 
 ### The CacheMode property
 
+
 This property of the viewer enables caching and sets its type. It can take one of the following values, specified in the **StiServerCacheMode** enumeration:
 
 
@@ -28,18 +29,18 @@ This property of the viewer enables caching and sets its type. It can take one o
 
 **StringSession** – for caching, the current session is used. The report is saved as a packed string in this cache.
 
-
 ### The CacheItemPriority property
+
 
 This property sets the priority of the report stored in the server's cache. It affects the automatic clearing of the server memory in case of a lack of memory. The lower the priority is, the greater is the chance of removing information from memory.
 
-
 ### The CacheTimeout property
+
 
 This property specifies the amount of time in minutes for which you want to save the report in the server cache. If you use caching and the requested report is not found in the cache (the objects storage time has expired), then it will be requested again using a special **GetReport** event, then connect the report data and render it.
 
-
 ### StiCacheHelper
+
 
 The **HTML5 Viewer** component provides the ability to define your methods of working with report caching. For this purpose, a special class **StiCacheHelper** is used. It contains methods for obtaining a report from the cache and saving the report to the cache. It is necessary to create a new class inherited from **StiCacheHelper** and reload the above methods, which respectively have the names - **GetReport**, **SaveReport** and **RemoveReport**.
 

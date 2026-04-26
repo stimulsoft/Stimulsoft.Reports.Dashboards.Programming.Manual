@@ -37,6 +37,7 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 
 ### The Viewer properties
 
+
 | **Name** | **Description** |
 | --- | --- |
 | ID | Allows you to set a string unique identifier of a component, by default **StiBlazorViewer**. |
@@ -47,8 +48,8 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | Options | It allows specifying the object of the **StiBlazorViewerOptions**, which contains the set of the component options. |
 | Theme | Specifies [the theme of the viewers](Using_Themes.md) layout. The list of available themes can be found in the **StiTheme** enumeration. The default value is **Office2022WhiteCarmine**. |
 
-
 ### Server
+
 
 | **Name** | **Desription** |
 | --- | --- |
@@ -59,8 +60,8 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | PassFormValues | Enables passing the values of the POST form to the client side, if these values are required to be used in the actions of the viewer. If you enable this property, the additional **GetFormValues()** method will return a collection of form parameters. By default, the property is **false**. |
 | AllowLoadingCustomFontsToClientSide | Allows you to pass custom fonts to the client side and convert them to CSS style for the correct display of text as HTML with a specified font. By default, the property is set to **false**. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -99,8 +100,8 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | AllowPropagationEvents | Allows the propagation of key press events when the report viewer is not in focus. By default, the property is set to **true**. |
 | DashboardFilterElementItemHeight | Sets the height in pixel of the checkbox in the List Box dashboard element. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -140,8 +141,8 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | ShowMenuMode | Sets the display mode of the viewer menu. It can take one of the following values of the **StiShowMenuMode** enumeration: **Click** – shows menu by mouse click (default value); **Hover** – shows menu by hovering the mouse cursor. |
 | AutoHide | Enables auto-hiding of the viewer's toolbar. The property will work only for the Mobile mode of the viewer's interface. The default value of the property is **false**. |
 
-
 ### Export
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -179,8 +180,8 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | ShowExportToImageSvgz | Enables displaying the **Compressed SVG (SVGZ) File** export menu item when viewing reports, and the **Compressed SVG (SVGZ) File** item when viewing dashboards. By default, the property is set to **true**. |
 | ShowOpenAfterExport | Enables displaying the **Open After Export** parameter in export settings menu. By default, the property is set to **true**. |
 
-
 ### Email
+
 
 | **Name** | **Description** |
 | --- | --- |

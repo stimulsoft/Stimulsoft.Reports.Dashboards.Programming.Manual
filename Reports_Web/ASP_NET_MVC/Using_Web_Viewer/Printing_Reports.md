@@ -60,6 +60,7 @@ public ActionResult PrintReport()
 
 ### Print setup
 
+
 If you choose to print a report in the viewer panel, a menu with printing options is displayed. The **HTML5 Viewer** component is able to force the required printing mode. To do this, set the **PrintDestination** property to one of the following values of the **StiPrintDestination** enumeration.
 
 **Default** – the menu will be displayed (the default property value);

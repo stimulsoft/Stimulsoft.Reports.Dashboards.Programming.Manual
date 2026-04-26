@@ -39,13 +39,14 @@ protected void Page_Load(object sender, EventArgs e)
 
 ### Basic Settings
 
+
 | **Name** | **Description** |
 | --- | --- |
 | Width | Sets the width of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default width is 100%. |
 | Height | Sets the height of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default height is 800 pixels. |
 
-
 ### Server
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -58,8 +59,8 @@ protected void Page_Load(object sender, EventArgs e)
 | UseRelativeUrls | Sets the designer mode in which relative URLs are used for requests to the server. By default, the property is set to **true**. |
 | PassQueryParametersForResources | Enables transferring all request URL parameters when generating links to the resources of the designer. If **false**, only the necessary parameters are used to request the resources of the designer. This corresponds to the more correct operation of the browser cache. By default, the property is set to **true**. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -91,8 +92,8 @@ protected void Page_Load(object sender, EventArgs e)
 | OpenExportedReportWindow | Specifies the target window for opening the exported file from the report preview window. By default, the property is set to **Blank** (new window). |
 | ImagesQuality | Sets the quality of image conversion. Used to display some components, such as **Rich Text**, some types of charts and bar-codes. By default, the property is set to **Normal**. |
 
-
 ### Behavior
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -105,8 +106,8 @@ protected void Page_Load(object sender, EventArgs e)
 | DesignerEventFunction | Specifies the name of the JavaScript function that will be called when certain actions are taken by the designer. The function takes a string parameter to the input. The designer action ID is passed in it. |
 | ExitUrl | Specifies the URL address when clicking the **Exit** button in the main menu of the designer. |
 
-
 ### Main Menu
+
 
 | Name | Description |
 | --- | --- |
@@ -126,8 +127,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowFileMenuExit | Enables showing the main menu item - **Exit**. By default, the property is set to **true**. |
 | FileMenuCaption | Specifies the title of the main menu of the report designer. By default, the standard title text is used. |
 
-
 ### Data dictionary
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -146,8 +147,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowOnlyAliasForDataColumns | Enables showing the mode of showing aliases for columns. By default, the property is set to **false**. |
 | ShowOnlyAliasForVariables | Enables showing the mode of showing aliases for variables. By default, the property is set to **false**. |
 
-
 ### Main menu
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -167,8 +168,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowFileMenuExit | Enables showing the **Exit** item of the main menu. By default, the property is set to **true**. |
 | FileMenuCaption | Specifies the title of the main menu. By default, the standard title is used. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -179,8 +180,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowEventsTab | Enables showing report events tabs in the property editor panel. By default, the property is set to **true**. |
 | Zoom | Specifies the zoom for displaying the report template edit page. The default zoom is set to 100 percent. The values vary from 10 to 500 percent. You can also set one of the following values: **StiZoomModeFx.Default** – when the designer runs, the previously used zoom value (the default value) will be set; **StiZoomModeFx.OnePage** – when the designer runs, the zoom, necessary to display the entire page in the designer window, will be set; **StiZoomModeFx.PageWidth** – when the designer runs, the zoom, necessary to display the report by the width of the page, will be set; **StiZoomModeFx.PageHeight** – when the designer runs, the zoom, necessary to display the report by the height, will be set. |
 
-
 ### Preview window toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -206,8 +207,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowPreviewMultiplePageViewModeButton | Enables showing the button - **Multiple Page** - in the panel to select the report preview mode. By default, the property is set to **true**. |
 | ShowPreviewZoomButtons | Enables showing the buttons to select zoom in the preview window. By default, the property is set to **true**. |
 
-
 ### Behavior
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -221,8 +222,8 @@ protected void Page_Load(object sender, EventArgs e)
 | DesignerEventFunction | Specifies the name of the JavaScript function that will be called when certain actions are taken by the designer. The function takes a string parameter to the input. The designer action ID is passed in it. |
 | ExitUrl | Specifies the URL address when clicking the **Exit** button in the main menu of the designer. |
 
-
 ### Export options
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -257,8 +258,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowExportToImageSvg | Enables the export menu item - **Scalable Vector Graphics (SVG) File**. By default, the property is set to **true**. |
 | ShowExportToImageSvgz | Enables the export menu item - **Compressed SVG (SVGZ) File**. By default, the property is set to **true**. |
 
-
 ### Send report by Email
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -266,8 +267,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowEmailExportDialog | Enables showing the export parameters dialog box when sending email. If the property is **false**, the export will be done with the default settings. By default, the property is set to **true**. |
 | DefaultEmailAddress | Specifies the recipient email by default. This means the address to which the email with the attached report will be sent. |
 
-
 ### Printing parameters
+
 
 | **Name** | **Description** |
 | --- | --- |

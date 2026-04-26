@@ -44,9 +44,14 @@ In some cases, you may need to activate only the report generator, separately fr
 
 **app.py**
 
+```python
+
 from stimulsoft_reports.report import StiReport
-report = StiReport()report.license.setKey('Your activation code...')
+
+report = StiReport()
+report.license.setKey('Your activation code...')
 # report.license.setFile(url_for('static', filename='license.key'))
+```
 
 
 > **Information**

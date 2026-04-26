@@ -119,8 +119,28 @@ To form the response, the `getFrameworkResponse()` function is used, which retur
 
 **app.py**
 
-from flask import Flask, make_response, render_template, url_for, requestfrom stimulsoft_reports.designer import StiDesigner
+```python
+
+from flask import Flask, make_response, render_template, url_for, request
+from stimulsoft_reports.designer import StiDesigner
+
 app = Flask(__name__)
-@app.route('/designer', methods = ['GET', 'POST'])def designer():designer = StiDesigner()designer.options.appearance.fullScreenMode = True
-query = request.args.to_dict()body = request.get_data(False)if designer.processRequest(None, query, body):designerResponse = designer.getResponse()response = make_response(designerResponse.data)response.mimetype = designerResponse.mimetyperesponse.headers.add('Access-Control-Allow-Origin', request.origin)return response
-js = designer.javascript.getHtml()html = designer.getHtml()return render_template('designer.html', designerJavaScript = js, designerHtml = html)
+
+@app.route('/designer', methods = ['GET', 'POST'])
+def designer():
+    designer = StiDesigner()
+    designer.options.appearance.fullScreenMode = True
+
+    query = request.args.to_dict()
+    body = request.get_data(False)
+    if designer.processRequest(None, query, body):
+        designerResponse = designer.getResponse()
+        response = make_response(designerResponse.data)
+        response.mimetype = designerResponse.mimetype
+        response.headers.add('Access-Control-Allow-Origin', request.origin)
+        return response
+
+    js = designer.javascript.getHtml()
+    html = designer.getHtml()
+    return render_template('designer.html', designerJavaScript = js, designerHtml = html)
+```

@@ -36,14 +36,15 @@ def designer():
 
 ### Main (without group)
 
+
 | **Name** | **Description** |
 | --- | --- |
 | `width` | Sets the width of the component in "px" or "%". By default, the value is set to "100%". |
 | `height` | Sets the height of the component in "px" or "%". By default, the value is set to "100%" for standard mode and "650px" for scroll mode. |
 | `localization` | Sets the selected localization of the component. By default, the English localization is embedded in the component. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -74,8 +75,8 @@ def designer():
 | `allowPropagationEvents` | Allows the propagation of key press events when the report designer is not in focus. By default, the property is set to `true`. |
 | `propertiesPanelViewMode` | Provides the ability to pin or unpin the Properties panel, Report Dictionary, and Report Tree. It can take one of the following values from the enumeration: - `Pinned` — panels are pinned (default value); - `Unpinned` — panels are unpinned. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -100,8 +101,8 @@ def designer():
 | `showNewPageButton` | Enables or disables the display of the **New Page** button on the toolbar. By default, the property is set to `True`. |
 | `showNewDashboardButton` | Enables or disables the display of the **New Dashboard** button on the toolbar. By default, the property is set to `True`. |
 
-
 ### Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -123,8 +124,8 @@ def designer():
 | `showTable` | Enables the display of the **Table** component in the **Sections** menu. By default, the property is set to `True`. |
 | `showTableOfContents` | Enables or disables the display of the **Table of Contents** component in the **Sections** menu. By default, the property is set to `True`. |
 
-
 ### Cross-Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -135,111 +136,33 @@ def designer():
 | `showCrossFooterBand` | Enables the display of the **Cross Footer** section in the Cross menu. By default, the property is set to `True`. |
 | `showCrossDataBand` | Enables the display of the **Cross Data** section in the Cross menu. By default, the property is set to `True`. |
 
-
 ### Dashboard Elements
 
-**Name
-              
-              
-                Description
 
-                showTableElement
-              
-              
-                Enables the display of the Table indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showCardsElement
-              
-              
-                Enables the display of the Cards indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showChartElement
-              
-              
-                Enables the display of the Chart indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showGaugeElement
-              
-              
-                Enables the display of the Gauge indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showPivotTableElement
-              
-              
-                Enables the display of the Pivot Table indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showIndicatorElement
-              
-              
-                Enables the display of the Indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showProgressElement
-              
-              
-                Enables the display of the Progress panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showRegionMapElement
-              
-              
-                Enables the display of the Region Map panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showOnlineMapElement
-              
-              
-                Enables the display of the Online Map panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showImageElement
-              
-              
-                Enables the display of the Image panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showTextElement
-              
-              
-                Enables the display of the Text panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showPanelElement
-              
-              
-                Enables the display of the Panel panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showShapeElement
-              
-              
-                Enables the display of the Shape panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showButtonElement
-              
-              
-                Enables the display of the Button panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showListBoxElement
-              
-              
-                Enables the display of the ListBox panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showComboBoxElement
-              
-              
-                Enables the display of the ComboBox panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showTreeViewElement
-              
-              
-                Enables the display of the Tree View panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showTreeViewBoxElement
-              
-              
-                Enables the display of the Tree ViewBox indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.
-
-                showDatePickerElement
-              
-              
-                nables the display of the Date Picker indicator panel item in the toolbar or the Insert tab in the designer. By default, the property is set to True.**
-
+| **Name** | **Description** |
+| --- | --- |
+| `showTableElement` | Enables the display of the **Table** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to True. |
+| `showCardsElement` | Enables the display of the **Cards** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showChartElement` | Enables the display of the **Chart** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showGaugeElement` | Enables the display of the **Gauge** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showPivotTableElement` | Enables the display of the **Pivot Table** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showIndicatorElement` | Enables the display of the **Indicator** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showProgressElement` | Enables the display of the **Progress** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showRegionMapElement` | Enables the display of the **Region Map** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showOnlineMapElement` | Enables the display of the **Online Map** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showImageElement` | Enables the display of the **Image** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showTextElement` | Enables the display of the **Text** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showPanelElement` | Enables the display of the **Panel** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showShapeElement` | Enables the display of the **Shape** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showButtonElement` | Enables the display of the **Button** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showListBoxElement` | Enables the display of the **ListBox** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showComboBoxElement` | Enables the display of the **ComboBox** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showTreeViewElement` | Enables the display of the **Tree View** panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showTreeViewBoxElement` | Enables the display of the **Tree ViewBox** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
+| `showDatePickerElement` | nables the display of the **Date Picker** indicator panel item in the toolbar or the **Insert** tab in the designer. By default, the property is set to `True`. |
 
 ### Components
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -260,8 +183,8 @@ def designer():
 | `showMathFormula` | Enables or disables the display of the **Math Formula** component in the **Components** menu. By default, the property is set to `False`. |
 | `showMap` | Enables or disables the display of the **Map** component in the toolbar or the Insert tab in the designer. By default, the property is set to `True`. |
 
-
 ### Dictionary
+
 
 | **Name** | **Description** |
 | --- | --- |

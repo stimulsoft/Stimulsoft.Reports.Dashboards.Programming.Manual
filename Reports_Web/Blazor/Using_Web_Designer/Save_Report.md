@@ -83,7 +83,6 @@ private void OnSaveReport(StiSaveReportEventArgs args)
 ...
 ```
 
-
 ### Saving on the client-side
 
 To save an edited report on the client-side as a file, you don't need additional designer settings. It's enough to select **Save as**, when clicking on it, the file saving dialog will be displayed. In this dialog, you can change the name of your report file, and after that, the file will be saved on the local disk of the computer.
@@ -105,8 +104,8 @@ private void OnSaveReportAs(StiSaveReportAsEventArgs args)
 ...
 ```
 
-
 ### Saving settings
+
 
 A report is saved in the background mode, i.e., without reloading a page in the browser window. Suppose it is required to control the process of report saving somehow visually. In that case, you should change the **SaveReportMode** option (or the **SaveReportAsMode** option) to one of three values - **Hidden** (set by default), the **Visible**, or the **NewWindow**.
 

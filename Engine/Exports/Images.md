@@ -6,6 +6,7 @@ format. So the DitheringType property works only for these exports.
 
 ### Export Parameters
 
+
 All exports of images have the same export settings. They are described in the table below. But each format has its own ExportSettings class. For BMP, GIF, PNG, TIFF, JPEG, PCX, and EMF the following classes are used in exports. The StiBmpExportSettings is used for export to BMP, **StiGifExportSettings** is used for export to GIF, **StiPngExportSettings** is used for export to PNG, **StiTiffExportSettings** is used for export to TIFF, **StiJpegExportSettings** is used for export to JPEG, **StiPcxExportSettings** is used for export to PCX, and **StiEmfExportSettings** is used for export to EMF.
 
 

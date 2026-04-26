@@ -8,25 +8,26 @@ To connect a font file, use the `addFontFile` function. You need to specify the 
 
 **report.php**
 
+```php
 
 <?php
-
-use Stimulsoft\Enums\FontStyle;
-
-use Stimulsoft\StiFontCollection;
-
-StiFontCollection::addFontFile('Roboto-Black.ttf', 'Roboto', FontStyle::Bold);
+    use Stimulsoft\Enums\FontStyle;
+    use Stimulsoft\StiFontCollection; 
+    
+    StiFontCollection::addFontFile('Roboto-Black.ttf', 'Roboto', FontStyle::Bold);
 ?>
+```
 
 Additionally, you can load all fonts from a single directory. To do this, specify the directory containing the fonts using the `setFontsFolder` function. For example:
 
 
 **report.php**
 
+```php
 
 <?php
-
-use Stimulsoft\StiFontCollection;
-
-StiFontCollection::setFontsFolder('/fonts');
+    use Stimulsoft\StiFontCollection; 
+    
+    StiFontCollection::setFontsFolder('/fonts');
 ?>
+```

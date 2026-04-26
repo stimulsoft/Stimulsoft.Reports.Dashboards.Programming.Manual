@@ -16,6 +16,7 @@ When exporting the report is converted into a single table. The document is easi
 
 ### Export Settings
 
+
 The export parameters of the ODT export are described in the **StiOdtExportSettings** class. The description of all class properties are in the table below.
 
 
@@ -23,8 +24,8 @@ The export parameters of the ODT export are described in the **StiOdtExportSetti
 | --- | --- | --- |
 | ImageResolution | float | image resolution, dot per inch; may have any value, by default 100 |
 
-
 ### Static Options
+
 
 Static properties of export to ODT. To access to export properties it is necessary to add the **StiOptions.Export.Odt...** prefix. For example, **StiOptions.Export.Odt.DivideSegmentPages**.
 

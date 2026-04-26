@@ -15,6 +15,7 @@ Export to PDF is based on the "Adobe Portable Document Format, Version 1.3, seco
 
 ### Digital Signature
 
+
 Digital signature is a requisite of an electronic document used to protect this document from falsification. This document is a result of cryptographic conversion of information using the closed key of the electronic signature and allows identifying the owner of the certificate of the key of the signature. Digital signatures are often used to implement electronic signatures
 
 
@@ -91,8 +92,8 @@ report.renderAsync(function () {
 ...
 ```
 
-
 ### Encryption
+
 
 A PDF document can be encoded to protect the content from unauthorized access. A user may set the following parameters of encryption:
 
@@ -107,6 +108,7 @@ Key length.
 
 Using the StiPdfExportSettings class it is possible to set the encryption parameters from code. The following properties of this class are used:
 
+
 **C#**
 
 ```csharp
@@ -117,6 +119,7 @@ public StiUserAccessPrivileges UserAccessPrivileges
 public StiPdfEncryptionKeyLength KeyLength
 ...
 ```
+
 
 The **StiUserAccessPrivileges** enumeration contains the following elements (flags):
 
@@ -201,8 +204,8 @@ report.renderAsync(function () {
 ...
 ```
 
-
 ### Embedded Fonts
+
 
 By default all embedded fonts are optimized. Characters which are not used in a report are excluded. It allows decreasing the size of a file. But, for correct work of the editable field, the font should be complete. Therefore, for fonts, which are used in editable fields, optimization is not done. This increases the output file size. If Asian languages are used, the file size can be 15-20mb.
 
@@ -218,8 +221,8 @@ StiOptions.Export.Pdf.ReduceFontFileSize = false;
 ...
 ```
 
-
 ### Editable Fields
+
 
 To enable the export of editable fields it is necessary to set the static property
 
@@ -241,8 +244,8 @@ Editable fields in the PDF-file has two conditions:
 
 If it is necessary to have the **MultiLine** editable field, then it is necessary to set the **WordWrap** property of the text box to **true**.
 
-
 ### Export Settings
+
 
 The export parameters of the PDF export are described in the **StiPdfExportSettings** class. The description of all class properties are in the table below.
 
@@ -280,8 +283,8 @@ disable **Embedded fonts**;
 
 if Embedded fonts is required then enable the **ReduceFontFileSize**.
 
-
 ### Static Options
+
 
 Except the **StiPdfExportSettings** class, parameters of export to PDF are also set using the static properties. All properties are described in the table below. To access to export properties it is necessary to add the **StiOptions.Export.Pdf...** prefix.  For example, **StiOptions.Export.Pdf.DivideSegmentPages**.
 

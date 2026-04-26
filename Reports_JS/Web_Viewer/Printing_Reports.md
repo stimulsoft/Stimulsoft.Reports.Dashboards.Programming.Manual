@@ -30,6 +30,7 @@ The report will be printed directly to the printer without preview. After select
 
 ### Print setup
 
+
 If you choose printing a report in the viewer panel, a menu with printing options is displayed. The **HTML5 Viewer** component is able to force the required printing mode. To do this, set the **printDestination** property to one of the following values of the **StiPrintDestination** enumeration.
 
 **Default** – the menu will be displayed (the default property value);
@@ -60,7 +61,6 @@ var options = new Stimulsoft.Viewer.StiViewerOptions();
 options.toolbar.showPrintButton = false;
 ...
 ```
-
 
 ### Print Report from Code
 

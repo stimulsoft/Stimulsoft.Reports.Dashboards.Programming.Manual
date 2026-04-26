@@ -4,6 +4,7 @@
 
 ### Export Settings
 
+
 The export parameters of the DIF export are described in the **StiDifExportSettings** class. The description of all class properties are in the table below.
 
 

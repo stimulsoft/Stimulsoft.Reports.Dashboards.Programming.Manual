@@ -5,6 +5,7 @@ Business Object is a data type, which is a set of objects related to each other,
 
 ### Filling the Business Objects manually in .NET
 
+
 This example creates a report with a business object. First we need to create the structure of the business object. Below is a sample code to create a business object class:
 
 
@@ -85,8 +86,8 @@ mainreport.Design();
 ...
 ```
 
-
 ### Using Business Object in Report
+
 
 After that, the business object is created, filled with data, registered and passed to the reporting tool. In order to create a report in the designer using business objects, you should create a data description in the report dictionary. To do this, select MyObject (created Business Object) in the report dictionary in and choose New Business Object... from the context menu or the menu New Item. After selecting this command, the window will open a New Business Object, in which you should specify the Child Business Object and select lists of data. The picture below shows the dialog New Business Object.
 
@@ -123,8 +124,8 @@ Press the Ok button once the fields are filled and parameters are specified. Aft
 
 ![](../../images/topics/Engine.Data.Business_Objects_in_Net_Web_Silverlight_3.png)
 
-
 ### Provide the data to business objects from the data source in .NET
+
 
 Created business objects that are registered and passed to the report generator, but do not contain the actual data are called a description of business objects. Using the description of the business object, you can create a report template (define the structure and design the report), and then, before building, connect the real data and render a report. This is useful if you want to create reports with the same structure and design, but with different data. Create a structural description of the business object first. Below is a sample code to create a business object class:
 
@@ -229,8 +230,8 @@ After that, the report generator will receive the data for the business object f
 
 ![](../../images/topics/Engine.Data.Business_Objects_in_Net_Web_Silverlight_5.png)
 
-
 ### Business objects in Web
+
 
 Creating, filling, signing and sending business objects to the Web is almost the same as in .NET. First, create a class of the business object that is identical as in .NET. Next, create an object of the business object class, register it manually fill data and pass them. Here are the differences that, instead of the mainreport.Design() method, you should use the StiWebDesigner1.Design(mainreport) method. Also perform synchronization using the mainreport.Dictionary.SynchronizeBusinessObjects(), because in the Web designer it is not possible to create a description of the business object from the data dictionary (the description can only be created from code). Below is a sample code to create, fill, register and pass the business objects:
 

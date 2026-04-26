@@ -91,6 +91,7 @@ public ActionResult ViewerInteraction()
 
 ### SQL data sources
 
+
 The connection parameters to the SQL data source and any other ones can be stored in the report template. Suppose you want to set the connection parameters from the code before rendering the report (for example, for security reasons or depending on the authorized user). In that case, you can use the example below.
 
 
@@ -200,8 +201,8 @@ The table below shows the connection string templates for different types of dat
 | OData | http://services.odata.org/v3/odata/OData.svc/ |
 | Other... | The table shows the most commonly used templates for the connection string. You can view various connection string options at [the special website](https://www.connectionstrings.com/). |
 
-
 ### Data from XML, JSON, Excel files
+
 
 Connecting to XML and JSON data sources can be stored in the report template. If you want to specify data files from the code, you can use the example below.
 

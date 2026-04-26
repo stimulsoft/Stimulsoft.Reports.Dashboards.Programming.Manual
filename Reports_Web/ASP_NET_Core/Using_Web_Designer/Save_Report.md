@@ -9,6 +9,7 @@ The **HTML5 Designer** component provides two ways of saving the report which ar
 
 ### Saving a report and dashboard on the server side
 
+
 To save the editable report on the server side, you need to set the **SaveReport** action, which will be called when you select **Save** in the main menu, or click the **Save** button on the main panel of the designer.
 
 
@@ -92,8 +93,8 @@ In this case, the dialog with the specified text will be displayed. The text can
 
 ![](../../../images/topics/Reports_Web.ASP_NET_Core.Using_Web_Designer.Save_Report_1.png)
 
-
 ### Saving reports and dashboards on the client side
+
 
 To save the edited report on the client side as a file, no additional designer settings are required. It is enough to click the **Save As** main menu item. The dialog box will be displayed. In this dialog you can change the name of the report file. The file will be saved to the local disk of the computer.
 
@@ -151,6 +152,7 @@ public IActionResult SaveReport()
 ```
 
 ### Saving settings
+
 
 The report is saved in the background mode without reloading the page in the web browser window. If you need to visually control the process of saving the report, you should change the value of the **SaveReportMode** (or **SaveReportAsMode**) property of the designer to one of the three specified values - **Hidden** (default value), **Visible** or **NewWindow**.
 

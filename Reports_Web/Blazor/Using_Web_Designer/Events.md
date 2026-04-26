@@ -44,6 +44,7 @@
 
 ### Events list
 
+
 | **Name** | **Description** |
 | --- | --- |
 | OnCreateReport | Occurs when [creating new reports](Creating_Report.md) from the designer menu. |

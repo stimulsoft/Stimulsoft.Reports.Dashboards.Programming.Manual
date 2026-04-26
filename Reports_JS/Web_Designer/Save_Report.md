@@ -9,6 +9,7 @@ The **HTML5 Designer** component has two ways of saving the report which are ava
 
 ### Saving a report and dashboard on the server side
 
+
 To save the edited report on the server side, you should set the **onSaveReport** special event which will be called when you select the **Save Report** menu item or click the **Save** button on the main panel of the designer.
 
 An editable report will be passed in the arguments of the event. That report can be saved, for example, in a JSON string and then transferred to the server side.
@@ -71,7 +72,6 @@ The function takes the error text and a flag as arguments that define the type o
 
 
 ![](../../images/topics/Reports_JS.Web_Designer.Save_Report_1.png)
-
 
 ### Saving reports and dashboards on the client side
 

@@ -39,6 +39,7 @@ public ActionResult ExportReport()
 
 ### Export Settings
 
+
 The **Flash Viewer** component contains 30+ export formats, and sometimes you need to disable unwanted formats. This allows you to simplify UI and the use of the viewer. To disable unused export formats, it is enough to set the values for the corresponding properties of the viewer listed in the list below to **false**.
 
 

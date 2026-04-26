@@ -5,6 +5,7 @@ For **Angular Viewer**, there are several additional methods that are used to ge
 
 ### The GetReportObject() method
 
+
 Returns the report object with which the viewer is currently working. It is possible to perform the necessary actions with it - register new data sets, change report properties, assign parameters or load another report to the object. Then, the report can be returned to the viewer, specifying it as a parameter in the resulting action method.
 
 
@@ -22,8 +23,8 @@ public IActionResult ViewerInteraction()
 ...
 ```
 
-
 ### The GetRouteValues() method
+
 
 Returns values for URLs with which the viewer page was opened. Thus, it is possible to get the initial collection of run page parameters in any viewer action and use these values for any checks and conditions.
 
@@ -55,8 +56,8 @@ public IActionResult ViewerInteraction(string id)
 ...
 ```
 
-
 ### The GetFormValues() method
+
 
 Returns the values of the form that initiated (opened by the POST request) a page of the viewer. Thus, it is possible to get a collection of form parameters in any action of the viewer.
 
@@ -93,8 +94,8 @@ public IActionResult InitViewer()
 ...
 ```
 
-
 ### The GetRequestParams() method
+
 
 Returns all parameters of the current state of the viewer passed to the server side. They can be useful for determining the type of action that the viewer is currently executing - for example, to determine the type of export, as well as all action parameters.
 
@@ -142,8 +143,8 @@ public IActionResult ViewerInteraction()
 ...
 ```
 
-
 ### The GetExportSettings() method
+
 
 Returns all the parameters of the current report export. The type of the parameter object will correspond to the type of export selected in the viewer menu. Any export parameters can be changed and passed to the input of the resulting method. In this case, the report will be exported with the parameters transferred.
 
@@ -168,19 +169,22 @@ public IActionResult ExportReport()
 ...
 ```
 
-
 ### The MapPath() and MapWebRootPath() methods
 
-**Returns the absolute path, respectively, to the application or wwwroot directory. You can use this to upload report templates files, data files, etc. These methods are located in the StiAngularHelper static class.
 
-                HomeController.cs
+Returns the absolute path, respectively, to the application or wwwroot directory. You can use this to upload report templates files, data files, etc. These methods are located in the StiAngularHelper static class.
 
-                ...
-                public IActionResult GetReport()
-                {
-                StiReport report = new StiReport();
-                report.Load(StiAngularHelper.MapPath(this, "Reports/SimpleList.mrt"));
-                
-                return StiAngularViewer.GetReportResult(this, report);
-                }
-                ...**
+
+**HomeController.cs**
+
+```csharp
+...
+public IActionResult GetReport()
+{
+    StiReport report = new StiReport();
+    report.Load(StiAngularHelper.MapPath(this, "Reports/SimpleList.mrt"));
+    
+    return StiAngularViewer.GetReportResult(this, report);
+}
+...
+```

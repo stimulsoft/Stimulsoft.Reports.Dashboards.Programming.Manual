@@ -4,6 +4,7 @@
 
 ### Export Settings
 
+
 The export parameters of the HTML export are described in the **StiHtmlExportSettings** class. The description of all class properties are in the table below.
 
 
@@ -18,8 +19,8 @@ The export parameters of the HTML export are described in the **StiHtmlExportSet
 | ExportBookmarksMode | StiHtmlExportBookmarksMode | a mode the export a document with bookmarks; by default StiHtmlExportBookmarksMode.All |
 | UseStylesTable | bool | use the Styles table; if false then the style table is empty and all properties of each component will described directly in the style of this component; by default true |
 
-
 ### Static Options
+
 
 Except the **StiHtmlExportSettings** class parameters of export to HTML are set using the static properties. All properties are described in the table below. To access to export properties it is necessary to add the **StiOptions.Export.Html...** prefix. For example, **StiOptions.Export.Html.ConvertDigitsToArabic**.
 

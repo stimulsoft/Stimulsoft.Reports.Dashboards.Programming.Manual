@@ -19,61 +19,14 @@ The report generator allows exporting reports or dashboards to various formats. 
 | RTF (Rich Text Format) | + | - |
 
 
-**Data format
-        
-        
-          Reports
-        
-        
-          Dashboards
-
-          CSV (Comma Separated Value)
-        
-        
-          +
-        
-        
-          +
-
-          JSON (JavaScript Object Notation)
-        
-        
-          +
-        
-        
-          +
-
-          XML (Extensible Markup Language)
-        
-        
-          +
-        
-        
-          +
-
-          DBF (dBase/FoxPro)
-        
-        
-          +
-        
-        
-          +
-
-          DIF
-        
-        
-          +
-        
-        
-          +
-
-          SYLK (Symbolic Link)
-        
-        
-          +
-        
-        
-          +**
+| **Data format** | **Reports** | **Dashboards** |
+| --- | --- | --- |
+| CSV (Comma Separated Value) | + | + |
+| JSON (JavaScript Object Notation) | + | + |
+| XML (Extensible Markup Language) | + | + |
+| DBF (dBase/FoxPro) | + | + |
+| DIF | + | + |
+| SYLK (Symbolic Link) | + | + |
 
 
 | **Image format** | **Reports** | **Dashboards** |

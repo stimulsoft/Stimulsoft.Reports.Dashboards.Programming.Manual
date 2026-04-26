@@ -68,23 +68,25 @@ To do this, edit the **App.vue** file in the project's **src** folder. First, im
 Alternatively, open the viewer with a previously created report. The report files should be copied beforehand into the **reports** folder in the **./public** directory of the project.
 
 
-**App.vue
+**App.vue**
 
-          ...
-          <script setup lang="ts">
-          import { onMounted } from "vue";
-          import { Stimulsoft } from "stimulsoft-dashboards-js/Scripts/stimulsoft.viewer.js";
-          
-          onMounted(() => {
-          let viewer = new Stimulsoft.Viewer.StiViewer(false, "StiViewer", false);
-          let report = new Stimulsoft.Report.StiReport();
-          report.loadFile("reports/SimpleList.mrt");
-          
-          viewer.report = report;
-          viewer.renderHtml("content");
-          });
-          </script>
-          ...**
+```
+...
+<script setup lang="ts">
+    import { onMounted } from "vue";
+    import { Stimulsoft } from "stimulsoft-dashboards-js/Scripts/stimulsoft.viewer.js";
+    
+    onMounted(() => {
+        let viewer = new Stimulsoft.Viewer.StiViewer(false, "StiViewer", false);
+        let report = new Stimulsoft.Report.StiReport();
+        report.loadFile("reports/SimpleList.mrt");
+        
+        viewer.report = report;
+        viewer.renderHtml("content");
+    });
+</script>
+...
+```
 
 **First Start**
 By default, a Vue application defines the start command in the **package.js**on file. Therefore, to run the project, simply execute the command from the terminal in the project's root folder.

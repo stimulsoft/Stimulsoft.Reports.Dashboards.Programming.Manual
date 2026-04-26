@@ -7,6 +7,7 @@ The **Flash Viewer** component allows you to export the displayed report in thre
 
 ### Export events
 
+
 To perform any actions, a special **OnExportReport** event is assigned before the report is exported. In this event, you can get the type of the report export, get the report itself, and get the report export settings and, if necessary, change them.
 
 
@@ -62,8 +63,8 @@ protected void StiWebViewerFx1_ExportReportResponse(object sender, StiExportRepo
 ...
 ```
 
-
 ### Export settings
+
 
 The **Flash Viewer** component contains 30+ export formats, and sometimes you need to disable unwanted formats. This allows you to simplify UI and the use of the viewer. To disable unused export formats, it is enough to set the values for the corresponding properties of the viewer listed in the list below to **false**.
 

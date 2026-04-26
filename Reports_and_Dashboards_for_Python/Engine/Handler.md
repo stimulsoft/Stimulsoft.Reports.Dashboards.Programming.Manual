@@ -114,9 +114,21 @@ Example of output of various messages from the event result:
 
 **app.py**
 
-from stimulsoft_reports import StiResultfrom stimulsoft_reports.designer import StiDesignerfrom stimulsoft_reports.events import StiReportEventArgsfrom stimulsoft_reports.report import StiReport
-def saveReport(args: StiReportEventArgs):#StiResult.getError('An error occurred while saving.')#StiResult.getSuccess('The report was successfully saved.')return 'The report was successfully saved.'
-designer = StiDesigner()designer.onSaveReport += saveReport
+```python
+
+from stimulsoft_reports import StiResult
+from stimulsoft_reports.designer import StiDesigner
+from stimulsoft_reports.events import StiReportEventArgs
+from stimulsoft_reports.report import StiReport
+
+def saveReport(args: StiReportEventArgs):
+    #StiResult.getError('An error occurred while saving.')
+    #StiResult.getSuccess('The report was successfully saved.')
+    return 'The report was successfully saved.'
+
+designer = StiDesigner()
+designer.onSaveReport += saveReport
+```
 
 > **Information**
 >
@@ -179,5 +191,10 @@ However, if encryption is not required, for example, when debugging the applicat
 
 **app.py**
 
+```python
+
 from stimulsoft_reports.report import StiReport
-report = StiReport()report.handler.encryptData = False
+
+report = StiReport()
+report.handler.encryptData = False
+```

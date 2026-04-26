@@ -9,6 +9,7 @@ For **HTML5 Designer**, several additional methods are used to get the object of
 
 ### The GetReportObject() Method
 
+
 Returns the report object with which the designer is currently working. It is possible to perform the necessary actions - register new data sets, change report properties, assign parameters or load another report to the object. Then, the report can be returned to the designer, specifying it as a parameter in the resulting action method.
 
 
@@ -26,8 +27,8 @@ public ActionResult ExportReport()
 ...
 ```
 
-
 ### The GetActionReportObject() method
+
 
 Returns the report object that will be used for the particular action. For example, for the **OpenReport** action, this method returns a report loaded from the local disk of the computer. For the **PreviewReport** action, the method returns a prepared copy of the report for preview.
 
@@ -51,8 +52,8 @@ public ActionResult OpenReport()
 ...
 ```
 
-
 ### The GetRouteValues() method
+
 
 Returns values for URLs with which the designer page was opened. Thus, it is possible to get the initial collection of page parameters to run the designer and use these values for any checks and conditions.
 
@@ -84,8 +85,8 @@ public ActionResult ExportReport(string id)
 ...
 ```
 
-
 ### The GetRequestParams() method
+
 
 Returns all parameters of the current state of the designer passed to the server-side. They can be useful for determining the type of action that the designer is currently executing - for example, to determine the type of export, and all action parameters.
 
@@ -112,8 +113,8 @@ public ActionResult ExportReport()
 ...
 ```
 
-
 ### The GetExportSettings() method
+
 
 Returns all parameters of the current report export. The parameter object type will correspond to the type of export selected in the report preview menu. Any export parameters can be changed and passed to the input of the resulting method. In this case, the report will be exported with the parameters transferred.
 

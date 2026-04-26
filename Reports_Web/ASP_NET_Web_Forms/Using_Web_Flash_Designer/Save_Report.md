@@ -5,6 +5,7 @@ The **Flash Designer** component provides two ways of saving the report which ar
 
 ### Saving reports on the server-side
 
+
 To save the edited report on the server-side, you need to use the special **OnSaveReport** event, which will be called when you select the **Save Report** menu item, or click the **Save** button on the main panel of the report designer.
 
 
@@ -83,8 +84,8 @@ protected void StiWebDesignerFx1_SaveReport(object sender, StiReportDataEventArg
 ...
 ```
 
-
 ### Saving reports on the client-side
+
 
 No additional designer settings are required to save the edited report on the client-side as a file. It is enough to select the **Save As** menu item. When you click on it you will be asked to choose the format of saving the report. After the format is selected, the system save file dialog is displayed. In this dialog, you can specify the name of the report file and the folder in what to save.
 
@@ -119,8 +120,8 @@ protected void StiWebDesignerFx1_SaveReportAs(object sender, StiReportDataEventA
 ...
 ```
 
-
 ### Saving settings
+
 
 The report is saved in the background mode without reloading the page in the web browser window. If you need to visually control the process of saving the report, you should change the value of the **SaveReportMode** (or **SaveReportAsMode**) property of the designer to one of the three specified values - **Hidden** (default value), **Visible** or **NewWindow**.
 

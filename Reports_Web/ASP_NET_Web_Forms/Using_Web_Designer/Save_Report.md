@@ -9,7 +9,6 @@
 
 **Saving a report and dashboard on the server-side**
 
-
 To save the edited report on the server-side, you need to set the **OnSaveReport** special event, which will be called when you select the **Save Report** menu item or click the Save button on the main panel of the designer.
 
 
@@ -86,8 +85,8 @@ If you set a string value for the **e.ErrorString** property, a dialog with the 
 
 ![](../../../images/topics/Reports_Web.ASP_NET_Web_Forms.Using_Web_Designer.Save_Report_2.png)
 
-
 ### Saving reports and dashboards on the client side
+
 
 To save the edited report on the client-side as a file, no additional designer settings are required. It is enough to click the **Save As** main menu item. The dialog box will be displayed. In this dialog, you can change the name of the report file. The file will be saved to the local disk of the computer.
 
@@ -122,8 +121,8 @@ protected void StiWebDesigner1_SaveReportAs(object sender, StiReportDataEventArg
 ...
 ```
 
-
 ### Saving settings
+
 
 The report is saved in the background mode without reloading the page in the web browser window. Suppose you need to control the process of saving the report visually. In that case, you should change the value of the **SaveReportMode** (or **SaveReportAsMode**) property of the designer to one of the three specified values - **Hidden** (default value), **Visible**, or **NewWindow**.
 

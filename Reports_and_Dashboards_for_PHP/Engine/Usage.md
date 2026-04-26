@@ -121,10 +121,9 @@ Thus, the methods described above allow you to display the component in differen
 ```
 
 
-**Information**
-
-
-When using the Node.js platform for report generation on the PHP server side, the specified methods will be called automatically within the handler, and their explicit use is not required.
+> **Information**
+>
+> When using the Node.js platform for report generation on the PHP server side, the specified methods will be called automatically within the handler, and their explicit use is not required.
 
 ### Managing URLs for Loading Report Generator JavaScript Files
 
@@ -133,22 +132,30 @@ By default, all product JavaScript files are loaded via URLs relative to the loc
 
 **index.php**
 
+```php
 
 <?php
-use Stimulsoft\Report\StiReport;
-$report = new StiReport();$report->javascript->useRelativeUrls = false;
+    use Stimulsoft\Report\StiReport;
+    
+    $report = new StiReport();
+    $report->javascript->useRelativeUrls = false;
 ?>
+```
 
 To adjust the relative path, the `relativePath` option is provided. You need to assign a string value that will be used when forming the URL for loading the scripts. In this case, the `useRelativeUrls` option must be enabled (default value):
 
 
 **index.php**
 
+```php
 
 <?php
-use Stimulsoft\Report\StiReport;
-$report = new StiReport();$report->javascript->relativePath = '../../';
+    use Stimulsoft\Report\StiReport;
+    
+    $report = new StiReport();
+    $report->javascript->relativePath = '../../';
 ?>
+```
 
 By default, the scripts are loaded as static files. To enable dynamic script loading using a PHP handler, set the `useStaticUrls` option to `false`:
 

@@ -11,6 +11,7 @@ The **HTML5 Viewer** component allows you to export the displayed report to thre
 
 ### Export Events
 
+
 To perform any actions, a special **OnExportReport** event is assigned before the report is exported. In this event, you can get the report export type, get the report itself, get the report export settings, and change them if necessary.
 
 
@@ -66,8 +67,8 @@ protected void StiWebViewer1_ExportReportResponse(object sender, StiExportReport
 ...
 ```
 
-
 ### Export Settings
+
 
 Each report export format of the **HTML5 Viewer** component has a lot of settings, and each setting has its default values. Sometimes you need to set other default values. For this purpose, a special **DefaultExportSettings** property of the viewer is used. It is a container for all the default export settings.
 

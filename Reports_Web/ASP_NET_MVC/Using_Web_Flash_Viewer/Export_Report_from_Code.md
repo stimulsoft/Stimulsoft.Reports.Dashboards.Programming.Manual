@@ -5,6 +5,7 @@ For **Flash Viewer**, there are several additional methods that are used to get 
 
 ### The GetReportObject() method
 
+
 Returns the report object with which the viewer is currently working. It is possible to perform the necessary actions with it - register new data sets, change report properties, assign parameters or load another report to the object. Then, the report can be returned to the viewer, specifying it as a parameter in the resulting action method.
 
 
@@ -22,8 +23,8 @@ public ActionResult ExportReport()
 ...
 ```
 
-
 ### The GetRouteValues() method
+
 
 Returns values for URLs with which the viewer page was opened. Thus, it is possible to get the initial collection of parameters of the run page of the viewer and use these values for any checks and conditions.
 
@@ -55,8 +56,8 @@ public ActionResult ExportReport(string id)
 ...
 ```
 
-
 ### The GetRequestParams() method
+
 
 Returns all parameters of the current state of the viewer passed to the server-side. They can be useful for determining the type of action that the viewer is currently executing - for example, to determine the type of export, as well as all action parameters.
 
@@ -83,8 +84,8 @@ return StiMvcViewerFx.ExportReportResult();
 ...
 ```
 
-
 ### The GetLocalizationName() method
+
 
 Returns the name of the requested XML localization file in the **GetLocalization** action. By default, this value is used when generating a response to the viewer. Can be used to manage loading of localization files.
 
@@ -103,8 +104,8 @@ public ActionResult GetLocalization()
 ...
 ```
 
-
 ### The GetExportSettings() method
+
 
 Returns all the parameters of the current report export. The type of the parameter object will correspond to the type of the export selected in the viewer menu. Any export parameters can be changed and passed to the input of the resulting method. In this case, the report will be exported with the parameters transferred.
 

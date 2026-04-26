@@ -127,17 +127,30 @@ Thus, the above methods allow you to render the component in various ways depend
 
 **app.py**
 
-from flask import Flask, url_for, requestfrom stimulsoft_reports.report import StiReport
+```python
+
+from flask import Flask, url_for, request
+from stimulsoft_reports.report import StiReport
+
 app = Flask(__name__)
-@app.route('/report', methods = ['GET', 'POST'])def report():report = StiReport()report.onAfterRender += "alert('Done!');"if report.processRequest(request):return report.getFrameworkResponse()
-report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))report.render()
-return report.getFrameworkResponse()
+
+@app.route('/report', methods = ['GET', 'POST'])
+def report():
+    report = StiReport()
+    report.onAfterRender += "alert('Done!');"
+    if report.processRequest(request):
+        return report.getFrameworkResponse()
+
+    report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+    report.render()
+
+    return report.getFrameworkResponse()
+```
 
 
-**Information**
-
-
-When using the Node.js platform to build a report on the Python server side, the specified methods will be called automatically within the handler, and their explicit use is not required.
+> **Information**
+>
+> When using the Node.js platform to build a report on the Python server side, the specified methods will be called automatically within the handler, and their explicit use is not required.
 
 ### Framework support
 

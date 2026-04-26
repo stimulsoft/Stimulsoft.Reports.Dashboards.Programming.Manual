@@ -7,6 +7,7 @@ Microsoft Excel up until Excel 2007 version used a proprietary binary file forma
 
 ### Export Settings
 
+
 The export parameters of the XLS export are described in the **StiExcelExportSettings** class. The description of all class properties are in the table below.
 
 
@@ -21,8 +22,8 @@ The export parameters of the XLS export are described in the **StiExcelExportSet
 
 The **ExportObjectFormatting** property works only if the ExportDataOnly is set to true.
 
-
 ### Static Options
+
 
 Static properties of export to Excel. To access to export properties it is necessary to add the **StiOptions.Export.Excel...** prefix. For example, **StiOptions.Export.Excel.AllowExportDateTime**.
 

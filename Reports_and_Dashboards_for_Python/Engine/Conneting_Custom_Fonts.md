@@ -8,16 +8,23 @@ To connect a font file, use the `addFontFile` function. You need to specify the 
 
 **app.py**
 
-from stimulsoft_reports import StiFontCollectionfrom stimulsoft_reports.enums import FontStyle
+```python
+    
+from stimulsoft_reports import StiFontCollection
+from stimulsoft_reports.enums import FontStyle
 
 StiFontCollection.addFontFile('Roboto.ttf', 'Roboto');
-
 StiFontCollection.addFontFile('Roboto-Black.ttf', 'Roboto Black', FontStyle.BOLD)
+```
 
 Additionally, there is a feature that allows loading all fonts located in a specific directory. To do this, simply specify the required font directory using the `setFontsFolder` function, for example:
 
 
 **app.py**
 
+```python
+
 from stimulsoft_reports import StiFontCollection
+
 StiFontCollection.setFontsFolder('/fonts')
+```

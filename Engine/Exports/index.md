@@ -16,6 +16,7 @@ This section describes principles of saving rendered reports to different format
 
 ### Available File Formats
 
+
 The **StiExportFormat** enumeration describes export formats. Brief information of exports is represented below.
 
 

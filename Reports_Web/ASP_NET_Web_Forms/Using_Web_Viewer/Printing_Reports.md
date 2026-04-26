@@ -28,6 +28,7 @@ The report will be printed directly to the printer without preview. After select
 
 ### Report printing events
 
+
 To perform any actions, a special **OnPrintReport** event is assigned before the report is printed. In this event, you can get the type of report printing, the report itself, and the export report settings in case of printing to **PDF**.
 
 
@@ -55,8 +56,8 @@ protected void StiWebViewer1_PrintReport(object sender, StiPrintReportEventArgs 
 ...
 ```
 
-
 ### Print setup
+
 
 If you choose to print a report in the viewer panel, a menu with printing options is displayed. The **HTML5 Viewer** component can force the required printing mode. To do this, set the **PrintDestination** property to one of the following values.
 

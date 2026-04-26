@@ -33,52 +33,15 @@ protected void StiWebViewerFx1_ExportReport(object sender, StiExportReportEventA
 
 ### List of events
 
-**Name
-              
-              
-                Description
 
-                OnGetReport
-              
-              
-                Occurs when requesting a report for preview.
-
-                OnGetReportData
-              
-              
-                Occurs when connecting data of a report before it is rendered.
-
-                OnPrintReport
-              
-              
-                Occurs when printing a report in the PDF format.
-
-                OnExportReport
-              
-              
-                Occurs when exporting a report.
-
-                OnExportReportResponse
-              
-              
-                Occurs after exporting a report before saving the exported file.
-
-                OnEmailReport
-              
-              
-                Occurs when sending a report by email.
-
-                OnInteraction
-              
-              
-                The event occurs at some interactive actions of the viewer, such as using report variables, dynamic collapsing, drill-down, and sorting in reports.
-
-                OnDesignReport
-              
-              
-                Occurs when clicking the Design button on the toolbar of the viewer.
-
-                OnExit
-              
-              
-                Occurs when clicking the Exit button on the toolbar of the viewer.**
+| **Name** | **Description** |
+| --- | --- |
+| OnGetReport | Occurs when requesting a report for [preview](Showing_Reports.md). |
+| OnGetReportData | Occurs when [connecting data](Connecting_Data.md) of a report before it is rendered. |
+| OnPrintReport | Occurs when [printing a report](Printing_Reports.md) in the PDF format. |
+| OnExportReport | Occurs when [exporting a report](Export_Setting.md). |
+| OnExportReportResponse | Occurs after [exporting a report](Export_Setting.md) before saving the exported file. |
+| OnEmailReport | Occurs when [sending a report by email](Send_Email.md). |
+| OnInteraction | The event occurs at some interactive actions of the viewer, such as using report variables, dynamic collapsing, drill-down, and sorting in reports. |
+| OnDesignReport | Occurs when [clicking the Design button](Call_Designer.md) on the toolbar of the viewer. |
+| OnExit | Occurs when clicking the Exit button on the toolbar of the viewer. |

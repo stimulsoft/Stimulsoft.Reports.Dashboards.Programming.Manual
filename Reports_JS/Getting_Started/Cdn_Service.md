@@ -7,19 +7,22 @@ This chapter will cover an example of quickly deploying Stimulsoft in pure JavaS
 It can be any HTML file, but by default, the entry point is considered to be `index.html`.
 
 
-**index.html
+**index.html**
 
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Document</title>
-          </head>
-          <body>
-             
-          </body>
-          </html>**
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+```
 
 ### Connect stimulsoft script files
 
@@ -32,27 +35,31 @@ Currently, the following services can be used:
 These services provide access to script files via URLs from the [npm](https://www.npmjs.com/search?q=stimulsoft) packages [stimulsoft-reports-js](https://www.npmjs.com/package/stimulsoft-reports-js) and [stimulsoft-dashboards-js](https://www.npmjs.com/package/stimulsoft-dashboards-js). This allows you to include script files in your `index.html` file via their URLs. For example, using the `cdn.jsdelivr.net` service:
 
 
-**index.html
+**index.html**
 
-          ...
-          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.reports.js"></script>
-          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.designer.js"></script>
-          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.viewer.js"></script>
-          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.blockly.editor.js"></script>
-          ...**
+```html
+...
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.reports.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.designer.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.viewer.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/stimulsoft-reports-js/Scripts/stimulsoft.blockly.editor.js"></script>
+...
+```
 
 Or, using the `unpkg.com` service:
 
 
-**index.html
+**index.html**
 
-          ...
-          <script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.reports.js"></script>
-          <script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.dashboards.js"></script>
-          <script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.designer.js"></script>
-          <script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.viewer.js"></script>
-          <script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.blockly.editor.js"></script>
-          ...**
+```html
+...
+<script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.reports.js"></script>
+<script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.dashboards.js"></script>
+<script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.designer.js"></script>
+<script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.viewer.js"></script>
+<script type="text/javascript" src="https://www.unpkg.com/stimulsoft-dashboards-js/Scripts/stimulsoft.blockly.editor.js"></script>
+...
+```
 
 
 > **Information**
@@ -67,49 +74,53 @@ Or, using the `unpkg.com` service:
 For example, a function to launch the report designer with an empty report.
 
 
-**index.html
+**index.html**
 
-          ...
-          <script type="text/javascript">
-          function onLoad() {
-          var report = new Stimulsoft.Report.StiReport();
-          
-          var designer = new Stimulsoft.Designer.StiDesigner();
-          designer.renderHtml('content');
-          designer.report = report;
-          }
-          </script>
-          
-          ...
-          
-          <body onload="onLoad()">
-          <div id="content"></div>
-          </body>
-          ...**
+```html
+...
+<script type="text/javascript">
+    function onLoad() {
+        var report = new Stimulsoft.Report.StiReport();
+        
+        var designer = new Stimulsoft.Designer.StiDesigner();
+        designer.renderHtml('content');
+        designer.report = report;
+    }
+</script>
+
+...
+
+<body onload="onLoad()">
+    <div id="content"></div>
+</body>
+...
+```
 
 Or, a function to launch the report viewer with a previously created report template.
 
 
-**index.html
+**index.html**
 
-          ...
-          <script type="text/javascript">
-          function onLoad() {
-          var report = new Stimulsoft.Report.StiReport();
-          report.loadFile('reports/Report.mrt');
-          
-          var viewer = new Stimulsoft.Viewer.StiViewer();
-          viewer.renderHtml('content');
-          viewer.report = report;
-          }
-          </script>
-          
-          ...
-          
-          <body onload="onLoad()">
-          <div id="content"></div>
-          </body>
-          ...**
+```html
+...
+<script type="text/javascript">
+    function onLoad() {
+        var report = new Stimulsoft.Report.StiReport();
+        report.loadFile('reports/Report.mrt');
+        
+        var viewer = new Stimulsoft.Viewer.StiViewer();
+        viewer.renderHtml('content');
+        viewer.report = report;
+    }
+</script>
+
+...
+
+<body onload="onLoad()">
+    <div id="content"></div>
+</body>
+...
+```
 
 ### First launch
 

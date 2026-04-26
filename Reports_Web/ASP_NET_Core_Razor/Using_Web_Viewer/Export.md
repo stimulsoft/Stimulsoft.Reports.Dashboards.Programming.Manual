@@ -42,6 +42,7 @@ public IActionResult OnPostExportReport()
 
 ### Export settings
 
+
 Each report export format of the **HTML5 Viewer** component has a lot of settings, and each setting has its default values. Sometimes you need to set other default values. For this purpose, a special **DefaultSettings** property of the viewer is used. It is a container for all the default export settings.
 
 

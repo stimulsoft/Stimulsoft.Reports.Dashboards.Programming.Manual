@@ -13,6 +13,7 @@ OpenOffice Calc is the table processor that is included into the OpenOffice and 
 
 ### Export Settings
 
+
 The export parameters of the ODS export are described in the **StiOdsExportSettings** class. The description of all class properties are in the table below.
 
 
@@ -20,8 +21,8 @@ The export parameters of the ODS export are described in the **StiOdsExportSetti
 | --- | --- | --- |
 | ImageResolution | float | image resolution, dot per inch; may have any value, by default 100 |
 
-
 ### Static Options
+
 
 Static properties of export to ODS. To access to export properties it is necessary to add the **StiOptions.Export.Ods...** prefix. For example, **StiOptions.Export.Ods.AllowImageComparer**.
 

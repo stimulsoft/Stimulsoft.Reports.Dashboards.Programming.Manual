@@ -9,6 +9,7 @@
 
 ### Export Settings
 
+
 The export parameters of the CSV export are described in the StiCsvExportSettings class. The description of all class properties are in the table below.
 
 
@@ -18,8 +19,8 @@ The export parameters of the CSV export are described in the StiCsvExportSetting
 | Encoding | Encoding | text file coding; by default Encoding.UTF8 |
 | SkipColumnHeaders | bool | skip headers of columns; by default false |
 
-
 ### Static Options
+
 
 Static properties of export to CSV. To access to export properties it is necessary to add the **StiOptions.Export.Csv...** prefix. For example, **StiOptions.Export.Csv.ForcedSeparator**.
 

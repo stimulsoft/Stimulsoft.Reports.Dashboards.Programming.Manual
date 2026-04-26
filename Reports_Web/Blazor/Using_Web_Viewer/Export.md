@@ -29,6 +29,7 @@ If you need to make any actions before exporting a report, you can set the speci
 
 ### Export Settings
 
+
 Each report export format of the Blazor Viewer has a lot of settings, and each setting has its values by default. Sometimes you need other values by default. The special **DefaultSettings** property of the Viewer is used for this. You can find it in the export options. This property is the container of all export settings used by default.
 
 

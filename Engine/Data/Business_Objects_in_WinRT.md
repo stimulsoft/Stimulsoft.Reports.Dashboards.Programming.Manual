@@ -5,6 +5,7 @@ In order to pass the business objects in UWP, you should use the following metho
 
 ### The method of saving a dictionary structure
 
+
 The method of saving the structure of the dictionary file *.dct, for further opening it in the report designer and creating a report. In this case, only the structure of the **Dictionary** is remained. The structure contains a description of business objects. Here is the code that implements this method:
 
 
@@ -20,8 +21,8 @@ var picker = new Windows.Storage.Pickers.FileSavePicker(); picker.FileTypeChoice
 ...
 ```
 
-
 ### The method of saving a report
+
 
 The method of saving to a file ***.mrt**, with the structure of the report dictionary. The structure of the dictionary includes a description of the business object. Here is the code that implements this method:
 
@@ -36,8 +37,8 @@ var picker = new Windows.Storage.Pickers.FileSavePicker();picker.FileTypeChoices
 
 Next, consider creating a report template with the description of the business objects, filling them with real data and reporting.
 
-
 ### Creating a report template with a description of the business object
+
 
 To do this, open a saved report with the structure of the dictionary or open the dictionary data in the report designer. Next, using the description, you should create a report template. For example, dragging the business object to the page. When dragging the dialogue form Data will be invoked, which determines the field references of the business object, the basis of the report - Data Band or Table, as well as to add a Header Band and Footer Band to the report template. You should also edit report components. The picture below shows the created report template:
 
@@ -46,8 +47,8 @@ To do this, open a saved report with the structure of the dictionary or open the
 
 The picture above shows that the report template is created. Since it was created with a description of the business object that does not contain the actual data, the report can not be rendered. For rendering a report, a business object should be filled with real data. This can be done manually by specifying values ​​for the fields, or to connect the data source from which the data will be delivered. Created report template should be saved, for example, in the folder "My Documents" with the name Report.mrt.
 
-
 ### Filling the business object with the real data
+
 
 Filling the business object in this example, will be done from the installed database. First, we need to create a connection to this database in Visual Studio. After this, you should specify the filling code of the business object. Filling the actual business object data directly before the report. Here is the code to fill the business object:
 

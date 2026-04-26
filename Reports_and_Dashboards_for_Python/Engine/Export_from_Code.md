@@ -19,61 +19,14 @@ The reporting tool allows you to export the generated report or dashboard to var
 | RTF (Rich Text Format) | + | - |
 
 
-**Export format
-        
-        
-          Reports
-        
-        
-          Dashboards
-
-          CSV (Comma Separated Value)
-        
-        
-          +
-        
-        
-          +
-
-          JSON (JavaScript Object Notation)
-        
-        
-          +
-        
-        
-          +
-
-          XML (Extensible Markup Language)
-        
-        
-          +
-        
-        
-          +
-
-          DBF (dBase/FoxPro)
-        
-        
-          +
-        
-        
-          +
-
-          DIF
-        
-        
-          +
-        
-        
-          +
-
-          SYLK (Symbolic Link)
-        
-        
-          +
-        
-        
-          +**
+| **Export format** | **Reports** | **Dashboards** |
+| --- | --- | --- |
+| CSV (Comma Separated Value) | + | + |
+| JSON (JavaScript Object Notation) | + | + |
+| XML (Extensible Markup Language) | + | + |
+| DBF (dBase/FoxPro) | + | + |
+| DIF | + | + |
+| SYLK (Symbolic Link) | + | + |
 
 
 | **Export format** | **Reports** | **Dashboards** |

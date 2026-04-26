@@ -9,6 +9,7 @@ The **DBF** (DataBase File) is the format to store data and it is used as the st
 
 Controlling Exports
 
+
 The following elements can be specified in the Tag field to control export:
 
 DataType [ : FieldLength [ : DecimalPartLength ] ],
@@ -58,8 +59,8 @@ The "Column" element indicates that the additional field is added to the exporte
 
 Column: "SortField" "{Products.Categories.CategoryName}"
 
-
 ### Export Options
+
 
 The export parameters of the DBF export are described in the **StiDbfExportSettings** class. The description of all class properties are in the table below.
 

@@ -8,6 +8,7 @@ Microsoft PowerPoint is a presentation program developed by Microsoft. It is a p
 
 ### Export Settings
 
+
 The export parameters of the PPT export are described in the **StiPpt2007ExportSettings** class. The description of all class properties are in the table below.
 
 
@@ -15,8 +16,8 @@ The export parameters of the PPT export are described in the **StiPpt2007ExportS
 | --- | --- | --- |
 | ImageResolution | float | image resolution dpi; can take any value, by default 100 |
 
-
 ### Static Options
+
 
 Besides the **StiPpt2007ExportSettings** class, the parameters of the export to PPT are also set using the static properties. All properties are described in the table below. To access to export properties it is necessary to add the **StiOptions.Export.Ppt2007...** prefix. For example, **StiOptions.Export.Ppt2007.ReduceFontFileSize**.
 

@@ -12,6 +12,7 @@ You can manage caching with the following properties.
 
 ### The CacheMode property
 
+
 This property of the designer enables caching and sets its type. It can take one of the following values, specified in the **StiServerCacheMode** enumeration:
 
 
@@ -25,16 +26,15 @@ This property of the designer enables caching and sets its type. It can take one
 
 **StringSession** - for caching, the current session is used, in which the report is saved as a packed string.
 
-
 ### The CacheItemPriority property
+
 
 This property sets the priority of the report stored in the cache of the server. It affects the automatic clearing of the server memory in case of memory shortage. The lower the priority is, the greater is the chance of removing information from memory.
 
-
 ### The CacheTimeout property
 
-This property specifies the amount of time in minutes you want to store the report in the server cache. If, when using caching, the requested report is not found in the cache (time of storing this report expired), then it will be requested again using the special **OnGetReport** event. In this case, the unsaved changes may be lost.
 
+This property specifies the amount of time in minutes you want to store the report in the server cache. If, when using caching, the requested report is not found in the cache (time of storing this report expired), then it will be requested again using the special **OnGetReport** event. In this case, the unsaved changes may be lost.
 
 The **HTML5 Designer** component provides the ability to specify its methods for working with report caching. For this purpose, a special **StiCacheHelper** class is used. It contains methods for obtaining a report from the cache and saving the report to the cache. It is necessary to create a new class inherited from **StiCacheHelper** and reload the above methods, which respectively have the names - **GetReport** and **SaveReport**.
 

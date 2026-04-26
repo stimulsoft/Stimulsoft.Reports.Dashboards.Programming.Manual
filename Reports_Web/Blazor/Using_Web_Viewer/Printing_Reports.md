@@ -49,6 +49,7 @@ You don't need additional settings of the Viewer for print functions to work. If
 
 ### Report printing setting
 
+
 The menu with print options is displayed when selecting a report print in the Viewer panel. The **Blazor Viewer** component has a feature to set the requested print mode forcibly. To use this option, you should set the **PrintDestination** property to one of the **StiPrintDestination** enum values specified below.
 
 **Default** – when selecting a printing, the menu (property value by default) will be displayed;

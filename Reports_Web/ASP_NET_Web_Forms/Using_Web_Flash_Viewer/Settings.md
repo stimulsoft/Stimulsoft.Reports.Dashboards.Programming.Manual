@@ -39,13 +39,14 @@ protected void Page_Load(object sender, EventArgs e)
 
 ### Basic settings
 
+
 | **Name** | **Description** |
 | --- | --- |
 | Width | Sets the width of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default width is 100%. |
 | Height | Sets the height of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default height in 650 pixels. |
 
-
 ### Work with server
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -58,8 +59,8 @@ protected void Page_Load(object sender, EventArgs e)
 | UseRelativeUrls | Sets the viewer mode in which relative URLs are used for requests to the server. By default, the property is set to **true**. |
 | PassQueryParametersForResources | Enables transferring all request URL parameters when generating links to the resources of the viewer. If **false**, only the necessary parameters are used to request the resources of the viewer. This corresponds to the more correct work of the browser cache. By default, the property is set to **true**. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -87,8 +88,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowFormsHints | Enables displaying tooltips when hovering over the interface elements in the dialog boxes of the viewer. By default, the property is set to **true**. |
 | BrowserTitle | Specifies the title of the browser window on the page on which the viewer is located. By default, the property has an empty value and the browser window title in this case remains unchanged. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -120,8 +121,8 @@ protected void Page_Load(object sender, EventArgs e)
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomModeFx.OnePage** – when the viewer runs, the zoom to display the one report page will be set; **StiZoomModeFx.TwoPages** – when the viewer runs, the zoom to display two report pages will be set; **StiZoomModeFx.PageWidth** – when the viewer runs, the zoom to display the report by the width of the page will be set. |
 | ExitUrl | Specifies the URL address for the **Exit** button of the report viewer. If the **OnExit** event handler is set, the value of this property will be ignored. By default, you will be redirected to the previous page corresponding to the browser history. |
 
-
 ### Export report
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -156,8 +157,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowExportToImageSvg | Enables the export menu item **Scalable Vector Graphics (SVG) File**. By default, the property is set to **true**. |
 | ShowExportToImageSvgz | Enables the export menu item **Compressed SVG (SVGZ) File**. By default, the property is set to **true**. |
 
-
 ### Email
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -165,8 +166,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowEmailExportDialog | Enables displaying export options dialog box when sending email. If the property is set to **false**, the export will be done with the default settings. By default the property is set to **true**. |
 | DefaultEmailAddress | Sets the default recipient email, i.e. the address to which the email with the attached report will be sent. |
 
-
 ### Printing reports
+
 
 | **Name** | **Description** |
 | --- | --- |

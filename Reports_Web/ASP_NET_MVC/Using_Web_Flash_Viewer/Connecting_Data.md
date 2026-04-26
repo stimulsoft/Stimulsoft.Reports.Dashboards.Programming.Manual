@@ -24,6 +24,7 @@ public ActionResult GetReport()
 
 ### SQL data sources
 
+
 The connection parameters to the SQL data source, as well as to any other ones, can be stored in the report template. If you want to set the connection parameters from the code before rendering the report (for example, for security reasons or depending on the authorized user), you can use the example below.
 
 
@@ -84,8 +85,8 @@ The table below shows the connection string templates for different types of dat
 >
 > The table shows the most commonly used templates for the connection string. You can view various connection string options at [the specia; website](https://www.connectionstrings.com/).
 
-
 ### Data from XML, JSON, Excel files
+
 
 Connecting to XML and JSON data sources can be stored in the report template. If you want to specify data files from the code, you can use the example below.
 

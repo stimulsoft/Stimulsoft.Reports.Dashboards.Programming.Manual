@@ -29,13 +29,14 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 
 ### Main settings (without groups)
 
+
 | **Name** | **Description** |
 | --- | --- |
 | `Width` | Sets the width of the component in “px” or “%”. |
 | `Height` | Sets the height of the component in “px” or “%”. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -63,8 +64,8 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `allowPropagationEvents` | Allows the propagation of key press events when the report designer is not in focus. By default, the property is set to `true`. |
 | `propertiesPanelViewMode` | Provides the ability to pin or unpin the Properties panel, Report Dictionary, and Report Tree. It can take one of the following values from the enumeration: - `Pinned` — panels are pinned (default value); - `Unpinned` — panels are unpinned. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -89,8 +90,8 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `showNewPageButton` | It enables or disables the display of the **New Page** button in the toolbar. The property has the `true` value by default. |
 | `showNewDashboardButton` | It enables or disables the display of the **New Dashboard** button in the toolbar. The property has the `true` value by default. |
 
-
 ### Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -112,8 +113,8 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `showTable` | It enables the display of the **Table** component in the designer components insert menu. The property has the `true` value by default. |
 | `showTableOfContents` | It enables the display of the **Table of Contents** band in the designer components insert menu. The property has the `true` value by default. |
 
-
 ### Cross-Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -124,111 +125,33 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `showCrossFooterBand` | It enables the display of the **Cross-Footer** band in the designer components insert menu. The property has the `true` value by default. |
 | `showCrossDataBand` | It enables the display of the **Cross-Data** band in the designer components insert menu. The property has the `true` value by default. |
 
-
 ### dashboardElements
 
-**Name
-              
-              
-                Description
 
-                showTableElement
-              
-              
-                It enables the display of the Table dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showCardsElement
-              
-              
-                It enables the display of the Cards dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showChartElement
-              
-              
-                It enables the display of the Chart dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showGaugeElement
-              
-              
-                It enables the display of the Gauge dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showPivotTableElement
-              
-              
-                It enables the display of the Pivot dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showIndicatorElement
-              
-              
-                It enables the display of the Indicator dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showProgressElement
-              
-              
-                It enables the display of the Progress dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showRegionMapElement
-              
-              
-                It enables the display of the Region Map dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showOnlineMapElement
-              
-              
-                It enables the display of the Online Map dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showImageElement
-              
-              
-                It enables the display of the Image dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showTextElement
-              
-              
-                It enables the display of the Text dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showPanelElement
-              
-              
-                It enables the display of the Panel dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showShapeElement
-              
-              
-                It enables the display of the Shape dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showButtonElement
-              
-              
-                It enables the display of the Button dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showListBoxElement
-              
-              
-                It enables the display of the List Box dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showComboBoxElement
-              
-              
-                It enables the display of the Combo Box dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showTreeViewElement
-              
-              
-                It enables the display of the Tree View dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showTreeViewBoxElement
-              
-              
-                It enables the display of the Tree View Box dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.
-
-                showDatePickerElement
-              
-              
-                It enables the display of the Date Picker dashboard element in the toolbox or the Insert tab in the designer. The property has the true value by default.**
-
+| **Name** | **Description** |
+| --- | --- |
+| `showTableElement` | It enables the display of the **Table** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showCardsElement` | It enables the display of the **Cards** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showChartElement` | It enables the display of the **Chart** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showGaugeElement` | It enables the display of the **Gauge** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showPivotTableElement` | It enables the display of the **Pivot** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showIndicatorElement` | It enables the display of the **Indicator** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showProgressElement` | It enables the display of the **Progress** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showRegionMapElement` | It enables the display of the **Region Map** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showOnlineMapElement` | It enables the display of the **Online Map** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showImageElement` | It enables the display of the **Image** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showTextElement` | It enables the display of the **Text** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showPanelElement` | It enables the display of the **Panel** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showShapeElement` | It enables the display of the **Shape** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showButtonElement` | It enables the display of the **Button** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showListBoxElement` | It enables the display of the **List Box** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showComboBoxElement` | It enables the display of the **Combo Box** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showTreeViewElement` | It enables the display of the **Tree View** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showTreeViewBoxElement` | It enables the display of the **Tree View Box** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
+| `showDatePickerElement` | It enables the display of the **Date Picker** dashboard element in the toolbox or the **Insert** tab in the designer. The property has the `true` value by default. |
 
 ### Components
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -249,8 +172,8 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `showMathFormula` | It enables the display of the **Math Formula** component in the designer components insert menu. The property has the `true` value by default. |
 | `showMap` | It enables the display of the **Map** component in the designer components insert menu. The property has the `true` value by default. |
 
-
 ### Dictionary
+
 
 | **Name** | **Description** |
 | --- | --- |

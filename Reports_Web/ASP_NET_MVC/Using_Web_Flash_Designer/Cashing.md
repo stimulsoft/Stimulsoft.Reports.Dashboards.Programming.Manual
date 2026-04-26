@@ -10,6 +10,7 @@ You can manage caching with the following properties.
 
 ### The CacheMode property
 
+
 This property of the designer enables caching and sets its type. It can take one of the following values, specified in the **StiServerCacheMode** enumeration:
 
 
@@ -23,16 +24,15 @@ This property of the designer enables caching and sets its type. It can take one
 
 **StringSession** - for caching, the current session is used, in which the report is saved as a packed string.
 
-
 ### The CacheItemPriority property
+
 
 This property sets the priority of the report stored in the server's cache. It affects the automatic clearing of the server memory in case of memory shortage. The lower the priority is, the greater is the chance of removing information from memory.
 
-
 ### The CacheTimeout property
 
-This property specifies the amount of time in minutes for which you want to save the report in the server cache.
 
+This property specifies the amount of time in minutes for which you want to save the report in the server cache.
 
 The **Flash Designer** component provides the ability to specify its own methods for working with report caching. For this purpose, a special **StiCacheHelper** class is used. It contains methods for obtaining a report from the cache and saving the report to the cache. It is necessary to create a new class inherited from **StiCacheHelper** and reload the above methods which respectively have the names - **GetReport** and **SaveReport**.
 

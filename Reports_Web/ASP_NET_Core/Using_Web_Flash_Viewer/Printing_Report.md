@@ -27,6 +27,7 @@ The report will be printed by exporting the report to the **HTML format**. Advan
 
 ### Report printing settings
 
+
 If you choose to print a report on the panel of the viewer, a print dialog with a selection of pages and a print type is displayed. The component **Flash Viewer** has the ability to hide unnecessary printing modes. For this it is enough to set the value to **false** for the corresponding properties of the viewer.
 
 

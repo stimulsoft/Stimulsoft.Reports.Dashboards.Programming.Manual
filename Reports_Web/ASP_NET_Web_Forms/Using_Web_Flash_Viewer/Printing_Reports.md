@@ -27,6 +27,7 @@ The report will be printed by exporting the report to the **HTML format**. Advan
 
 ### Report printing events
 
+
 To perform any actions, a special **OnPrintReport** event is assigned before the report is printed. In this event, you can get the report itself, and also get the export report settings to the **PDF format**.
 
 
@@ -58,8 +59,8 @@ protected void StiWebViewerFx1_PrintReport(object sender, StiPrintReportEventArg
 >
 > The specified event will only be triggered when printing to the **PDF format**. This happens because the rest of the printing modes are processed only on the client-side (in the Flash application) and do not require any requests to the server-side.
 
-
 ### Reports setup
+
 
 If you choose to print a report on the viewer panel, a print dialog with a selection of pages and a print type is displayed. The **Flash Viewer** component has the ability to hide unwanted printing modes. For this, it is enough to set the value to **false** for the corresponding properties of the viewer.
 

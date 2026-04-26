@@ -18,7 +18,12 @@ The localization XML files can be found in the resources of the installed produc
 
 **app.py**
 
+```python
+
 from stimulsoft_reports.viewer import StiViewer
-viewer = StiViewer()viewer.options.localization = '/resources/loc/de.xml'
+
+viewer = StiViewer()
+viewer.options.localization = '/resources/loc/de.xml'
+```
 
 If the file is readable from the Python application, the localization will be loaded into the viewer. Otherwise, the built-in English localization of the interface will be used.

@@ -14,6 +14,7 @@ The **Dot-Matrix** viewer is designed to preview the report before printing it o
 
 ### Setting Dot-Matrix Viewer in WinForms
 
+
 The **Dot-Matrix** viewer can be configured from code using static properties. Depending on the value of the static properties in the Dot-matrix viewer, these or that parameters will be specified. For example, the **AutoRefresh** property. The picture below shows the **Dot-Matrix** viewer dialog box:
 
 
@@ -37,8 +38,8 @@ Thus, the AutoRefresh property will be disabled. The picture below shows the Dot
 
 Most parameters can be set using the static properties.
 
-
 ### Dot-Matrix and Escape Codes
+
 
 For inserting the escape sequence to text the commands that may look like &lt;#command&gt; should be used as seen in the code sample below:
 

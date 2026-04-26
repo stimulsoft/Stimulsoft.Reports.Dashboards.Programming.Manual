@@ -5,6 +5,7 @@ Setting the **Web** designer can be done using the static properties, which are 
 
 ### Main Menu
 
+
 The main menu of the **Web** designer can be setup according to user's requirements. This group of static properties **StiWebDesignerSLOptions.Menu** allows enabling/disabling the main menu or submenu items
 
 
@@ -21,8 +22,8 @@ The main menu of the **Web** designer can be setup according to user's requireme
 | DesignerEnabled | property enables/disables the **Designer** menu item. If the **DesignerEnabled** property is set to **true**, then the menu item is enabled and can be available for a user. If **false** then it is disabled and cannot be available for a user. By default the property is set to **true**. This menu item contains the submenu shown on the picture below: |
 | OptionsEnabled | property enables/disables the **Options** menu item. If the **OptionsEnabled** property is set to **true**, then the menu item is enabled and can be available for a user. If **false** then it is disabled and cannot be available for a user. By default the property is set to **true**. |
 
-
 ### Zooming
+
 
 The properties of the **StiWebDesignerSL** Zoom panel are described below:
 
@@ -35,8 +36,8 @@ The properties of the **StiWebDesignerSL** Zoom panel are described below:
 | ZoomMode | Is used to change report zoom. This property has the following values: **Default**, **OnePage**, **TwoPages**, **PageWidth**: The **Default** value sets previously saved zoom of a report in **WebDesignerSL**. So, if a report was saved with 37% zoom then, when opening it next time, 37% zoom of a report showing remains; The **PageWidth** value sets zoom by **Page Width**. So the width of the report template matches the width of the window of the web designer; The **PageHeight** value sets zoom by **Page Height**. So the height of the report template matches the height of the window of the web designer; The **OnePage** value sets zoom by **One Page**. So the entire page of the report template fits in the window of the web designer. |
 | Zoom | Provides an opportunity to zoom in the designer. This property can take any value from **0** to **100**, where the value of the **Zoom** is the zoom percentage. For example, if the **Zoom** property is set to **70**, the zoom in the designer will be equal to **70** percent. |
 
-
 ### Viewer
+
 
 The group of static **StiWebDesignerSLOptions**.Viewer. properties allows setting the viewer. The list of properties is represented below.
 

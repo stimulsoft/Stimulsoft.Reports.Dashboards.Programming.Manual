@@ -7,6 +7,7 @@ Text files are commonly used for storage of information.
 
 ### Export Settings
 
+
 The export parameters of the TXT export are described in the **StiTxtExportSettings** class. The description of all class properties are in the table below.
 
 
@@ -21,8 +22,8 @@ The export parameters of the TXT export are described in the **StiTxtExportSetti
 | ZoomX | float | horizontal zoom factor by X axis. By default a value is 1.0 what is equal 100% in export settings window |
 | ZoomY | float | vertical zoom factor by Y axis. By default a value is 1.0 what is equal 100% in export settings window |
 
-
 ### Static Options
+
 
 Static properties of export to TXT are shown on the table below. To access to export properties it is necessary to add the **StiOptions.Export.Txt...** prefix. For example, **StiOptions.Export.Txt.ColumnWidths**.
 

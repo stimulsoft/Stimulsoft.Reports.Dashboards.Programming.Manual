@@ -12,10 +12,21 @@ It is allowed to change the path to the data file. In this case, after the event
 
 **app.py**
 
-from stimulsoft_reports.report import StiReportfrom stimulsoft_reports.events import StiDataEventArgs
-def beginProcessData(args: StiDataEventArgs):if args.connection == 'MyJsonConnection':args->pathData = 'Data/Demo.json'
+```python
 
-report = StiReport()report.onBeginProcessData += beginProcessDatareport.loadFile(url_for('static', filename='reports/SimpleList.mrt'))report.render()
+from stimulsoft_reports.report import StiReport
+from stimulsoft_reports.events import StiDataEventArgs
+
+def beginProcessData(args: StiDataEventArgs):
+    if args.connection == 'MyJsonConnection':
+        args->pathData = 'Data/Demo.json'
+
+
+report = StiReport()
+report.onBeginProcessData += beginProcessData
+report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+report.render()
+```
 
 If necessary, the same actions can be performed in a client-side JavaScript event:
 
@@ -44,10 +55,20 @@ To view and modify the connection parameters of file data before loading, you ne
 
 **app.py**
 
-from stimulsoft_reports.report import StiReportfrom stimulsoft_reports.events import StiDataEventArgs
-def endProcessData(args: StiDataEventArgs):data = args.result.data
+```python
 
-report = StiReport()report.onEndProcessData += endProcessDatareport.loadFile(url_for('static', filename='reports/SimpleList.mrt'))report.render()
+from stimulsoft_reports.report import StiReport
+from stimulsoft_reports.events import StiDataEventArgs
+
+def endProcessData(args: StiDataEventArgs):
+    data = args.result.data
+
+
+report = StiReport()
+report.onEndProcessData += endProcessData
+report.loadFile(url_for('static', filename='reports/SimpleList.mrt'))
+report.render()
+```
 
 
 If necessary, viewing or adjusting the loaded data can be done in a client-side JavaScript event. In the event arguments will include information about the connection to the file data source such as the connection name and type saved in the report template and prepared `DataSet` object containing tables and rows of data obtained from a file source. A detailed description of the available argument values can be found in the [Report Engine Events](Events.md) section.
@@ -92,8 +113,13 @@ To disable file data adapters on the server side, simply set the `allowFileDataA
 
 **index.php**
 
+```php
+
 from stimulsoft_reports.report import StiReport
-report = StiReport()report.handler.allowFileDataAdapters = False
+
+report = StiReport()
+report.handler.allowFileDataAdapters = False
+```
 
 ### Using variables in the data file
 

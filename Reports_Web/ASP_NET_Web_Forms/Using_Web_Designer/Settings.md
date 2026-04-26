@@ -42,13 +42,14 @@ protected void Page_Load(object sender, EventArgs e)
 
 ### Basic Settings
 
+
 | **Name** | **Description** |
 | --- | --- |
 | Width | Sets the width of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default width is 100%. By default, the component is expanded to the entire area of the browser window. |
 | Height | Sets the height of the component in the required units that are specified in the **Unit** class. The value can be set in pixels - **Unit.Pixel()**, points - **Unit.Point()** and per cent - **Unit.Percentage()**. The default height is 800 pixels. By default, the component is expanded to the entire area of the browser window. |
 
-
 ### Server
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -65,8 +66,8 @@ protected void Page_Load(object sender, EventArgs e)
 | UseCacheForResources | Enables caching of the component resources on the server-side. The following resources are supported: scripts, styles, and images. This option improves the load speed of the component and also reduces the server load in multi-client environments. The default value is **true**. |
 | AllowLoadingCustomFontsToClientSide | Allows you to pass custom fonts to the client side and convert them to CSS style for the correct display of text as HTML with a specified font. By default, the property is set to **false**. |
 
-
 ### Appearance
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -98,8 +99,8 @@ protected void Page_Load(object sender, EventArgs e)
 | AllowPropagationEvents | Allows the propagation of key press events when the report designer is not in focus. By default, the property is set to **true**. |
 | PropertiesPanelViewMode | Provides the ability to pin or unpin the Properties panel, Report Dictionary, and Report Tree. It can take one of the following values from the enumeration: **Pinned** — panels are pinned (default value); **Unpinned** — panels are unpinned. |
 
-
 ### Behavior
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -110,8 +111,8 @@ protected void Page_Load(object sender, EventArgs e)
 | SaveReportAsMode | Sets the mode for saving the report. It has the three values of the **StiSaveMode** enumeration. **Hidden** - saving of the report is called in the background mode using the AJAX request and is not shown in the browser window (default value); **Visible** - saving of the report is called in the current web browser window in the visible mode using the POST request; **NewWindow** - saving of the report is called in a new window (tab) of the web browser. |
 | CheckReportBeforePreview | Sets the value that allows running the report checker before preview. |
 
-
 ### FileMenu
+
 
 | Name | Description |
 | --- | --- |
@@ -130,8 +131,8 @@ protected void Page_Load(object sender, EventArgs e)
 | ShowAbout | Enables showing the main menu item - **About**. By default, the property is set to **true**. |
 | ShowHelp | Enables showing the main menu item - **Help**. By default, the property is set to **true**. |
 
-
 ### Dictionary
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -164,8 +165,8 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | View | Allows viewing a specific data dictionary item. |
 | ModifyView | Allows modifying and viewing a specific data dictionary item. |
 
-
 ### Toolbar
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -178,8 +179,8 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | ShowSaveButton | Enables displaying the **Save** button on the toolbar of the designer. By default, the property is set to **true**. |
 | ShowAboutButton | Enables displaying the **About** on the toolbar of the designer. By default, the property is set to **false**. |
 
-
 ### PropertiesGrid
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -189,8 +190,8 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
 
-
 ### Components
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -219,8 +220,8 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | ShowElectronicSignature | Enables displaying the **Electronic Signature** component in the insert menu for report components. By default, the property is set to **true**. |
 | ShowPdfDigitalSignature | Enables displaying the **PDF Digital Signature** component in the insert menu for report components. By default, the property is set to **true**. |
 
-
 ### Bands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -241,8 +242,8 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | ShowOverlayBand | Enables displaying the **Overlay** item in the **Bands** menu of the designer. By default, the property is set to **true**. |
 | ShowTableOfContents | Enables displaying the **Table of Contents** item in the **Bands** menu of the designer. By default, the property is set to **true**. |
 
-
 ### DashboardElements
+
 
 | Name | Description |
 | --- | --- |
@@ -266,8 +267,8 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | ShowTreeViewBoxElement | Enables displaying the **Tree View Box** element in the Dashboard Elements menu of the designer. By default, the property is set to **true**. |
 | ShowDatePickerElement | Enables displaying the **Date Picker** element in the Dashboard Elements menu of the designer. By default, the property is set to **true**. |
 
-
 ### CrossBands
+
 
 | **Name** | **Description** |
 | --- | --- |
@@ -280,27 +281,15 @@ The table below shows all available values for the **StiDesignerPermissions** en
 **Dashboards**
 
 
-**Name
-              
-              
-                Description
-
-                ShowNewDashboardButton
-              
-              
-                Sets a visibility of the New Dashboard button in the designer. By default, the property is set to true.**
+| **Name** | **Description** |
+| --- | --- |
+| ShowNewDashboardButton | Sets a visibility of the **New Dashboard** button in the designer. By default, the property is set to **true**. |
 
 **Pages**
 
 
-**Name
-              
-              
-                Description
-
-                ShowNewPageButton
-              
-              
-                Sets a visibility of the New Page button in the designer. By default, the property is set to true.**
+| **Name** | **Description** |
+| --- | --- |
+| ShowNewPageButton | Sets a visibility of the **New Page** button in the designer. By default, the property is set to **true**. |
 
 When designing a report or dashboard in the report designer, you can also define **ExportOptions**, **EmailOptions**, and **PreviewToolbarOptions** on the **Preview** tab. These options are similar to the [report viewer options](../Using_Web_Viewer/Settings.md).
