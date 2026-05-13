@@ -90,6 +90,7 @@ protected void Page_Load(object sender, EventArgs e)
 | ReportDisplayMode | Sets the export mode for displaying report pages in the preview tab. Can take one of the following values of the **StiReportDisplayMode** enumeration: **FromReport** - the export mode of the report elements is defined from report template settings - Div or Table; **Table** – report elements are exported using HTML tables (default value); **Div** – report elements are exported using DIV markup; **Span** - report items are exported using SPAN markup. |
 | ParametersPanelDateFormat | Sets the date and time format for variables of the corresponding type in the parameters panel. By default, the date and time format set by the browser is used. |
 | ParametersPanelSortDataItems | Sets a value that indicates that variable items will be sorted. By default, the property is set to **true**. |
+| ParametersPanelShowDescriptions | Gets or sets a value which indicates that showing descriptions for variables is allowed. By default, the property is set to **true**. |
 | CloseDesignerWithoutAsking | Sets a value that indicates that the designer will be closed without asking. By default, the property is set to **true**. |
 | ShowSystemFonts | Sets visibility of the system fonts in the fonts list. By default, the property is set to **true**. |
 | ShowNewPageButton | Sets visibility of the **New Page** button in the designer. By default, the property is set to **true**. |
