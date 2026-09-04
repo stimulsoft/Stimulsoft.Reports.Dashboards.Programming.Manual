@@ -40,7 +40,7 @@ In this example, you can obtain a JavaScript report object from the event argume
 
 > **Information**
 >
-> More information about the available functions and parameters of the JavaScript reporting tool can be found in the documentation for the [Stimulsoft Reports.JS and Stimulsoft Dashboards.JS](Reports_JS) products.
+> More information about the available functions and parameters of the JavaScript reporting tool can be found in the documentation for the [Stimulsoft Reports.JS and Stimulsoft Dashboards.JS](../../Reports_JS/index.md) products.
 
 
 ### Calling a JavaScript Event on the Node.js server-side
