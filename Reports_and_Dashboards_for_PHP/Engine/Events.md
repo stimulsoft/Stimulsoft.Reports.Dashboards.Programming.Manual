@@ -109,12 +109,12 @@ The table below lists the properties passed in the event arguments on the client
 The table below lists the properties passed in the event arguments on the PHP server-side:
 
 
-| **Наименование** | **Описание** |
+| **Name** | **Description** |
 | --- | --- |
-| `event` | Идентификатор текущего события, для данного события имеет значение StiEventType::BeforeRender |
-| `sender` | Компонент, который инициировал данное событие, может иметь следующие типы: ·    StiReport |
-| `report` | Текущий объект отчета. |
-| regReportData($name, $data, $synchronize = false) | Метод, позволяющий передать данные в отчет. В качестве аргументов может принимать следующие значения: $name – имя источника данных в отчете; $data – данные в виде XML либо JSON строки, либо в виде PHP объекта или массива; $synchronize – флаг, указывающий на необходимость синхронизации данных, по умолчанию false. |
+| `event` | The identifier of the current event; for this event it has the value StiEventType::BeforeRender |
+| `sender` | The component that raised this event. It can be of the following types: ·    StiReport |
+| `report` | The current report object. |
+| regReportData($name, $data, $synchronize = false) | A method that allows passing data to the report. It accepts the following arguments: $name – the name of the data source in the report; $data – the data as an XML or JSON string, or as a PHP object or array; $synchronize – a flag indicating whether the data must be synchronized; the default is false. |
 
 ### onAfterRender
 

@@ -26,7 +26,7 @@ This can be any HTML file, but by default, the entry point is `index.html`.
 
 **Install Stimulsoft components**
 
-First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/ru/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/ru/downloads#dashboards) package. Then, you should connect the Stimulsoft scripts in the `index.html` file.
+First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/en/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/en/downloads#dashboards) package. Then, you should connect the Stimulsoft scripts in the `index.html` file.
 
 
 **index.html**

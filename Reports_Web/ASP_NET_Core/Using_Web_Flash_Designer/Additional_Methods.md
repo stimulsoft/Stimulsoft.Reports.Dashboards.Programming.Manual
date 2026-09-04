@@ -130,7 +130,7 @@ public IActionResult ExportReport()
 ...
 ```
 
-### The MapPath() и MapWebRootPath() methods
+### The MapPath() and MapWebRootPath() methods
 
 
 Returns the absolute path, respectively, to the application or wwwroot directory. You can use this to upload report templates files, data files, etc. These methods are located in the **StiNetCoreHelper** static class.

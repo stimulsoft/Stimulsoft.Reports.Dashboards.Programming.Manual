@@ -29,3 +29,8 @@ Report.Show()
 ```
 
 If the report was not rendered before showing, the **Show** method will render a report using the **Render** method.
+
+
+> **Information**
+>
+> When displaying a report in the viewer, you can apply rounded page corners and drop shadows to the rendered pages of the report. To enable this feature, set the following option: `StiOptions``.``Viewer``.``Windows``.``UsePageShadowAndRoundedCorners``=``true``;`

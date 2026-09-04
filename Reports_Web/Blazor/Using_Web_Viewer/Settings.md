@@ -120,6 +120,7 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | ShowSendEmailButton | Enables showing the button - **Send Email** - on the viewer toolbar. By default, the property is set to **false**. Also, you should [add the EmailReport action](../../ASP_NET_Core/Using_Web_Viewer/Send_Email.md). |
 | ShowFindButton | Enables showing the button - **Find** - on the viewer toolbar. By default, the property is set to **true**. |
 | ShowBookmarksButton | Enables showing the button - **Bookmarks** - on the viewer toolbar. By default, the property is set to **true**. If the button is hidden, the bookmarks panel will not be displayed even if there are bookmarks in the report. |
+| ShowBookmarksPanel | Gets or sets a value indicating whether the **Bookmarks** panel is shown automatically when the report has bookmarks. Default value is **true**. |
 | ShowParametersButton | Enables showing the button - **Parameters** - on the viewer toolbar. By default, the property is set to **true**. If the button is hidden, the parameters panel will not be displayed even if there are parameters in the report. |
 | ShowResourcesButton | Enables showing the button - **Resources** - on the toolbar of the viewer. By default, the property is set to **true**. If the button is hidden, the resources panel will not be displayed even if there are resources in the report. |
 | ShowEditorButton | Enables showing the button - **Editor** - on the viewer toolbar. By default, the property is set to **true**. |

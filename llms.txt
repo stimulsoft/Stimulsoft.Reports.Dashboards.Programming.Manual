@@ -479,6 +479,7 @@
 - [Reports as Assemblies](https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.Manual/Engine/Reports_as_Assemblies.md)
 - [Standalone Reports](https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.Manual/Engine/Standalone_Reports.md)
 - [Deployment Reports as Files](https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.Manual/Engine/Deployment_Reports_as_Files.md)
+- [Working with Localization](https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.Manual/Engine/Working_with_Localization.md)
 
 ## Out_Of_Date
 

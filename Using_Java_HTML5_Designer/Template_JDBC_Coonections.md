@@ -26,7 +26,7 @@ jdbc.password={ myUserPassword };
 ```
 
 
-[http://msdn.microsoft.com/en-us/library/ms378428](http://msdn.microsoft.com/en-us/library/ms378428)
+[https://msdn.microsoft.com/en-us/library/ms378428](https://msdn.microsoft.com/en-us/library/ms378428)
 
 An example for a **Oracle****:**
 
@@ -43,7 +43,7 @@ jdbc.password={ myUserPassword };
 ```
 
 
-[http://www.orafaq.com/wiki/JDBC](http://www.orafaq.com/wiki/JDBC)
+[https://www.orafaq.com/wiki/JDBC](https://www.orafaq.com/wiki/JDBC)
 
 An example for a **POSTGreSQL****:**
 

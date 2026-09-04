@@ -1,19 +1,19 @@
 Using Expression Values in Variable
 
-Текстовые компоненты, кроме текста, могут содержать выражения. В момент построения компонента, выражение  обрабатывается генератором отчетов, т.е. производиться его вычисление. За исключением, итоговых сумм по бэнду или странице. В этом случае, результат высчитывается после полного построения бэнда или отчета. Порядок обработки компонентов ядром генератора отчетов определяется иерархией компонентов отчета. Иначе говоря, чем выше компонент в этой иерархии, тем выше его приоритет обработки при построении отчета. Полученое значение (результат вычисления выражения) передается в обработанный (построенный) компонент.
+Besides text, text components can contain expressions. When a component is being rendered, the expression is processed by the report engine, i.e. it is evaluated. The exception is band or page totals: in that case the result is calculated after the band or the whole report has been fully rendered. The order in which components are processed by the report engine core is determined by the hierarchy of the report components. In other words, the higher a component is in this hierarchy, the higher its processing priority when the report is built. The resulting value (the result of evaluating the expression) is passed to the processed (rendered) component.
 
 
-* **Примечание**: Если текстовый компонент с выражением располагается на бэнде, то в построенном отчете, будет столько же экземпляров компонента, сколько строк в источнике данных бэнда.
+* **Note**: If a text component with an expression is placed on a band, the rendered report will contain as many instances of the component as there are rows in the band data source.
 
 
-Иногда возникает необходимость использовать результат выражения (рассчитанное значение) в переменной. Рассмотрим пример. Допустим есть выражение **{x+y}**, которое расположено в текстовом компонент **Text10**. Для того чтобы использовать результат этого выражения в переменной недостаточно указать ссылку **{Text10.Text}**. Потому как обращение, в данном случае, будет не к результату выражения, а к текстовому выражению в шаблоне отчета. Для использования результата выражения в переменной, следует воспользоваться одним из следующих вариантов:
+Sometimes you need to use the result of an expression (the calculated value) in a variable. Consider an example. Suppose there is an expression **{x+y}** placed in the text component **Text10**. To use the result of this expression in a variable, it is not enough to specify the reference **{Text10.Text}**. This is because, in this case, the reference points not to the result of the expression, but to the text expression in the report template. To use the result of the expression in a variable, use one of the following options:
 
 
-* Если необходимо получить значение компонента до его отрисовки, то следует: использовать такое же выражение в переменной, как в компоненте, или использовать два прохода, т.е на первом рассчитать значение, на втором использовать в переменной.
+* If you need to get the component value before it is rendered, you should either use the same expression in the variable as in the component, or use two passes, i.e. calculate the value on the first pass and use it in the variable on the second.
 
-* Если значение будет использоваться после отрисовки компонента, можно в событии **GetValue** компонента получить необходимое значение и сохранить (передать) его в переменную.
+* If the value is to be used after the component is rendered, you can use the component's **GetValue** event to get the required value and save (pass) it to the variable.
 
-* Также можно после построения всего отчета, в событии **EndRender**, пробежаться по всем компонентам построенного отчета и сделать необходимые вычисления. Ниже представлен пример скрипта, который подсчитывает сумму по странице, в случае, если у бэнда установлено свойство **Can Break** и заранее неизвестно, на какой странице окажется текстовый компонент.
+* You can also, after the whole report has been rendered, iterate over all components of the rendered report in the **EndRender** event and perform the required calculations. Below is a sample script that calculates a page total when the band has the **Can Break** property set and it is not known in advance which page the text component will end up on.
 
 
 ```

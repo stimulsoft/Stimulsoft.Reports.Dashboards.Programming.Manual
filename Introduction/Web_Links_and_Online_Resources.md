@@ -16,7 +16,7 @@ This section describes how to get information about the latest news and announce
 
 * `Reports.Web`, Reports.Blazor, Reports.Angular Reports.Net, Reports.Wpf, `Reports.Web.NetCore, Dashboards.Blazor, Dashboards.Win, Dashboards.Web, Dashboards.Web.NetCore` from NuGet at [https://www.nuget.org/profiles/Stimulsoft](https://www.nuget.org/profiles/Stimulsoft)
 
-* Reports.Java from Maven at  [http://central.maven.org/maven2/com/stimulsoft](http://central.maven.org/maven2/com/stimulsoft)
+* Reports.Java from Maven at  [https://repo1.maven.org/maven2/com/stimulsoft](https://repo1.maven.org/maven2/com/stimulsoft)
 
 * Reports.JS and `Dashboards`.JS from npm at [https://www.npmjs.com/search?q=stimulsoft](https://www.npmjs.com/search?q=stimulsoft)
 
@@ -83,5 +83,5 @@ This section describes how to get information about the latest news and announce
 
 [https://www.instagram.com/stimulsoft/](https://www.instagram.com/stimulsoft/)
 
-Also, visit our Forum to communicate with other users of Stimulsoft Reports - [http://forum.stimulsoft.com/index.php](http://forum.stimulsoft.com/index.php )
+Also, visit our Forum to communicate with other users of Stimulsoft Reports - [https://forum.stimulsoft.com/](https://forum.stimulsoft.com/)
 Here you can read and discuss various topics related to tools for creating reports. For more information about the product in other Internet resources, please use the search engines.

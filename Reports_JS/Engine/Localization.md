@@ -1,5 +1,9 @@
 # Localization
 
+> **Information**
+>
+> The `StiLocalization` class is also available for working with localization. A detailed description of its properties and methods can be found in the  chapter. "[Report Engine - Working with Localization](../../Engine/Working_with_Localization.md#jsengine)" chapter.
+
 The **HTML5 Viewer** **and** **HTML5 Designer** components support full localization of the user interface. The special static method - **addLocalizationFile()** - is used to localize the report viewer interface to the required language. As the arguments of the method, you should specify the path to the localization XML file, and specify whether the localization will automatically load together with the component.
 
 

@@ -450,6 +450,7 @@
   - [Reports as Assemblies](Engine/Reports_as_Assemblies.md)
   - [Standalone Reports](Engine/Standalone_Reports.md)
   - [Deployment Reports as Files](Engine/Deployment_Reports_as_Files.md)
+  - [Working with Localization](Engine/Working_with_Localization.md)
 - [Out_Of_Date](Out_Of_Date/index.md)
   - [Flash Viewer](Reports_Web/ASP_NET_Web_Forms/Using_Web_Flash_Viewer/index.md)
     - [How this Works](Reports_Web/ASP_NET_Web_Forms/Using_Web_Flash_Viewer/How_to_Work.md)

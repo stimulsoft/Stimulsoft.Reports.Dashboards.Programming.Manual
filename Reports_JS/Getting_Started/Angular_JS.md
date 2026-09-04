@@ -13,7 +13,7 @@ In the terminal navigate to the directory where you want to place the new projec
 
 **Install Stimulsoft components**
 
-First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/ru/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/ru/downloads#dashboards) package. Then, copy the Stimulsoft scripts into the project at the path `sti-angular-js./src/scripts`.
+First, you need to download the Stimulsoft package. If you need reporting tools, you should download the [Stimulsoft Reports.JS](https://www.stimulsoft.com/en/downloads#reports) package. If you need reporting tools and dashboards, you should download the [Stimulsoft Dashboards.JS](https://www.stimulsoft.com/en/downloads#dashboards) package. Then, copy the Stimulsoft scripts into the project at the path `sti-angular-js./src/scripts`.
 
 ### Configure the Angular project
 
@@ -104,7 +104,7 @@ declare var Stimulsoft: any;
     selector: 'app-root',
     template: `<div>
                         <h2>Stimulsoft Reports.JS - Invoice.mrt - Designer</h2>
-                        <div id="сontent"></div>
+                        <div id="content"></div>
                     </div>`
 })
 
@@ -115,7 +115,7 @@ export class AppComponent {
         var report = new Stimulsoft.Report.StiReport();
         
         this.designer.report = report;
-        this.designer.renderHtml("сontent");
+        this.designer.renderHtml("content");
     }
 
     constructor(private http: HttpClientModule) {
@@ -139,7 +139,7 @@ export class AppComponent {
         report.loadFile("reports/Invoice.mrt");
         
         this.viewer.report = report;
-        this.viewer.renderHtml("сontent");
+        this.viewer.renderHtml("content");
     }
 
     constructor(private http: HttpClientModule) {

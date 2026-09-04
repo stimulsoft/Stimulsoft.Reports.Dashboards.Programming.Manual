@@ -15,7 +15,7 @@ You can manage caching with the following properties.
 This property of the viewer enables caching and sets its type. It can take one of the following values, specified in the **StiServerCacheMode** enumeration:
 
 
-**None** – сaching is disabled, when printing and exporting, the report will be sent each time to the server-side;
+**None** – caching is disabled, when printing and exporting, the report will be sent each time to the server-side;
 
 **ObjectCache** – for caching, the server cache is used. The report object is saved in it (set by default);
 
