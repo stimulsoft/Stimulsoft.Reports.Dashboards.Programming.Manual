@@ -117,10 +117,10 @@ The event is triggered before printing the report. The table below shows the lis
 | `sender` | The identifier of the component that triggered this event, possible values: - `"Viewer"` - `"Designer"` |
 | `report` | The current report object. |
 | `printAction` | The type of report printing. Possible values: - `PrintPdf` - prints in PDF format; - `PrintWithoutPreview` - prints in HTML format directly to the printer,  displays the system print dialog; - `PrintWithPreview` - prints in HTML format with a preview in a popup. |
+| `exportSettings` | The export settings used for printing: `Stimulsoft.Report.Export.StiPdfExportSettings` for PDF or `Stimulsoft.Report.Export.StiHtmlExportSettings` for HTML. The changed settings are applied when printing. The page range is set via `exportSettings.pageRange`. |
 | `preventDefault` | This flag allows you to stop further event handling by the viewer. By default, it is set to `false`. |
 
-The list of properties passed as event arguments on the server side in Python has the type `StiReportEventArgs`:
-
+The list of properties passed as event arguments on the server side in Python has the type `StiPrintEventArgs`:
 
 | **Name** | **Description** |
 | --- | --- |
@@ -128,6 +128,8 @@ The list of properties passed as event arguments on the server side in Python ha
 | `sender` | The identifier of the component that triggered this event, possible values: - `StiViewer` - `StiDesigner` |
 | `report` | The current report object. |
 | `printAction` | The type of report printing. Possible values: - `StiPrintAction.PRINT_PDF` - prints in PDF format; - `StiPrintAction.PRINT_WITHOUT_PREVIEW` - prints in HTML format directly  to the printer, displays the system print dialog; - `StiPrintAction.PRINT_WITH_PREVIEW` - prints in HTML format with a preview in a popup. |
+| `exportSettings` | Export settings used to prepare the report for printing: `StiPdfExportSettings` for printing to PDF, `StiHtmlExportSettings` for other options. Property values can be changed; the changed settings are applied when printing. |
+| `pageRange` | The page range for printing, a `StiPagesRange` object. Its properties can be changed, or a new object can be assigned. If both `pageRange` and `exportSettings.pageRange` are changed, `pageRange` is applied. |
 
 For detailed descriptions and usage examples, refer to the [Report Printing](Printing_Report.md) section.
 

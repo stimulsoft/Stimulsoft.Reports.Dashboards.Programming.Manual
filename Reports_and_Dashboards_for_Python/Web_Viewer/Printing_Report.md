@@ -63,7 +63,10 @@ viewer.options.toolbar.showPrintButton = False
 
 ### Report print event
 
-If any actions need to be performed before printing a report, the `onPrintReport` event is available. The event arguments will include the type of report printing and the report itself that is being sent to print.
+If you need to perform any actions before printing a report, use the `onPrintReport` event. The event arguments contain the report print type, the export settings for printing, the page range, and the report itself. You can change the export settings, the page range, and report property values.
+
+
+For example, when printing to PDF, you can set the image resolution and quality. By default, the `Auto` mode is used - images are printed at their original resolution.
 
 
 **app.py**
@@ -71,15 +74,18 @@ If any actions need to be performed before printing a report, the `onPrintReport
 ```python
 
 from stimulsoft_reports.viewer import StiViewer
-from stimulsoft_reports.events import StiReportEventArgs
+from stimulsoft_reports.viewer.enums import StiPrintAction
+from stimulsoft_reports.events import StiPrintEventArgs
+from stimulsoft_reports.export.enums import StiImageResolutionMode
 
-def printReport(args: StiReportEventArgs):
-    printAction = args.printAction
-    report = args.report
+def printReport(args: StiPrintEventArgs):
+    if args.printAction == StiPrintAction.PRINT_PDF:
+        args.exportSettings.imageResolutionMode = StiImageResolutionMode.EXACTLY
+        args.exportSettings.imageResolution = 300
+        args.exportSettings.imageQuality = 1
 
 viewer = StiViewer()
 viewer.onPrintReport += printReport
-viewer.onPrintReport += 'printReport'
 ```
 
 
@@ -89,8 +95,11 @@ viewer.onPrintReport += 'printReport'
 
 <script>
     function printReport(args) {
-        let printAction = args.printAction;
-        let report = args.report;
+        if (args.printAction == 'PrintPdf') {
+            args.exportSettings.imageResolutionMode = Stimulsoft.Report.Export.StiImageResolutionMode.Exactly;
+            args.exportSettings.imageResolution = 300;
+            args.exportSettings.imageQuality = 1;
+        }
     }
 </script>
 ```

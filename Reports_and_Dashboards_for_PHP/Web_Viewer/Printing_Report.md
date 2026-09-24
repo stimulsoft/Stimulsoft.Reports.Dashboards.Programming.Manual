@@ -67,7 +67,7 @@ The viewer also allows disabling the print option entirely if it's not needed. T
 
 ### Report print event
 
-The `onPrintReport` event is triggered if any actions need to be performed before printing the report. The event arguments include the print type, page range, and the report itself. It’s possible to modify the page range or report properties before printing.
+If you need to perform any actions before printing a report, use the `onPrintReport` event. The event arguments contain the report print type, the export settings for printing, the page range, and the report itself. You can change the export settings, the page range, and report property values.
 
 
 Example of actions performed on the JavaScript client-side before printing a report:
@@ -117,6 +117,47 @@ Example of actions performed on the PHP server-side before printing a report:
     };
     $viewer->process();
 ?>
+```
+
+For example, when printing to PDF, you can set the image resolution and quality. By default, the `Auto` mode is used - images are printed at their original resolution.
+
+
+**viewer.php**
+
+```php
+
+<?php
+    use Stimulsoft\Viewer\StiViewer;
+    use Stimulsoft\Events\StiPrintEventArgs;
+    use Stimulsoft\Viewer\Enums\StiPrintAction;
+    use Stimulsoft\Export\Enums\StiImageResolutionMode;
+    
+    $viewer = new StiViewer();
+    $viewer->onPrintReport = function (StiPrintEventArgs $args) {
+        if ($args->printAction == StiPrintAction::PrintPdf) {
+            $args->exportSettings->imageResolutionMode = StiImageResolutionMode::Exactly;
+            $args->exportSettings->imageResolution = 300;
+            $args->exportSettings->imageQuality = 1;
+        }
+    };
+    $viewer->process();
+?>
+```
+
+
+**viewer.php**
+
+```php
+
+<script>
+    function printReport(args) {
+        if (args.printAction == 'PrintPdf') {
+            args.exportSettings.imageResolutionMode = Stimulsoft.Report.Export.StiImageResolutionMode.Exactly;
+            args.exportSettings.imageResolution = 300;
+            args.exportSettings.imageQuality = 1;
+        }
+    }
+</script>
 ```
 
 Detailed descriptions of the available argument values can be found in the [Viewer Events](Events.md) section.

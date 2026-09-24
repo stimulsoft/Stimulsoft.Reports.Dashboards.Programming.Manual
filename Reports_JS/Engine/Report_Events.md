@@ -183,6 +183,8 @@ report.onPrinting = () => {
 ...
 ```
 
+To change the export settings used for printing from the viewer, use the `viewer.onPrintReport` event and its `args.exportSettings` argument.
+
 ### onPrinted
 
 

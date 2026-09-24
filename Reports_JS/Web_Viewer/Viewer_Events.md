@@ -141,7 +141,7 @@ viewer.onEndProcessData = (args) => {
 ### onPrintReport
 
 
-Asynchronous event is called before printing the report. This is not relevant when viewing dashboards. The event handler argument “event” is an object with the next fields:
+The event is called before printing the report and allows changing the export settings used for printing. Asynchronous processing is supported. This is not relevant when viewing dashboards. The event handler argument “event” is an object with the next fields:
 
 
 | **Name** | **Description** |
@@ -151,7 +151,8 @@ Asynchronous event is called before printing the report. This is not relevant wh
 | report | a report for saving. |
 | preventDefault | a flag to prevent further processing of the event. By default, the value is set to **false**. |
 | async | a flag is used to provide the ability to stop the execution of the event before the callback function is executed. By default, the value is set to **false**. |
-| printAction | a sting method name for printing. |
+| printAction | a sting method name for printing. Can have the values **PrintPdf**, **PrintWithPreview** and **PrintWithoutPreview**. |
+| exportSettings | The export settings used for printing: **Stimulsoft.Report.Export.StiPdfExportSettings** for PDF or **Stimulsoft.Report.Export.StiHtmlExportSettings** for HTML. The changed settings are applied when printing. The page range is set via **exportSettings.pageRange**. |
 
 
 **viewer.html**
@@ -166,7 +167,21 @@ viewer.onPrintReport = (args) => {
         page.components.remove(image);
 }
 ...
+
+//Set image resolution and quality when printing to PDF
+viewer.onPrintReport = (args, callback) => {
+    if (args.printAction === "PrintPdf") {
+        args.exportSettings.imageResolutionMode =
+            Stimulsoft.Report.Export.StiImageResolutionMode.Exactly;
+        args.exportSettings.imageResolution = 300;
+        args.exportSettings.imageQuality = 1;
+    }
+}
+...
 ```
+
+
+For the viewer embedded in the designer, the handler is assigned via `designer.viewer.onPrintReport`. When the settings are changed synchronously, there is no need to call `callback()`.
 
 ### onBeginExportReport
 

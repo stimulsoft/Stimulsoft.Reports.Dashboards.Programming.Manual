@@ -92,7 +92,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.M
 
 The free trial of Stimulsoft software is a full-featured version. It has a few limitations, which are as follows:
 
-* The evaluation period is limited to 60 days for Stimulsoft components;
+* The evaluation period is limited to 30 days for Stimulsoft components;
 
 * The Trial watermark is printed on each report page or the dashboard panel.
 
@@ -20132,6 +20132,18 @@ report.print(pageRange);
 ...
 ```
 
+The print settings, including the page range, are set via the export settings object **exportSettings**, which is passed to the **print()** and **printToPdf()** methods:
+
+**viewer.html**
+
+```html
+...
+report.print(exportSettings);
+report.printToPdf(exportSettings, element);
+```
+
+The page range is now specified in **exportSettings.pageRange**, and the HTML export mode in **exportSettings.exportMode**. The old calls and **args.pageRange** keep working for backward compatibility.
+
 ---
 
 # Exporting Reports
@@ -20650,7 +20662,7 @@ viewer.onEndProcessData = (args) => {
 
 ### onPrintReport
 
-Asynchronous event is called before printing the report. This is not relevant when viewing dashboards. The event handler argument “event” is an object with the next fields:
+The event is called before printing the report and allows changing the export settings used for printing. Asynchronous processing is supported. This is not relevant when viewing dashboards. The event handler argument “event” is an object with the next fields:
 
 | **Name** | **Description** |
 | --- | --- |
@@ -20659,7 +20671,8 @@ Asynchronous event is called before printing the report. This is not relevant wh
 | report | a report for saving. |
 | preventDefault | a flag to prevent further processing of the event. By default, the value is set to **false**. |
 | async | a flag is used to provide the ability to stop the execution of the event before the callback function is executed. By default, the value is set to **false**. |
-| printAction | a sting method name for printing. |
+| printAction | a sting method name for printing. Can have the values **PrintPdf**, **PrintWithPreview** and **PrintWithoutPreview**. |
+| exportSettings | The export settings used for printing: **Stimulsoft.Report.Export.StiPdfExportSettings** for PDF or **Stimulsoft.Report.Export.StiHtmlExportSettings** for HTML. The changed settings are applied when printing. The page range is set via **exportSettings.pageRange**. |
 
 **viewer.html**
 
@@ -20673,7 +20686,20 @@ viewer.onPrintReport = (args) => {
         page.components.remove(image);
 }
 ...
+
+//Set image resolution and quality when printing to PDF
+viewer.onPrintReport = (args, callback) => {
+    if (args.printAction === "PrintPdf") {
+        args.exportSettings.imageResolutionMode =
+            Stimulsoft.Report.Export.StiImageResolutionMode.Exactly;
+        args.exportSettings.imageResolution = 300;
+        args.exportSettings.imageQuality = 1;
+    }
+}
+...
 ```
+
+For the viewer embedded in the designer, the handler is assigned via `designer.viewer.onPrintReport`. When the settings are changed synchronously, there is no need to call `callback()`.
 
 ### onBeginExportReport
 
@@ -22987,6 +23013,8 @@ report.onPrinting = () => {
 }
 ...
 ```
+
+To change the export settings used for printing from the viewer, use the `viewer.onPrintReport` event and its `args.exportSettings` argument.
 
 ### onPrinted
 
@@ -25461,7 +25489,7 @@ The viewer also allows disabling the print option entirely if it's not needed. T
 
 ### Report print event
 
-The `onPrintReport` event is triggered if any actions need to be performed before printing the report. The event arguments include the print type, page range, and the report itself. It’s possible to modify the page range or report properties before printing.
+If you need to perform any actions before printing a report, use the `onPrintReport` event. The event arguments contain the report print type, the export settings for printing, the page range, and the report itself. You can change the export settings, the page range, and report property values.
 
 Example of actions performed on the JavaScript client-side before printing a report:
 
@@ -25508,6 +25536,45 @@ Example of actions performed on the PHP server-side before printing a report:
     };
     $viewer->process();
 ?>
+```
+
+For example, when printing to PDF, you can set the image resolution and quality. By default, the `Auto` mode is used - images are printed at their original resolution.
+
+**viewer.php**
+
+```php
+
+<?php
+    use Stimulsoft\Viewer\StiViewer;
+    use Stimulsoft\Events\StiPrintEventArgs;
+    use Stimulsoft\Viewer\Enums\StiPrintAction;
+    use Stimulsoft\Export\Enums\StiImageResolutionMode;
+
+    $viewer = new StiViewer();
+    $viewer->onPrintReport = function (StiPrintEventArgs $args) {
+        if ($args->printAction == StiPrintAction::PrintPdf) {
+            $args->exportSettings->imageResolutionMode = StiImageResolutionMode::Exactly;
+            $args->exportSettings->imageResolution = 300;
+            $args->exportSettings->imageQuality = 1;
+        }
+    };
+    $viewer->process();
+?>
+```
+
+**viewer.php**
+
+```php
+
+<script>
+    function printReport(args) {
+        if (args.printAction == 'PrintPdf') {
+            args.exportSettings.imageResolutionMode = Stimulsoft.Report.Export.StiImageResolutionMode.Exactly;
+            args.exportSettings.imageResolution = 300;
+            args.exportSettings.imageQuality = 1;
+        }
+    }
+</script>
 ```
 
 Detailed descriptions of the available argument values can be found in the [Viewer Events](Events.md) section.
@@ -26385,7 +26452,7 @@ The table below contains a list of properties passed as event arguments on the J
 | `sender` | The identifier of the component that triggered this event can take the following values: - `"Viewer"` - `"Designer"` |
 | `report` | The current report object. |
 | `printAction` | Report print type can take the following values: - `"PrintPdf"` - print in PDF format; - `"PrintWithoutPreview"` - print in HTML format directly to the printer, displaying the system print dialog; - `"PrintWithPreview"` - print in HTML format directly to the printer, displaying the system print dialog; |
-| `pageRange` | The object containing the page range settings for printing. |
+| `exportSettings` | The export settings used for printing: `Stimulsoft.Report.Export.StiPdfExportSettings` for PDF or `Stimulsoft.Report.Export.StiHtmlExportSettings` for HTML. The changed settings are applied when printing. The page range is set via `exportSettings.pageRange`. |
 | `preventDefault` | This flag allows you to stop further processing of the event by the viewer. The default value is `false`. |
 
 A list of event arguments is available for both JavaScript client-side and PHP server-side, `StiPrintEventArgs` type.
@@ -26397,7 +26464,8 @@ A list of event arguments is available for both JavaScript client-side and PHP s
 | `report` | The current report object. |
 | `printAction` | Report print type can take the following values: - `StiPrintAction::PrintPdf` - print in PDF format; - `StiPrintAction::PrintWithoutPreview` - print in HTML format directly to the printer, displaying the system print dialog; - `StiPrintAction::PrintWithPreview` - print in HTML format with a preview in a pop-up window. |
 | `fileName` | The report file name for saving. |
-| `pageRange` | The object containing the page range settings for printing. |
+| `exportSettings` | Export settings used to prepare the report for printing: `StiPdfExportSettings` for printing to PDF, `StiHtmlExportSettings` for other options. Property values can be changed; the changed settings are applied when printing. |
+| `pageRange` | The object containing the page range settings for printing. If both `pageRange` and `exportSettings.pageRange` are changed, `pageRange` is applied. |
 
 ### onBeginExportReport
 
@@ -30509,22 +30577,27 @@ viewer.options.toolbar.showPrintButton = False
 
 ### Report print event
 
-If any actions need to be performed before printing a report, the `onPrintReport` event is available. The event arguments will include the type of report printing and the report itself that is being sent to print.
+If you need to perform any actions before printing a report, use the `onPrintReport` event. The event arguments contain the report print type, the export settings for printing, the page range, and the report itself. You can change the export settings, the page range, and report property values.
+
+For example, when printing to PDF, you can set the image resolution and quality. By default, the `Auto` mode is used - images are printed at their original resolution.
 
 **app.py**
 
 ```python
 
 from stimulsoft_reports.viewer import StiViewer
-from stimulsoft_reports.events import StiReportEventArgs
+from stimulsoft_reports.viewer.enums import StiPrintAction
+from stimulsoft_reports.events import StiPrintEventArgs
+from stimulsoft_reports.export.enums import StiImageResolutionMode
 
-def printReport(args: StiReportEventArgs):
-    printAction = args.printAction
-    report = args.report
+def printReport(args: StiPrintEventArgs):
+    if args.printAction == StiPrintAction.PRINT_PDF:
+        args.exportSettings.imageResolutionMode = StiImageResolutionMode.EXACTLY
+        args.exportSettings.imageResolution = 300
+        args.exportSettings.imageQuality = 1
 
 viewer = StiViewer()
 viewer.onPrintReport += printReport
-viewer.onPrintReport += 'printReport'
 ```
 
 **viewer.html**
@@ -30533,8 +30606,11 @@ viewer.onPrintReport += 'printReport'
 
 <script>
     function printReport(args) {
-        let printAction = args.printAction;
-        let report = args.report;
+        if (args.printAction == 'PrintPdf') {
+            args.exportSettings.imageResolutionMode = Stimulsoft.Report.Export.StiImageResolutionMode.Exactly;
+            args.exportSettings.imageResolution = 300;
+            args.exportSettings.imageQuality = 1;
+        }
     }
 </script>
 ```
@@ -31382,9 +31458,10 @@ The event is triggered before printing the report. The table below shows the lis
 | `sender` | The identifier of the component that triggered this event, possible values: - `"Viewer"` - `"Designer"` |
 | `report` | The current report object. |
 | `printAction` | The type of report printing. Possible values: - `PrintPdf` - prints in PDF format; - `PrintWithoutPreview` - prints in HTML format directly to the printer,  displays the system print dialog; - `PrintWithPreview` - prints in HTML format with a preview in a popup. |
+| `exportSettings` | The export settings used for printing: `Stimulsoft.Report.Export.StiPdfExportSettings` for PDF or `Stimulsoft.Report.Export.StiHtmlExportSettings` for HTML. The changed settings are applied when printing. The page range is set via `exportSettings.pageRange`. |
 | `preventDefault` | This flag allows you to stop further event handling by the viewer. By default, it is set to `false`. |
 
-The list of properties passed as event arguments on the server side in Python has the type `StiReportEventArgs`:
+The list of properties passed as event arguments on the server side in Python has the type `StiPrintEventArgs`:
 
 | **Name** | **Description** |
 | --- | --- |
@@ -31392,6 +31469,8 @@ The list of properties passed as event arguments on the server side in Python ha
 | `sender` | The identifier of the component that triggered this event, possible values: - `StiViewer` - `StiDesigner` |
 | `report` | The current report object. |
 | `printAction` | The type of report printing. Possible values: - `StiPrintAction.PRINT_PDF` - prints in PDF format; - `StiPrintAction.PRINT_WITHOUT_PREVIEW` - prints in HTML format directly  to the printer, displays the system print dialog; - `StiPrintAction.PRINT_WITH_PREVIEW` - prints in HTML format with a preview in a popup. |
+| `exportSettings` | Export settings used to prepare the report for printing: `StiPdfExportSettings` for printing to PDF, `StiHtmlExportSettings` for other options. Property values can be changed; the changed settings are applied when printing. |
+| `pageRange` | The page range for printing, a `StiPagesRange` object. Its properties can be changed, or a new object can be assigned. If both `pageRange` and `exportSettings.pageRange` are changed, `pageRange` is applied. |
 
 For detailed descriptions and usage examples, refer to the [Report Printing](Printing_Report.md) section.
 

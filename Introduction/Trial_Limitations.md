@@ -4,7 +4,7 @@
 
 The free trial of Stimulsoft software is a full-featured version. It has a few limitations, which are as follows:
 
-* The evaluation period is limited to 60 days for Stimulsoft components;
+* The evaluation period is limited to 30 days for Stimulsoft components;
 
 * The Trial watermark is printed on each report page or the dashboard panel.
 

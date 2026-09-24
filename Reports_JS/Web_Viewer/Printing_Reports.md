@@ -94,3 +94,16 @@ var pageRange = new Stimulsoft.Report.StiPagesRange(Stimulsoft.Report.StiRangeTy
 report.print(pageRange);
 ...
 ```
+
+The print settings, including the page range, are set via the export settings object **exportSettings**, which is passed to the **print()** and **printToPdf()** methods:
+
+
+**viewer.html**
+
+```html
+...
+report.print(exportSettings);
+report.printToPdf(exportSettings, element);
+```
+
+The page range is now specified in **exportSettings.pageRange**, and the HTML export mode in **exportSettings.exportMode**. The old calls and **args.pageRange** keep working for backward compatibility.

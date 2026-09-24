@@ -105,7 +105,7 @@ The table below contains a list of properties passed as event arguments on the J
 | `sender` | The identifier of the component that triggered this event can take the following values: - `"Viewer"` - `"Designer"` |
 | `report` | The current report object. |
 | `printAction` | Report print type can take the following values: - `"PrintPdf"` - print in PDF format; - `"PrintWithoutPreview"` - print in HTML format directly to the printer, displaying the system print dialog; - `"PrintWithPreview"` - print in HTML format directly to the printer, displaying the system print dialog; |
-| `pageRange` | The object containing the page range settings for printing. |
+| `exportSettings` | The export settings used for printing: `Stimulsoft.Report.Export.StiPdfExportSettings` for PDF or `Stimulsoft.Report.Export.StiHtmlExportSettings` for HTML. The changed settings are applied when printing. The page range is set via `exportSettings.pageRange`. |
 | `preventDefault` | This flag allows you to stop further processing of the event by the viewer. The default value is `false`. |
 
 A list of event arguments is available for both JavaScript client-side and PHP server-side, `StiPrintEventArgs` type.
@@ -118,7 +118,8 @@ A list of event arguments is available for both JavaScript client-side and PHP s
 | `report` | The current report object. |
 | `printAction` | Report print type can take the following values: - `StiPrintAction::PrintPdf` - print in PDF format; - `StiPrintAction::PrintWithoutPreview` - print in HTML format directly to the printer, displaying the system print dialog; - `StiPrintAction::PrintWithPreview` - print in HTML format with a preview in a pop-up window. |
 | `fileName` | The report file name for saving. |
-| `pageRange` | The object containing the page range settings for printing. |
+| `exportSettings` | Export settings used to prepare the report for printing: `StiPdfExportSettings` for printing to PDF, `StiHtmlExportSettings` for other options. Property values can be changed; the changed settings are applied when printing. |
+| `pageRange` | The object containing the page range settings for printing. If both `pageRange` and `exportSettings.pageRange` are changed, `pageRange` is applied. |
 
 ### onBeginExportReport
 
