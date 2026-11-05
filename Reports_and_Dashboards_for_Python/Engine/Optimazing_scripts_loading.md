@@ -42,6 +42,7 @@ report.javascript.reportsChart = True
 report.javascript.reportsExport = True
 report.javascript.reportsImportXlsx = True
 report.javascript.reportsMaps = False
+report.javascript.reportsMarkdown = False
 report.javascript.blocklyEditor = False
 ```
 
@@ -53,6 +54,7 @@ Each option controls the loading of a script containing specific functionality. 
 | `javascript.reportsExport` | Contains algorithms for exporting the generated report to various formats - PDF, HTML, Excel, RichText, and others. |
 | `javascript.reportsChart` | Contains components for working with all types of charts in a report. |
 | `javascript.reportsMaps` | Contains components for working with regional and online maps. |
+| `javascript.reportsMarkdown` | Contains the resources required to work with the Markdown component. |
 | `javascript.blocklyEditor` | Contains the Blockly visual editor for creating event scripts in the report. The event handler itself is built into the reporting engine. |
 | `javascript.reportsImportXlsx` | Contains algorithms for working with Excel data sources. |
 

@@ -10,6 +10,7 @@
 | **stimulsoft.designer.js** | The script for working with the report designer. |
 | **stimulsoft.reports.js** | The main script contains all the functionality of the report generator - rendering, exporting, working with data. |
 | **stimulsoft.reports.maps.js** | The script contains resources for working with region maps. |
+| **stimulsoft.reports.markdown.js** | The script contains the resources required to work with the Markdown component. |
 | **stimulsoft.viewer.js** | The script for working with the report viewer. |
 | stimulosft.reports.js can be split into *: |  |
 | **stimulsoft.reports.engine.js** | The main script of the report generator. |

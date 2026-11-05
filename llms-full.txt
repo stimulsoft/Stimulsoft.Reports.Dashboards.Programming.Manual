@@ -294,6 +294,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.M
 | **stimulsoft.designer.js** | The script for working with the report designer. |
 | **stimulsoft.reports.js** | The main script contains all the functionality of the report generator - rendering, exporting, working with data. |
 | **stimulsoft.reports.maps.js** | The script contains resources for working with region maps. |
+| **stimulsoft.reports.markdown.js** | The script contains the resources required to work with the Markdown component. |
 | **stimulsoft.viewer.js** | The script for working with the report viewer. |
 | stimulosft.reports.js can be split into *: |  |
 | **stimulsoft.reports.engine.js** | The main script of the report generator. |
@@ -352,6 +353,8 @@ Source: https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.M
 | **stimulsoft.reports.js** | The main script contains all the functionality of the report generator - rendering, exporting, working with data. |
 | **stimulsoft.reports.pack.js** | The packed main script contains all the functionality of the report generator - rendering, exporting, working with data. It is similar to the previous one, but a bit smaller. |
 | **stimulsoft.reports.maps.js** | The script contains resources for working with region maps. |
+| **stimulsoft.reports.markdown.js** | The script contains the resources required to work with the Markdown component. |
+| **stimulsoft.reports.markdown.pack.js** | The packed script contains the resources required to work with the Markdown component. |
 | **stimulsoft.reports.maps.pack.js** | The packed script contains resources for working with region maps. It is similar to the previous one but a bit smaller. |
 | **stimulsoft.viewer.js** | The script for working with the report viewer. |
 | **stimulsoft.viewer.pack.js** | The packed script for working with the report viewer. It is similar to the previous one but a bit smaller. |
@@ -452,6 +455,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.M
 | **stimulsoft.designer.js** | The script for working with the report designer. |
 | **stimulsoft.reports.js** | The main script contains all the functionality of the report generator - rendering, exporting, working with data. |
 | **stimulsoft.reports.maps.js** | The script contains resources for working with region maps. |
+| **stimulsoft.reports.markdown.js** | The script contains the resources required to work with the Markdown component. |
 | **stimulsoft.viewer.js** | The script for working with the report viewer. |
 | stimulosft.reports.js can be split into *: |  |
 | **stimulsoft.reports.engine.js** | The main script of the report generator. |
@@ -479,6 +483,7 @@ Source: https://stimulsoft.github.io/Stimulsoft.Reports.Dashboards.Programming.M
 | **stimulsoft.designer.js** | The script for working with the report designer. |
 | **stimulsoft.reports.js** | The main script contains all the functionality of the report generator - rendering, exporting, working with data. |
 | **stimulsoft.reports.maps.js** | The script contains resources for working with region maps. |
+| **stimulsoft.reports.markdown.js** | The script contains the resources required to work with the Markdown component. |
 | **stimulsoft.viewer.js** | The script for working with the report viewer. |
 | stimulosft.reports.js can be split into *: |  |
 | **stimulsoft.reports.engine.js** | The main script of the report generator. |
@@ -2306,7 +2311,7 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | ShowAboutButton | Enables showing the button - **About** - on the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowRefreshButton | Sets a visibility of the **Refresh** button in the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowPinToolbarButton | Enables displaying of the **Pin Toolbar** button on the viewer's toolbar. The button is available only in the Mobile mode of the viewer's interface. The default value of the property is **true**. |
-| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **PopupWindow** – printing will be done in the HTML format via the preview window of the report. |
+| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **WithPreview** – printing will be done in the HTML format via the preview window of the report. |
 | ViewMode | Sets the mode for displaying report pages. It can take one of the following values of the **StiWebViewMode** enumeration values: **SinglePage** - displays one page of the report selected in the toolbar of the viewer (default value); **Continuous** - displays all pages of the report; **MultiplePages** - displays all report pages as a table. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomMode.PageWidth** – when the viewer runs, the zoom, necessary to display the report by the page width, will be set; **StiZoomMode.PageHeight** – when the viewer runs, the zoom, required to display the page height of the report, will be set. |
 | MenuAnimation | Enables animation when the viewer menu shows/hides. By default, the property is set to **true**. |
@@ -3398,6 +3403,7 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | LabelWidth | Specifies the width of the labels on the properties panel. By default, the width is set to **160 px**. |
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
+| ShowEventsTab | Enables displaying the Events tab in the Properties panel of the report designer. If set to **false**, the Events tab and the paired Properties button are hidden. By default, the property is set to **true**. |
 
 ### Components
 
@@ -5422,7 +5428,7 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | ShowAboutButton | Enables showing the button - **About** - on the viewer toolbar. By default, the property is set to **true**. |
 | ShowRefreshButton | Sets a visibility of the **Refresh** button in the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowPinToolbarButton | Enables displaying of the **Pin Toolbar** button on the viewer's toolbar. The button is available only in the Mobile mode of the viewer's interface. The default value of the property is **true**. |
-| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **PopupWindow** – printing will be done in the HTML format via the preview window of the report. |
+| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **WithPreview** – printing will be done in the HTML format via the preview window of the report. |
 | ViewMode | Sets the mode for displaying report pages. It can take one of the following **StiWebViewMode** enumeration values: **SinglePage** - displays one page of the report selected in the toolbar of the viewer (default value); **Continuous** - displays all pages of the report; **MultiplePages** - displays all report pages as a table. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomMode.PageWidth** – when the viewer runs, the zoom necessary to display the report by the page width will be set; **StiZoomMode.PageHeight** – when the viewer runs, the zoom necessary to display the report by the page height will be set. |
 | MenuAnimation | Enables animation when the viewer menu shows/hides. By default, the property is set to **true**. |
@@ -6642,6 +6648,7 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | LabelWidth | Specifies the width of the labels on the properties panel. By default, the width is set to **160 px**. |
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
+| ShowEventsTab | Enables displaying the Events tab in the Properties panel of the report designer. If set to **false**, the Events tab and the paired Properties button are hidden. By default, the property is set to **true**. |
 
 ### Components
 
@@ -8651,7 +8658,7 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | ShowAboutButton | Enables showing the button - **About** - on the viewer toolbar. By default, the property is set to **true**. |
 | ShowRefreshButton | Sets a visibility of the **Refresh** button in the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowPinToolbarButton | Enables displaying of the **Pin Toolbar** button on the viewer's toolbar. The button is available only in the Mobile mode of the viewer's interface. The default value of the property is **true**. |
-| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **PopupWindow** – printing will be done in the HTML format via the preview window of the report. |
+| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **WithPreview** – printing will be done in the HTML format via the preview window of the report. |
 | ViewMode | Sets the mode for displaying report pages. It can take one of the following **StiWebViewMode** enumeration values: **SinglePage** - displays one page of the report selected in the toolbar of the viewer (default value); **Continuous** - displays all pages of the report; **MultiplePages** - displays all report pages as a table. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomMode.PageWidth** – when the viewer runs, the zoom, necessary to display the report by the page width, will be set; **StiZoomMode.PageHeight** – when the viewer runs, the zoom, necessary to display the report by the page height, will be set. |
 | MenuAnimation | Enables animation when the viewer menu shows/hides. By default the property is set to **true**. |
@@ -9905,6 +9912,7 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | LabelWidth | Specifies the width of the labels on the properties panel. By default, the width is set to **160 px**. |
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
+| ShowEventsTab | Enables displaying the Events tab in the Properties panel of the report designer. If set to **false**, the Events tab and the paired Properties button are hidden. By default, the property is set to **true**. |
 
 ### Components
 
@@ -11881,7 +11889,7 @@ var dbsElementInteraction = (report.GetComponentByName("RegionMap1") as Stimulso
 | ShowAboutButton | Enables showing the button - **About** - on the viewer toolbar. By default, the property is set to **true**. |
 | ShowRefreshButton | Sets a visibility of the **Refresh** button in the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowPinToolbarButton | Enables displaying of the **Pin Toolbar** button on the viewer's toolbar. The button is available only in the Mobile mode of the viewer's interface. The default value of the property is **true**. |
-| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **PopupWindow** – printing will be done in the HTML format via the preview window of the report. |
+| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **WithPreview** – printing will be done in the HTML format via the preview window of the report. |
 | ViewMode | Sets the mode for displaying report pages. It can take one of the following **StiWebViewMode** enumeration values: **SinglePage** - displays one page of the report selected in the toolbar of the viewer (default value); **Continuous** - displays all pages of the report; **MultiplePages** - displays all report pages as a table. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomMode.PageWidth** – when the viewer runs, the zoom, necessary to display the report by the page width, will be set; **StiZoomMode.PageHeight** – when the viewer runs, the zoom, necessary to display the report by the page height, will be set. |
 | MenuAnimation | Enables animation when the viewer menu shows/hides. By default the property is set to **true**. |
@@ -13081,6 +13089,7 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | LabelWidth | Specifies the width of the labels on the properties panel. By default, the width is set to **160 px**. |
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
+| ShowEventsTab | Enables displaying the Events tab in the Properties panel of the report designer. If set to **false**, the Events tab and the paired Properties button are hidden. By default, the property is set to **true**. |
 
 ### Components
 
@@ -14826,7 +14835,7 @@ The **Blazor Viewer** setting is configured with the help of component propertie
 | ShowAboutButton | Enables showing the button - **About** - on the viewer toolbar. By default, the property is set to **true**. |
 | ShowRefreshButton | Sets a visibility of the **Refresh** button in the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowPinToolbarButton | Enables displaying of the **Pin Toolbar** button on the viewer's toolbar. The button is available only in the Mobile mode of the viewer's interface. The default value of the property is **true**. |
-| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **PopupWindow** – printing will be done in the HTML format via the preview window of the report. |
+| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **WithPreview** – printing will be done in the HTML format via the preview window of the report. |
 | ViewMode | Sets the mode for displaying report pages. It can take one of the following **StiWebViewMode** enumeration values: **SinglePage** - displays one page of the report selected in the toolbar of the viewer (default value); **Continuous** - displays all pages of the report; **MultiplePages** - displays all report pages as a table. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomMode.PageWidth** – when the viewer runs, the zoom, necessary to display the report by the page width, will be set; **StiZoomMode.PageHeight** – when the viewer runs, the zoom, necessary to display the report by the page height, will be set. |
 | MenuAnimation | Enables animation when the viewer menu shows/hides. By default the property is set to **true**. |
@@ -15620,6 +15629,7 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | LabelWidth | Specifies the width of the labels on the properties panel. By default, the width is set to **160 px**. |
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
+| ShowEventsTab | Enables displaying the Events tab in the Properties panel of the report designer. If set to **false**, the Events tab and the paired Properties button are hidden. By default, the property is set to **true**. |
 
 ### Components
 
@@ -17697,7 +17707,7 @@ public IActionResult InitViewer()
 | ShowAboutButton | Enables showing the button - **About** - on the viewer toolbar. By default, the property is set to **true**. |
 | ShowRefreshButton | Sets a visibility of the **Refresh** button in the toolbar of the viewer. By default, the property is set to **true**. |
 | ShowPinToolbarButton | Enables displaying of the **Pin Toolbar** button on the viewer's toolbar. The button is available only in the Mobile mode of the viewer's interface. The default value of the property is **true**. |
-| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **PopupWindow** – printing will be done in the HTML format via the preview window of the report. |
+| PrintDestination | Sets the report printing mode. It can take one of the following values of the **StiPrintDestination** enumeration: **Default** – a menu with a choice of printing modes will be displayed (default value); **Pdf** – printing will be done in the PDF format; **Direct** – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; **WithPreview** – printing will be done in the HTML format via the preview window of the report. |
 | ViewMode | Sets the mode for displaying report pages. It can take one of the following **StiWebViewMode** enumeration values: **SinglePage** - displays one page of the report selected in the toolbar of the viewer (default value); **Continuous** - displays all pages of the report; **MultiplePages** - displays all report pages as a table. |
 | Zoom | Sets the zoom for displaying report pages. The default setting is 100 percent. The values are from 10 to 500 percent. You can also set one of the following values: **StiZoomMode.PageWidth** – when the viewer runs, the zoom, necessary to display the report by the page width, will be set; **StiZoomMode.PageHeight** – when the viewer runs, the zoom, necessary to display the report by the page height, will be set. |
 | MenuAnimation | Enables animation when the viewer menu shows/hides. By default the property is set to **true**. |
@@ -21062,7 +21072,7 @@ var dbsElementInteraction = report.getComponentByName("RegionMap1").dashboardInt
 | `showDesignButton` | Enables displaying the **Design** button on the toolbar of the viewer when viewing reports or dashboards. By default, the property is set to `true`. |
 | `showAboutButton` | Enables showing the **About** button on the toolbar of the viewer. By default, the property is set to `true`. |
 | `showPinToolbarButton` | Sets a visibility of the **Pin** button in the toolbar of the viewer in mobile mode. By default, the property is set to `true`. |
-| `printDestination` | Sets the report printing mode. It can take one of the following values of the `StiPrintDestination` enumeration: `StiPrintDestination.Default` – a menu with a choice of printing modes will be displayed; `StiPrintDestination.Pdf` – printing will be done to the PDF format; `StiPrintDestination.Direct` – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; `StiPrintDestination.WithWindow`– printing will be done in the HTML format via the preview window of the report. By default, the property is set to `StiPrintDestination.Default`. |
+| `printDestination` | Sets the report printing mode. It can take one of the following values of the `StiPrintDestination` enumeration: `StiPrintDestination.Default` – a menu with a choice of printing modes will be displayed; `StiPrintDestination.Pdf` – printing will be done to the PDF format; `StiPrintDestination.Direct` – printing will be done to the HTML format directly to the printer, the system print dialog will be displayed; `StiPrintDestination.WithPreview`– printing will be done in the HTML format via the preview window of the report. By default, the property is set to `StiPrintDestination.Default`. |
 | `viewMode` | Sets the mode for displaying report pages: `StiWebViewMode.OnePage` – displays one page of the report selected in the toolbar of the viewer; `StiWebViewMode.Continuous` – displays all pages of the report; `StiWebViewMode.MultiplePages` – displays all report pages as a table; `StiWebViewMode.SinglePage -`only one report page is displayed in the viewer area. Navigation between pages is performed using the navigation panel; `StiWebViewMode.WholeReport -` all report pages are displayed sequentially in the viewer area as a single continuous ribbon. By default, the property is set to `StiWebViewMode.SinglePage`. |
 | `multiPageWidthCount` | Sets the number of report pages displayed horizontally in `MultiplePages` mode. By default, the value is set to 2 pages. |
 | `multiPageHeightCount` | Sets the number of report pages displayed vertically in `MultiplePages` mode. By default, the value is set to 2 pages. |
@@ -22125,6 +22135,7 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `showLocalization` | Sets a visibility of the localization control of the designer. By default, the property is set to `true`. |
 | `allowChangeWindowTitle` | Allows using a title of the browser window to display the file name of the edited report. By default, the property is set to `true`. |
 | `showPropertiesGrid` | Enables displaying the Property panel of the report designer. By default, the property is set to `true`. |
+| `showEventsTab` | Enables displaying the Events tab in the Properties panel of the report designer. If set to `false`, the Events tab and the paired Properties button are hidden. By default, the property is set to `true`. |
 | `showReportTree` | Enables displaying the tree of report components. By default, the property is set to `true`. |
 | `propertiesGridPosition` | Sets **Left** or **Right** position of the properties grid in the designer. |
 | `showSystemFonts` | Sets a visibility of the system fonts in the fonts list. By default, the property is set to `true`. |
@@ -23328,6 +23339,7 @@ To use partial script loading, simply configure the appropriate options in the `
     $report->javascript->reportsExport = true;
     $report->javascript->reportsImportXlsx = true;
     $report->javascript->reportsMaps = false;
+    $report->javascript->reportsMarkdown = false;
     $report->javascript->blocklyEditor = false;
 ?>
 ```
@@ -23339,6 +23351,7 @@ Each PHP option of the StiJavaScript object controls the loading of a script con
 | `javascript->reportsExport` | Contains algorithms for exporting generated reports into various formats such as PDF, HTML, Excel, RichText, and others. |
 | `javascript->reportsChart` | Includes components for working with all types of charts in the report. |
 | `javascript->reportsMaps` | Contains components for working with regional and online maps. |
+| `javascript->reportsMarkdown` | Contains the resources required to work with the Markdown component. |
 | `javascript->blocklyEditor` | Contains a visual editor based on Blockly for creating event scripts in the report. The event handler itself is built into the report engine. |
 | `javascript->reportsImportXlsx` | Contains algorithms for working with Excel data sources. |
 
@@ -24209,6 +24222,29 @@ To disable file data adapters on the server side, simply set the `$allowFileData
 
     $report = new StiReport();
     $report->handler->allowFileDataAdapters = false;
+?>
+```
+
+When file data adapters are disabled, the event handler also rejects requests to them that are sent directly to the server.
+
+### Restricting server-side file data
+
+When file data is processed on the server side, the event handler loads only local files with allowed extensions. The list of extensions is set by the `fileDataExtensions` property of the event handler, by default it is xml, xsd, json, csv and txt. If your data is stored in files with another extension, add it to the list. If the property is set to `null`, files with any extension are allowed. The list is not applied to data loaded by URL.
+
+If the path to a data file contains parameters, for example `Data/orders.xml?id=12345`, the extension is checked without them. Parameters are passed only when data is loaded by URL. For local files they are ignored.
+
+Loading file data by URL on the server side is enabled by default. To disable it, set the `allowFileDataUrls` property of the event handler to `false`, for example:
+
+**index.php**
+
+```php
+
+<?php
+    use Stimulsoft\Report\StiReport;
+
+    $report = new StiReport();
+    $report->handler->fileDataExtensions = ['xml', 'json', 'csv', 'dat'];
+    $report->handler->allowFileDataUrls = false;
 ?>
 ```
 
@@ -25453,7 +25489,7 @@ When selecting the print option from the viewer’s toolbar, a menu with print o
 
 | **Name** | **Description** |
 | --- | --- |
-| `StiPrintDestination::Default` | The menu will show all available print options (this is the default property value). |
+| `StiPrintDestination::DefaultValue` | The menu will show all available print options (this is the default property value). |
 | `StiPrintDestination::Pdf` | The report will be printed in PDF format. |
 | `StiPrintDestination::Direct` | The report will be printed directly in HTML format using the system print dialog. |
 | `StiPrintDestination::WithPreview` | The report will be displayed in a pop-up window for preview and then printed in HTML format. |
@@ -26689,7 +26725,7 @@ The full example code is available on [GitHub](https://github.com/stimulsoft/Sam
 | `showTooltips` | Enables displaying tips for the viewer controls when the mouse hovers over. By default, the property is set to `true`. |
 | `showTooltipsHelp` | Sets a value which indicates that show or hide the help link in tooltips. By default, the property is set to `true`. |
 | `showDialogsHelp` | Sets a value which indicates that show or hide the help button in dialogs. By default, the property is set to `true`. |
-| `pageAlignment` | Sets the position of the report page in the viewer window: StiContentAlignment::DefaultValue - page alignment is determined from the template settings; `StiContentAlignment::Left` – the page will be aligned left; `StiContentAlignment::Center` – the page will be centered; `StiContentAlignment::Right` – the page will be aligned right. By default, the property is set to `StiContentAlignment::Center`. |
+| `pageAlignment` | Sets the position of the report page in the viewer window: StiContentAlignment::Default - page alignment is determined from the template settings; `StiContentAlignment::Left` – the page will be aligned left; `StiContentAlignment::Center` – the page will be centered; `StiContentAlignment::Right` – the page will be aligned right. By default, the property is set to `StiContentAlignment::Center`. |
 | `showPageShadow` | Enables displaying shadow for report pages. By default, the property is set to `false`. |
 | `bookmarksPrint` | Enables printing of report bookmarks (besides the report itself). By default, the property is set to `false`. |
 | `bookmarksTreeWidth` | Sets the width of the bookmarks panel in pixels. By default, the width is 180 pixels. |
@@ -26748,7 +26784,7 @@ The full example code is available on [GitHub](https://github.com/stimulsoft/Sam
 | `showDesignButton` | It enables the display of the **Design** button in the viewer toolbar when viewing reports or dashboards. By default, the property is set to `false`. |
 | `showAboutButton` | It allows you to display or not to display the **About** button. By default, the property is set to `true`. |
 | `showPinToolbarButton` | It allows you to display or not to display the **Pin** button in the mobile mode of report viewing. By default, the property is set to `true`. |
-| `printDestination` | It sets the report print mode. It can take one of the enumeration values below: `StiPrintDestination::Default` – the menu with the selection print mode will be displayed; `StiPrintDestination::Pdf` – print will be made in PDF format; `StiPrintDestination::Direct` – print will be made in HTML format directly to the printer. System print dialog will be displayed; `StiPrintDestination::PopupWindow` – print will be made in HTML format via the pop-up window of report preview. By default, the property is set to `StiPrintDestination::Default`. |
+| `printDestination` | It sets the report print mode. It can take one of the enumeration values below: `StiPrintDestination::DefaultValue` – the menu with the selection print mode will be displayed; `StiPrintDestination::Pdf` – print will be made in PDF format; `StiPrintDestination::Direct` – print will be made in HTML format directly to the printer. System print dialog will be displayed; `StiPrintDestination::WithPreview` – print will be made in HTML format via the pop-up window of report preview. By default, the property is set to `StiPrintDestination::DefaultValue`. |
 | `viewMode` | It sets the report pages display mode: `StiWebViewMode::OnePage` – one page selected in the toolbar is displayed; `StiWebViewMode::Continuous` – all report pages are displayed as a ribbon; `StiWebViewMode::MultiplePages` – all report pages are displayed as a table. By default, the property is set to `StiWebViewMode::SinglePage`. |
 | `zoom` | It allows you to set the scale of report pages when loading the viewer. 100 percent by default. Max value is 500 percent. `StiZoomMode::PageWidth` – report pages scale by page width; `StiZoomMode::PageHeight` – report pages scale by page height. 100 percent by default. Max value is 500 percent. |
 | `menuAnimation` | It allows you to enable or disable the animation of display and closing various menus in the viewer. By default, the property is set to `true`. |
@@ -27697,6 +27733,7 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `showLocalization` | It allows you to display or not to display the localization control in the report designer. The `true` value is set by default. |
 | `allowChangeWindowTitle` | It allows you to use the header of browser window to display file name of edited report.  The `true` value is set by default. |
 | `showPropertiesGrid` | It enables the display of the property panel in the report designer. The `true` value is set by default. |
+| `showEventsTab` | Enables displaying the Events tab in the Properties panel of the report designer. If set to `false`, the Events tab and the paired Properties button are hidden. By default, the property is set to `true`. |
 | `showReportTree` | It enables the display of report components tree. The `true` value is set by default. |
 | `propertiesGridPosition` | It allows you to define the position of the property panel to the left or to the right: - `StiPropertiesGridPosition::Left` – the property panel will be displayed on the left (value is set by default); - `StiPropertiesGridPosition::Right`  – the property panel will be displayed on the right. |
 | `showSystemFonts` | It allows you to display or not to display system fonts in the list of fonts. The property has the `true` value by default, i.e. system fonts are displayed in the list of fonts. |
@@ -28449,6 +28486,7 @@ report.javascript.reportsChart = True
 report.javascript.reportsExport = True
 report.javascript.reportsImportXlsx = True
 report.javascript.reportsMaps = False
+report.javascript.reportsMarkdown = False
 report.javascript.blocklyEditor = False
 ```
 
@@ -28459,6 +28497,7 @@ Each option controls the loading of a script containing specific functionality. 
 | `javascript.reportsExport` | Contains algorithms for exporting the generated report to various formats - PDF, HTML, Excel, RichText, and others. |
 | `javascript.reportsChart` | Contains components for working with all types of charts in a report. |
 | `javascript.reportsMaps` | Contains components for working with regional and online maps. |
+| `javascript.reportsMarkdown` | Contains the resources required to work with the Markdown component. |
 | `javascript.blocklyEditor` | Contains the Blockly visual editor for creating event scripts in the report. The event handler itself is built into the reporting engine. |
 | `javascript.reportsImportXlsx` | Contains algorithms for working with Excel data sources. |
 
@@ -29287,6 +29326,29 @@ from stimulsoft_reports.report import StiReport
 report = StiReport()
 report.handler.allowFileDataAdapters = False
 ```
+
+When file data adapters are disabled, the event handler also rejects requests to them that are sent directly to the server.
+
+### Restricting server-side file data
+
+When file data is processed on the server side, the event handler loads only local files with allowed extensions. The list of extensions is set by the `fileDataExtensions` property of the event handler, by default it is xml, xsd, json, csv and txt. If your data is stored in files with another extension, add it to the list. If the property is set to `None`, files with any extension are allowed. The list is not applied to data loaded by URL.
+
+If the path to a data file contains parameters, for example `Data/orders.xml?id=12345`, the extension is checked without them. Parameters are passed only when data is loaded by URL. For local files they are ignored.
+
+Loading file data by URL on the server side is enabled by default. To disable it, set the `allowFileDataUrls` property of the event handler to `False`, for example:
+
+**app.py**
+
+```python
+
+from stimulsoft_reports.report import StiReport
+
+report = StiReport()
+report.handler.fileDataExtensions = ['xml', 'json', 'csv', 'dat']
+report.handler.allowFileDataUrls = False
+```
+
+To change the list of extensions, assign a new list to the property instead of modifying the default one.
 
 ### Using variables in the data file
 
@@ -32607,6 +32669,7 @@ def designer():
 | `showLocalization` | Provides the option to show or hide the localization control in the report designer. By default, the property is set to `True`. |
 | `allowChangeWindowTitle` | Allows the use of the browser window title to display the name of the edited report file. By default, the property is set to `True`. |
 | `showPropertiesGrid` | Enables the display of the properties panel in the report designer. By default, the property is set to `True`. |
+| `showEventsTab` | Enables displaying the Events tab in the Properties panel of the report designer. If set to `False`, the Events tab and the paired Properties button are hidden. By default, the property is set to `True`. |
 | `showReportTree` | Enables the display of the report components tree. By default, the property is set to `True`. |
 | `propertiesGridPosition` | Provides the option to define the position of the properties panel. The following values can be used: - `StiPropertiesGridPosition.LEFT` – the properties panel will be displayed on the left (default value); - `StiPropertiesGridPosition.RIGHT`  – the properties panel will be displayed on the right. |
 | `showSystemFonts` | Provides the option to show or hide system fonts in the font list. By default, the property is set to True, meaning system fonts are displayed in the font list. |
@@ -33333,7 +33396,7 @@ jdbc.password={ myUserPassword };
 ...
 ```
 
-http://jdbc.postgresql.org/documentation/80/connect.html
+[http://jdbc.postgresql.org/documentation/80/connect.html](http://jdbc.postgresql.org/documentation/80/connect.html)
 
 ---
 
@@ -33608,7 +33671,7 @@ jdbc.password={ myUserPassword };
 ...
 ```
 
-http://jdbc.postgresql.org/documentation/80/connect.html
+[http://jdbc.postgresql.org/documentation/80/connect.html](http://jdbc.postgresql.org/documentation/80/connect.html)
 
 ---
 
@@ -34105,7 +34168,7 @@ The protocol **Open Data (OData)** is used to access from different sources, inc
 
 * Connect the **Stimulsoft** assemblies;
 
-* Add **Service Reference** specifying the address of the entry point to OData-Service. In this case the address is http://services.odata.org/V3/OData/OData.svc;
+* Add **Service Reference** specifying the address of the entry point to OData-Service. In this case the address is [http://services.odata.org/V3/OData/OData.svc](http://services.odata.org/V3/OData/OData.svc);
 
 * Use following code.
 
@@ -44077,7 +44140,7 @@ jdbc.password={ myUserPassword };
 ...
 ```
 
-http://jdbc.postgresql.org/documentation/80/connect.html
+[http://jdbc.postgresql.org/documentation/80/connect.html](http://jdbc.postgresql.org/documentation/80/connect.html)
 
 ---
 

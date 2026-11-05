@@ -51,6 +51,7 @@ The designer is set using the properties found in the `Stimulsoft.Designer.StiDe
 | `showLocalization` | It allows you to display or not to display the localization control in the report designer. The `true` value is set by default. |
 | `allowChangeWindowTitle` | It allows you to use the header of browser window to display file name of edited report.  The `true` value is set by default. |
 | `showPropertiesGrid` | It enables the display of the property panel in the report designer. The `true` value is set by default. |
+| `showEventsTab` | Enables displaying the Events tab in the Properties panel of the report designer. If set to `false`, the Events tab and the paired Properties button are hidden. By default, the property is set to `true`. |
 | `showReportTree` | It enables the display of report components tree. The `true` value is set by default. |
 | `propertiesGridPosition` | It allows you to define the position of the property panel to the left or to the right: - `StiPropertiesGridPosition::Left` – the property panel will be displayed on the left (value is set by default); - `StiPropertiesGridPosition::Right`  – the property panel will be displayed on the right. |
 | `showSystemFonts` | It allows you to display or not to display system fonts in the list of fonts. The property has the `true` value by default, i.e. system fonts are displayed in the list of fonts. |

@@ -11,6 +11,8 @@
 | **stimulsoft.reports.js** | The main script contains all the functionality of the report generator - rendering, exporting, working with data. |
 | **stimulsoft.reports.pack.js** | The packed main script contains all the functionality of the report generator - rendering, exporting, working with data. It is similar to the previous one, but a bit smaller. |
 | **stimulsoft.reports.maps.js** | The script contains resources for working with region maps. |
+| **stimulsoft.reports.markdown.js** | The script contains the resources required to work with the Markdown component. |
+| **stimulsoft.reports.markdown.pack.js** | The packed script contains the resources required to work with the Markdown component. |
 | **stimulsoft.reports.maps.pack.js** | The packed script contains resources for working with region maps. It is similar to the previous one but a bit smaller. |
 | **stimulsoft.viewer.js** | The script for working with the report viewer. |
 | **stimulsoft.viewer.pack.js** | The packed script for working with the report viewer. It is similar to the previous one but a bit smaller. |

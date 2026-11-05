@@ -4,7 +4,7 @@ The protocol **Open Data (OData)** is used to access from different sources, inc
 
 * Connect the **Stimulsoft** assemblies;
 
-* Add **Service Reference** specifying the address of the entry point to OData-Service. In this case the address is http://services.odata.org/V3/OData/OData.svc;
+* Add **Service Reference** specifying the address of the entry point to OData-Service. In this case the address is [http://services.odata.org/V3/OData/OData.svc](http://services.odata.org/V3/OData/OData.svc);
 
 * Use following code.
 

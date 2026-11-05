@@ -121,6 +121,32 @@ report = StiReport()
 report.handler.allowFileDataAdapters = False
 ```
 
+When file data adapters are disabled, the event handler also rejects requests to them that are sent directly to the server.
+
+### Restricting server-side file data
+
+When file data is processed on the server side, the event handler loads only local files with allowed extensions. The list of extensions is set by the `fileDataExtensions` property of the event handler, by default it is xml, xsd, json, csv and txt. If your data is stored in files with another extension, add it to the list. If the property is set to `None`, files with any extension are allowed. The list is not applied to data loaded by URL.
+
+
+If the path to a data file contains parameters, for example `Data/orders.xml?id=12345`, the extension is checked without them. Parameters are passed only when data is loaded by URL. For local files they are ignored.
+
+
+Loading file data by URL on the server side is enabled by default. To disable it, set the `allowFileDataUrls` property of the event handler to `False`, for example:
+
+
+**app.py**
+
+```python
+
+from stimulsoft_reports.report import StiReport
+
+report = StiReport()
+report.handler.fileDataExtensions = ['xml', 'json', 'csv', 'dat']
+report.handler.allowFileDataUrls = False
+```
+
+To change the list of extensions, assign a new list to the property instead of modifying the default one.
+
 ### Using variables in the data file
 
 It is possible to use variables in the form of expressions (as well as using expressions) when specifying the path to the file data source. A variable or expression is defined within curly braces. Multiple expressions can be used anywhere in the file path, for example:

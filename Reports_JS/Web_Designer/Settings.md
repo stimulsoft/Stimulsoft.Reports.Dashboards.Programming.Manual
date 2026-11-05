@@ -54,6 +54,7 @@ The HTML5 Designer is configured using properties that are located in the **Stim
 | `showLocalization` | Sets a visibility of the localization control of the designer. By default, the property is set to `true`. |
 | `allowChangeWindowTitle` | Allows using a title of the browser window to display the file name of the edited report. By default, the property is set to `true`. |
 | `showPropertiesGrid` | Enables displaying the Property panel of the report designer. By default, the property is set to `true`. |
+| `showEventsTab` | Enables displaying the Events tab in the Properties panel of the report designer. If set to `false`, the Events tab and the paired Properties button are hidden. By default, the property is set to `true`. |
 | `showReportTree` | Enables displaying the tree of report components. By default, the property is set to `true`. |
 | `propertiesGridPosition` | Sets **Left** or **Right** position of the properties grid in the designer. |
 | `showSystemFonts` | Sets a visibility of the system fonts in the fonts list. By default, the property is set to `true`. |

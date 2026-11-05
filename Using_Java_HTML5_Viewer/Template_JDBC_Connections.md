@@ -52,4 +52,4 @@ jdbc.password={ myUserPassword };
 ```
 
 
-http://jdbc.postgresql.org/documentation/80/connect.html
+[http://jdbc.postgresql.org/documentation/80/connect.html](http://jdbc.postgresql.org/documentation/80/connect.html)

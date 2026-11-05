@@ -118,6 +118,32 @@ To disable file data adapters on the server side, simply set the `$allowFileData
 ?>
 ```
 
+When file data adapters are disabled, the event handler also rejects requests to them that are sent directly to the server.
+
+### Restricting server-side file data
+
+When file data is processed on the server side, the event handler loads only local files with allowed extensions. The list of extensions is set by the `fileDataExtensions` property of the event handler, by default it is xml, xsd, json, csv and txt. If your data is stored in files with another extension, add it to the list. If the property is set to `null`, files with any extension are allowed. The list is not applied to data loaded by URL.
+
+
+If the path to a data file contains parameters, for example `Data/orders.xml?id=12345`, the extension is checked without them. Parameters are passed only when data is loaded by URL. For local files they are ignored.
+
+
+Loading file data by URL on the server side is enabled by default. To disable it, set the `allowFileDataUrls` property of the event handler to `false`, for example:
+
+
+**index.php**
+
+```php
+
+<?php
+    use Stimulsoft\Report\StiReport;
+    
+    $report = new StiReport();
+    $report->handler->fileDataExtensions = ['xml', 'json', 'csv', 'dat'];
+    $report->handler->allowFileDataUrls = false;
+?>
+```
+
 **Using variables in file data**
 
 It is possible to use variables or expressions when specifying the path to the file data source. Variables or expressions are defined in curly braces. You can use multiple expressions anywhere in the data file path, for example:

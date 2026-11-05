@@ -63,6 +63,7 @@ def designer():
 | `showLocalization` | Provides the option to show or hide the localization control in the report designer. By default, the property is set to `True`. |
 | `allowChangeWindowTitle` | Allows the use of the browser window title to display the name of the edited report file. By default, the property is set to `True`. |
 | `showPropertiesGrid` | Enables the display of the properties panel in the report designer. By default, the property is set to `True`. |
+| `showEventsTab` | Enables displaying the Events tab in the Properties panel of the report designer. If set to `False`, the Events tab and the paired Properties button are hidden. By default, the property is set to `True`. |
 | `showReportTree` | Enables the display of the report components tree. By default, the property is set to `True`. |
 | `propertiesGridPosition` | Provides the option to define the position of the properties panel. The following values can be used: - `StiPropertiesGridPosition.LEFT` – the properties panel will be displayed on the left (default value); - `StiPropertiesGridPosition.RIGHT`  – the properties panel will be displayed on the right. |
 | `showSystemFonts` | Provides the option to show or hide system fonts in the font list. By default, the property is set to True, meaning system fonts are displayed in the font list. |

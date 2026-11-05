@@ -208,6 +208,7 @@ The table below shows all available values for the **StiDesignerPermissions** en
 | LabelWidth | Specifies the width of the labels on the properties panel. By default, the width is set to **160 px**. |
 | PropertiesGridPosition | Sets **Left** or **Right** position of the properties grid in the designer. It has the three values of the **StiPropertiesGridPosition** enumeration: **Left**; **Right**. |
 | ShowPropertiesWhichUsedFromStyles | Sets a visibility of the properties which used from styles in the designer. By default, the property is set to **false**. |
+| ShowEventsTab | Enables displaying the Events tab in the Properties panel of the report designer. If set to **false**, the Events tab and the paired Properties button are hidden. By default, the property is set to **true**. |
 
 ### Components
 

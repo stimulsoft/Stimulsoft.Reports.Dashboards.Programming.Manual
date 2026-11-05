@@ -46,6 +46,7 @@ To use partial script loading, simply configure the appropriate options in the `
     $report->javascript->reportsExport = true;
     $report->javascript->reportsImportXlsx = true;
     $report->javascript->reportsMaps = false;
+    $report->javascript->reportsMarkdown = false;
     $report->javascript->blocklyEditor = false;
 ?>
 ```
@@ -58,6 +59,7 @@ Each PHP option of the StiJavaScript object controls the loading of a script con
 | `javascript->reportsExport` | Contains algorithms for exporting generated reports into various formats such as PDF, HTML, Excel, RichText, and others. |
 | `javascript->reportsChart` | Includes components for working with all types of charts in the report. |
 | `javascript->reportsMaps` | Contains components for working with regional and online maps. |
+| `javascript->reportsMarkdown` | Contains the resources required to work with the Markdown component. |
 | `javascript->blocklyEditor` | Contains a visual editor based on Blockly for creating event scripts in the report. The event handler itself is built into the report engine. |
 | `javascript->reportsImportXlsx` | Contains algorithms for working with Excel data sources. |
 

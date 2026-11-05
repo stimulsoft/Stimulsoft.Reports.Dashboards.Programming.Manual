@@ -29,7 +29,7 @@ When selecting the print option from the viewer’s toolbar, a menu with print o
 
 | **Name** | **Description** |
 | --- | --- |
-| `StiPrintDestination::Default` | The menu will show all available print options (this is the default property value). |
+| `StiPrintDestination::DefaultValue` | The menu will show all available print options (this is the default property value). |
 | `StiPrintDestination::Pdf` | The report will be printed in PDF format. |
 | `StiPrintDestination::Direct` | The report will be printed directly in HTML format using the system print dialog. |
 | `StiPrintDestination::WithPreview` | The report will be displayed in a pop-up window for preview and then printed in HTML format. |
