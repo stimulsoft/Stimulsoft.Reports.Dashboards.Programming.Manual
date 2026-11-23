@@ -1,4 +1,4 @@
-## Creating Sample
+# Creating Sample
 
 In order to verify the project and the Tomcat server, create a simple JSP and deploy it on Tomcat. To do this, one can create a new JSP, by choosing **File&gt; New&gt; Other**, or one can use the context menu, right-click the project name in the **Project Explorer** and select **New&gt; JSP file**. In the next window (see the picture) define the directory Web Content, and in the **File name** write **index.jsp**. Click **Finish** to create pages using the default template.
 

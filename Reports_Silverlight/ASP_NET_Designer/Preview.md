@@ -1,4 +1,4 @@
-## Preview
+# Preview
 
 You can preview the report in the window of the Web-designer by selecting the **Preview** tab in the designer. The picture below shows tabs of the Web-designer:
 

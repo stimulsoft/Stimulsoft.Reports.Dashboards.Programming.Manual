@@ -1,4 +1,4 @@
-## Dot-Matrix Mode of WinForms Viewer
+# Dot-Matrix Mode of WinForms Viewer
 
 The **Dot-Matrix** viewer is designed to preview the report before printing it on dot matrix printer. The Dot matrix printer is used to print only the text and characters of pseudographics. Accordingly the viewer displays only the text and borders of objects as pseudographics characters. The picture below shows the Dot-matrix viewer dialog box:
 

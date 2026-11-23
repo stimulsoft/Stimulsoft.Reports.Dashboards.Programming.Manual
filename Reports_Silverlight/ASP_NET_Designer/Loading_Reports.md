@@ -1,4 +1,4 @@
-## Loading Reports
+# Loading Reports
 
 One of the following methods can be used to load a report to the **Web designer**:
 

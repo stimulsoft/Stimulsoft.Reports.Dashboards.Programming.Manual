@@ -1,4 +1,4 @@
-## Saving Report From Code
+# Saving Report From Code
 
 The report can be saved from the project code. Here is an example of the code to save a report:
 

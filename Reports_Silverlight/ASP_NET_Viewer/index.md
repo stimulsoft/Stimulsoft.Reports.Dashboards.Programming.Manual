@@ -1,4 +1,4 @@
-## ASP.NET Viewer
+# ASP.NET Viewer
 
 The **StiWebViewerSL** component is delivered as a part of **Stimulsoft Reports.WebSL**. The component is used for showing reports in the web browser.
 

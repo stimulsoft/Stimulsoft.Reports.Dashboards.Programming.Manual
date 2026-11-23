@@ -1,4 +1,4 @@
-## Viewer
+# Viewer
 
 **ViewerRT** is used to display reports in the UWP components. The component can display a report, zoom it, save rendered reports to various exporting formats and print them.
 

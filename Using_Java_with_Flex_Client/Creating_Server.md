@@ -1,4 +1,4 @@
-## Creating Server
+# Creating Server
 
 Under Target Runtime, you see &lt;None&gt;, as shown in the picture below, because you haven't created a runtime yet for Apache Tomcat. Click New Runtime to open the New Target Runtime Wizard. Select Apache Tomcat of the correct version from a list. Check Create a new local server as shown on Figure 3, then click Next.
 

@@ -1,4 +1,4 @@
-## WCF Server
+# WCF Server
 
 When designing a report, a user may process events via the **WCF** server. For this you need to set the **UseWCFService** property to **true**:
 

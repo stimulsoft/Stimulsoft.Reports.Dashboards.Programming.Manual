@@ -1,4 +1,4 @@
-## How to Show Report
+# How to Show Report
 
 > **Notice**
 >

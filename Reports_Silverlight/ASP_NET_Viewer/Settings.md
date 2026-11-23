@@ -1,4 +1,4 @@
-## Settings
+# Settings
 
 Setting the **WebViewerSL** can be done using the properties, which are described in the **StiWebViewerSL** class.
 

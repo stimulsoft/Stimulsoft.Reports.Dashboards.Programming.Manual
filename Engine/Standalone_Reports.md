@@ -1,4 +1,4 @@
-## Standalone Reports
+# Standalone Reports
 
 
 It is required to use the program code to compile standalone reports. It is impossible to create standalone reports using the designer. The following code will create the standalone report:

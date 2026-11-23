@@ -1,4 +1,4 @@
-## How to Show Report
+# How to Show Report
 
 Add the following code to display the rendered report (*.mdc, *.mdz, *.mdx):
 

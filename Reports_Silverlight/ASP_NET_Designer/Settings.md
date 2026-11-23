@@ -1,4 +1,4 @@
-## Settings
+# Settings
 
 Setting the **Web** designer can be done using the static properties, which are described in the **Stimulsoft.Report.Web.StiWebDesignerSLOptions** class. Static properties of the Web designer can be divided into following groups:
 

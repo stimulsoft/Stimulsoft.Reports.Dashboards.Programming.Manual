@@ -1,4 +1,4 @@
-## SYLK
+# SYLK
 
 **SYLK** (Symbolic Link) format- this text format is used to exchange data between applications, specifically spreadsheets. Files of SYLK have «.slk» extension. Microsoft does not publish a SYLK specification, therefore work with this format in different applications can be different.
 

@@ -1,4 +1,4 @@
-## Flash Designer
+# Flash Designer
 
 Using a report designer and viewer in the Web application. Flexible setup of an application using the configuration file. Loading and saving reports from the file system or a database. Ability to override mechanisms for loading and saving reports. Ability to use a set of custom JSP tags.
 

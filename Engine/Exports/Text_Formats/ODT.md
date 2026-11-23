@@ -1,4 +1,4 @@
-## ODT
+# ODT
 
 Open Document Text (**ODT**) is the open document for storing documents of the OpenOffice Writer, which is included into the OpenOffice.org package.
 

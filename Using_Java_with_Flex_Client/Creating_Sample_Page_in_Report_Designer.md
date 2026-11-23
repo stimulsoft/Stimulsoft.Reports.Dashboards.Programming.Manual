@@ -1,4 +1,4 @@
-## Creating Sample Page with Report Designer
+# Creating Sample Page with Report Designer
 
 Create a simple page with a report designer. To do this, put the following libraries into the **WebContent\WEB-INF\lib\** directory: stimulsoft.lib.jar, stimulsoft.reports-base.jar, stimulsoft.reports-report.jar, stimulsoft.reports-flex.jar, stimulsoft.reports-web.jar. As a result, one can see the following (picture below):
 

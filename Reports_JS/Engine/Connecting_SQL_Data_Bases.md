@@ -1,4 +1,4 @@
-## Connecting SQL Databases
+# Connecting SQL Databases
 
 > **Information**
 >

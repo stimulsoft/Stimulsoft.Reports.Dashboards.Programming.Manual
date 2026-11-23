@@ -1,4 +1,4 @@
-## Reports as Assemblies
+# Reports as Assemblies
 
 
 Stimulsoft Reports reports generation has the unique ability to compile reports to the .Net Framework assembly. Use the **File | Save Report As…** menu for saving a report to the assembly.

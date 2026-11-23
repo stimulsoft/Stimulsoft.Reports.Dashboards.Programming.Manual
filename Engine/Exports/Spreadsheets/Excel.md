@@ -1,4 +1,4 @@
-## Excel
+# Excel
 
 **Microsoft Excel** is a spreadsheet application written and distributed by Microsoft for Microsoft Windows. It allows using calculation, graphing tools, pivot tables and a macro programming language called VBA. So, it is the most popular table processor available for these platforms since version 5 in 1993.
 

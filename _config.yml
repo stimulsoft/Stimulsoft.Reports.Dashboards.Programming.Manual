@@ -1,9 +1,12 @@
-title: Stimulsoft Reports Documentation
-description:
+title: "Stimulsoft Reports Programming Manual"
+description: "Programming reference for Stimulsoft Reports and Dashboards. Covers integration across .NET, WEB, JS, PHP, Java, Python and WPF platforms: embedding viewers and designers, connecting data sources, exporting reports, licensing, and API usage."
 baseurl: "/Stimulsoft.Reports.Dashboards.Programming.Manual"
-url: "https://stimulsoft.github.io"
+url: "https://docs.stimulsoft.com"
 sidebar_title: "Programming Manual"
 exclude_from_menu: ["Out_Of_Date"]
+product_name: "Stimulsoft Reports and Dashboards"
+product_url: "https://www.stimulsoft.com/en/products/reports"
+designer_url: "https://designer.stimulsoft.com/"
 
 plugins:
   - jekyll-relative-links

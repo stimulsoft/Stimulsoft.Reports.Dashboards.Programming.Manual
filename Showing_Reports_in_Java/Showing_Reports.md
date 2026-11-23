@@ -1,4 +1,4 @@
-## Showing Reports
+# Showing Reports
 
 > **Notice**
 >

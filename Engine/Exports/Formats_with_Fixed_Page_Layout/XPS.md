@@ -1,4 +1,4 @@
-## XPS
+# XPS
 
 **XPS** (XML Paper Specification) is the open graphic format of fixed page layout on the base XML (more precisely XAML-based) used to store printed output as electronic documents. This format was developed by Microsoft as alternative to the PDF format.
 

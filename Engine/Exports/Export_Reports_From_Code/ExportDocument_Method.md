@@ -1,4 +1,4 @@
-## ExportDocument Method
+# ExportDocument Method
 
 The **ExportDocument** method is a simplified wrapping for report exports. There is no need to get the required export service. All you need is to define the export type, pass parameters of export and define the folder where the file should be saved. For example:
 

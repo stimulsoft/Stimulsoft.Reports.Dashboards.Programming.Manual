@@ -1,4 +1,4 @@
-## Creating Project
+# Creating Project
 
 Launch the Eclipse IDE, choose **File&gt; New&gt; Project**. In the project wizards open the **Web** type and in the drop-down list select **Dynamic Web Project** wizard and click **Next** (See the picture below):
 

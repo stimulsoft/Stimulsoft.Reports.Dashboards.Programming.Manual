@@ -1,4 +1,4 @@
-## Wpf Viewer
+# Wpf Viewer
 
 The **StiWpfViewerControl** component is used to view reports in **Reports.WPF**. The component can show a report, zoom, save rendered reports to various formats, print reports, send them to a recipient via Email.
 

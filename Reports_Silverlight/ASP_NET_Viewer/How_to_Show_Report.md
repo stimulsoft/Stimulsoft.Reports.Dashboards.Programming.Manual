@@ -1,4 +1,4 @@
-## How to Show Report
+# How to Show Report
 
 Put the **StiWebViewerSL** component on a web page. Then you need to use the following code to show a report:
 

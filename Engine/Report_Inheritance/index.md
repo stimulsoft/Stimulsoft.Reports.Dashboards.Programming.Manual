@@ -1,4 +1,4 @@
-## Report Inheritance
+# Report Inheritance
 
 There are two ways of report inheritance:
 

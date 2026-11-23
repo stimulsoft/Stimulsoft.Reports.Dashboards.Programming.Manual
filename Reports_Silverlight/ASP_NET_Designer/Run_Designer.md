@@ -1,4 +1,4 @@
-## Run Designer
+# Run Designer
 
 For running the Web report designer it is necessary to put non visual **StiWebDesignerSL** component on the form and, in the event handler of a control, to call the **Design()** method:
 

@@ -1,4 +1,4 @@
-## Options
+# Options
 
 If a report is shown in the dialog window, i.e. ability to set parameters of dialog window.
 

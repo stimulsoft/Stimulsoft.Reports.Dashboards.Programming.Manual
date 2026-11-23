@@ -1,4 +1,4 @@
-## Report Code
+# Report Code
 
 When you create a new report its source code, often called the report script, is generated automatically using either C# or VB.NET programming language depending on the currently selected default. You can use only one of these programming languages at a time
 

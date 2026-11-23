@@ -1,4 +1,4 @@
-## Changing Web Designer Properties From Code
+# Changing Web Designer Properties From Code
 
 The **PreInit** event is used to change **Web designer** properties. This event occurs before initialization of the designer, i.e. before passing Web designer properties to the client part of an application. In other words, to change the Web designer properties from code in it necessary to add the handler to the **PreInit** event. The code below shows how to add the handler to the PreInit event and set the Localization property to en:
 

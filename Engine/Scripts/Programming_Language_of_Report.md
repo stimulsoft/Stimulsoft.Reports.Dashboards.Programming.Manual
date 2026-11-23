@@ -1,4 +1,4 @@
-## Report Programming Language
+# Report Programming Language
 
 The report generator uses a single specified programming language to generate the report code and handle report events. If the current programming language of a report does not suit your requirements you can change it.  The options are currently C# or VB.NET.
 

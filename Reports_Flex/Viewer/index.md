@@ -1,4 +1,4 @@
-## Flex Viewer
+# Flex Viewer
 
 The **Viewer.Fx** component is delivered with **Stimulsoft Reports.Flex**. This component is used to show reports in Flex applications.
 
